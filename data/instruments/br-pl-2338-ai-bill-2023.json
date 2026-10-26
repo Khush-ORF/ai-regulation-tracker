@@ -1,0 +1,39 @@
+{
+  "id": "br-pl-2338-ai-bill-2023",
+  "jurisdiction": "BR",
+  "title": "Bill No. 2338/2023 on the development, promotion and ethical and responsible use of artificial intelligence",
+  "title_original": "Projeto de Lei nº 2.338, de 2023 – Dispõe sobre o desenvolvimento, o fomento e o uso ético e responsável da inteligência artificial com base na centralidade da pessoa humana",
+  "summary": "General AI framework bill introduced by Senator Rodrigo Pacheco. The Senate approved a substitute text by Senator Eduardo Gomes on 10 December 2024 and sent it to the Chamber of Deputies, which received it in March 2025. The text sorts AI systems by risk, bans 'excessive risk' uses, sets duties for high-risk systems, provides for remuneration of rights holders whose works are used to train commercial AI, and names the ANPD as competent authority and coordinator of a national AI regulation system (SIA). In the Chamber a special committee (rapporteur Aguinaldo Ribeiro) has had the bill since May 2025; as of September 2026 it was still awaiting the rapporteur's report, with dozens of AI bills attached.",
+  "streams": ["safety", "industry", "data-protection"],
+  "type": "bill",
+  "status": "in_progress",
+  "binding": true,
+  "issuing_body": "Câmara dos Deputados",
+  "dates": {
+    "introduced": "2023-05-03"
+  },
+  "sectors": ["all"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Classify AI systems by risk; prohibit systems posing excessive risk",
+    "Apply governance and impact-assessment duties to high-risk AI systems",
+    "Remunerate copyright holders whose works train commercial AI systems",
+    "ANPD to coordinate the national AI regulation system (SIA) and apply sanctions",
+    "Most provisions take effect 730 days after publication"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2023-05-03", "source_url": "https://legis.senado.leg.br/dadosabertos/processo?sigla=PL&numero=2338&ano=2023" },
+    { "status": "in_progress", "date": "2024-12-10", "source_url": "https://www12.senado.leg.br/noticias/materias/2024/12/10/senado-aprova-regulamentacao-da-inteligencia-artificial-texto-vai-a-camara" },
+    { "status": "in_progress", "date": "2025-03-17", "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262/tramitacoes" },
+    { "status": "in_progress", "date": "2025-05-20", "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262/tramitacoes" }
+  ],
+  "sources": [
+    { "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262/tramitacoes", "title": "PL 2338/2023 – tramitações (Câmara open data API)", "publisher": "Câmara dos Deputados", "date": "2026-09-02", "lang": "pt" },
+    { "url": "https://legis.senado.leg.br/dadosabertos/processo?sigla=PL&numero=2338&ano=2023", "title": "PL 2338/2023 – processo (Senado open data API)", "publisher": "Senado Federal", "date": "2026-09-09", "lang": "pt" },
+    { "url": "https://www12.senado.leg.br/noticias/materias/2024/12/10/senado-aprova-regulamentacao-da-inteligencia-artificial-texto-vai-a-camara", "title": "Senado aprova regulamentação da inteligência artificial; texto vai à Câmara", "publisher": "Agência Senado", "date": "2024-12-10", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

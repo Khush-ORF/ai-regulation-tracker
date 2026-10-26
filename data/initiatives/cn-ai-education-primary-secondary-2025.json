@@ -1,0 +1,21 @@
+{
+  "id": "cn-ai-education-primary-secondary-2025",
+  "jurisdiction": "CN",
+  "title": "AI general education in primary and secondary schools",
+  "title_original": "中小学人工智能通识教育",
+  "summary": "Ministry of Education effort to expand AI education in schools. In May 2025 the Ministry's Basic Education Teaching Guidance Committee issued the Guide to AI General Education in Primary and Secondary Schools (2025 edition). It also issued the Guide to Generative AI Use in Primary and Secondary Schools (2025 edition). The first sets a staged curriculum: interest and basic understanding in primary school, technical principles and basic applications in junior secondary, and systems thinking and innovation in senior secondary. It links curricula, resources, evaluation and teacher training to move from pilots to wider coverage. The second sets rules for generative AI use in teaching, learning and school management.",
+  "streams": ["skilling"],
+  "kind": "skilling",
+  "agency": "MOE",
+  "start": "2025-05",
+  "status": "active",
+  "beneficiaries": "Primary and secondary school students and teachers",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.gov.cn/lianbo/bumen/202505/content_7023810.htm", "title": "教育部发布两项指南 助推中小学人工智能教育", "publisher": "State Council of the PRC (gov.cn)", "date": "2025-05-15", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

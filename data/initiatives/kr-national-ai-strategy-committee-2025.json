@@ -1,0 +1,25 @@
+{
+  "id": "kr-national-ai-strategy-committee-2025",
+  "jurisdiction": "KR",
+  "title": "National AI Strategy Committee",
+  "title_original": "국가인공지능전략위원회",
+  "summary": "Presidential committee chaired by President Lee Jae-myung that sets national AI strategy, coordinates ministries' AI programmes and monitors implementation, with the goal of making Korea one of the world's top three AI powers (AI G3). It was launched on 8 September 2025 under a presidential decree in force from 4 September 2025, expanding the National AI Committee set up in September 2024. Since 22 January 2026 it has been a statutory body under Article 7 of the AI Basic Act. It has eight subcommittees and a council of ministries' Chief AI Officers, and adopted the AI Action Plan in February 2026.",
+  "streams": ["public-sector", "industry"],
+  "kind": "other",
+  "agency": "Office of the President / MSIT",
+  "start": "2025-09-08",
+  "status": "active",
+  "beneficiaries": "Government ministries; private-sector members advise across eight subcommittees",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://msit.go.kr/eng/bbs/view.do?sCode=eng&mPid=2&mId=4&bbsSeqNo=42&nttSeqNo=1165", "title": "National AI Strategy Committee Launched as Korea's Top-Level AI Policy Body", "publisher": "MSIT", "date": "2025-09-08", "lang": "en" },
+    { "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=270794", "title": "국가 최상위 인공지능 전략 논의기구, 대통령 직속 「국가인공지능전략위원회」 출범", "publisher": "National AI Strategy Committee Support Office (via KDI EIEC)", "date": "2025-09-08", "lang": "ko" },
+    { "url": "https://aikorea.go.kr/web/board/brdDetail.do?currentPage=1&menu_cd=000012&num=325&searchData=&searchText=", "title": "국가인공지능전략위원회, 제2차 전체회의 개최", "publisher": "National AI Strategy Committee (국가인공지능전략위원회)", "date": "2026-02-25", "lang": "ko" },
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&pageIndex=&bbsSeqNo=42&nttSeqNo=1040&searchOpt=ALL&searchTxt=", "title": "National AI Strategy Policy Directions (inaugural National AI Committee meeting)", "publisher": "MSIT", "date": "2024-09-26", "lang": "en" },
+    { "url": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73499", "title": "Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust (English translation)", "publisher": "Korea Legislation Research Institute", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

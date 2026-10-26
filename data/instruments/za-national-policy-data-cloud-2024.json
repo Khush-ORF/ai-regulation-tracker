@@ -1,0 +1,24 @@
+{
+  "id": "za-national-policy-data-cloud-2024",
+  "jurisdiction": "ZA",
+  "title": "National Policy on Data and Cloud",
+  "summary": "A national policy published by the Minister of Communications and Digital Technologies as General Notice 2533 in Government Gazette 50741 on 31 May 2024, after a 2021 draft. It aims to improve government service delivery and grow a data economy through faster digital infrastructure rollout, data privacy and security, open data and interoperability, and a cloud-first approach. It seeks clarity on cross-border data transfers and data sovereignty, and applies to government, state entities, the private sector and data custodians. It is adjacent to AI: the 2026 draft AI policy relied on it for cross-border data flows in AI processing.",
+  "streams": ["compute", "data-protection", "public-sector"],
+  "type": "strategy",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "DCDT",
+  "dates": { "passed": "2024-05-31" },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2024-05-31", "source_url": "https://www.gov.za/sites/default/files/gcis_document/202406/50741gen2533.pdf" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.za/sites/default/files/gcis_document/202406/50741gen2533.pdf", "title": "National Policy on Data and Cloud 2024, General Notice 2533 of 2024, Government Gazette 50741", "publisher": "Government Gazette / gov.za", "date": "2024-05-31", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

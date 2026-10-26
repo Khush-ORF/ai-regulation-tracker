@@ -1,0 +1,21 @@
+{
+  "id": "in-ai-coe-fund-2023",
+  "jurisdiction": "IN",
+  "title": "Outlay for three AI Centres of Excellence (healthcare, agriculture, sustainable cities)",
+  "summary": "The Government of India approved a financial outlay of ₹990 crore over five years, 2023-24 to 2027-28, for three Artificial Intelligence Centres of Excellence in healthcare, agriculture and sustainable cities. The centres were first outlined in the Union Budget 2023-24 and inaugurated by the Ministry of Education in October 2024, led by AIIMS Delhi, IIT Delhi, IIT Ropar and IIT Kanpur with industry and startup partners.",
+  "streams": ["research"],
+  "kind": "budget_allocation",
+  "amount": 9900000000,
+  "currency": "INR",
+  "stage": "allocated",
+  "fiscal_year": "2023-24",
+  "period": { "from": "2023-04", "to": "2028-03" },
+  "purpose": "Funding for three AI Centres of Excellence in healthcare, agriculture and sustainable cities.",
+  "sources": [
+    { "url": "https://indiaai.gov.in/article/prime-minister-hails-the-establishment-of-three-ai-centres-of-excellence", "title": "Prime Minister hails the establishment of three AI Centres of Excellence", "publisher": "IndiaAI", "date": "2024-10-16", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

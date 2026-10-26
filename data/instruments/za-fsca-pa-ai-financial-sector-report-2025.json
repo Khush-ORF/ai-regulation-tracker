@@ -1,0 +1,26 @@
+{
+  "id": "za-fsca-pa-ai-financial-sector-report-2025",
+  "jurisdiction": "ZA",
+  "title": "Artificial Intelligence in the South African Financial Sector",
+  "summary": "The first joint report by the Financial Sector Conduct Authority and the Prudential Authority on AI use in South Africa's financial sector, published on 24 November 2025. It draws on an industry survey run in late 2024 covering banks, insurers, investment firms, payment providers and fintechs, and describes AI adoption, benefits and risks such as cybersecurity and data protection. It does not impose new requirements, but signals regulators' expectations of governance frameworks that protect data, ensure fairness and make AI use transparent, alongside existing POPIA obligations. The regulators said they would continue engaging stakeholders.",
+  "streams": ["sector-rules"],
+  "type": "advisory",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "FSCA and Prudential Authority",
+  "dates": { "passed": "2025-11-24" },
+  "sectors": ["finance"],
+  "approach": "sectoral",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2025-11-24", "source_url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/media-releases/2025/artificial-intelligence-in-the-south-african-financial-sector" }
+  ],
+  "sources": [
+    { "url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/media-releases/2025/artificial-intelligence-in-the-south-african-financial-sector", "title": "Artificial Intelligence in the South African Financial Sector", "publisher": "South African Reserve Bank (Prudential Authority) and FSCA", "date": "2025-11-24", "lang": "en" },
+    { "url": "https://www.bakermckenzie.com/en/insight/publications/alerts/2025/12/south-africa-regulators-assess-ai-in-finance", "title": "South Africa: Regulators assess AI in finance", "publisher": "Baker McKenzie", "date": "2025-12-01", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

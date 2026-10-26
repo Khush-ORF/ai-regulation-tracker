@@ -1,0 +1,23 @@
+{
+  "id": "cn-ai-innovation-development-pilot-zones-2019",
+  "jurisdiction": "CN",
+  "title": "National New Generation AI Innovation and Development Pilot Zones",
+  "title_original": "国家新一代人工智能创新发展试验区",
+  "summary": "Ministry of Science and Technology programme under work guidelines first issued in 2019 and revised in 2020 (Guokefagui [2020] No. 254). Cities, mainly municipalities and sub-provincial and prefecture-level cities, apply to host pilot zones. The zones run AI application demonstrations and policy experiments on data, intellectual property, ethics, talent and finance, plus long-term social experiments on AI's effects. Applicants need a core AI industry above 5 billion yuan and related industries above 20 billion yuan. The revised guidelines aimed for about 20 zones by 2023. Shenzhen and Suzhou are among the cities approved.",
+  "streams": ["industry", "research"],
+  "kind": "other",
+  "agency": "MOST",
+  "start": "2019",
+  "status": "active",
+  "beneficiaries": "Host cities, AI firms and research institutions in pilot zones",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2020/202012/t20201224_171987.html", "title": "科技部关于印发《国家新一代人工智能创新发展试验区建设工作指引（修订版）》的通知", "publisher": "Ministry of Science and Technology of the PRC", "date": "2020-09-29", "lang": "zh" },
+    { "url": "https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/qtwj/qtwj2019/201910/t20191018_149418.html", "title": "科技部关于支持深圳建设国家新一代人工智能创新发展试验区的函", "publisher": "Ministry of Science and Technology of the PRC", "date": "2019-10", "lang": "zh" },
+    { "url": "https://www.gov.cn/zhengce/zhengceku/2021-03/25/content_5595549.htm", "title": "科技部关于支持苏州市建设国家新一代人工智能创新发展试验区的函", "publisher": "State Council of the PRC (gov.cn)", "date": "2021-03", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "in-it-rules-sgi-amendment-2026",
+  "jurisdiction": "IN",
+  "title": "Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules, 2026",
+  "summary": "MeitY amended the IT Rules, 2021 to cover 'synthetically generated information': audio, visual or audio-visual content created or altered by computer so that it appears real, with exclusions for routine edits and accessibility uses. Notified on 10 February 2026 after an October 2025 draft, the rules took effect on 20 February 2026. Intermediaries offering such tools must label synthetic content prominently, embed provenance metadata that cannot be removed, and block certain unlawful content. Significant social media intermediaries must collect and verify user declarations on whether uploads are synthetic. Deadlines for acting on government or court orders fall from 36 hours to 3 hours, and to 2 hours for non-consensual intimate imagery.",
+  "streams": ["content", "safety"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "MeitY",
+  "dates": {
+    "announced": "2025-10-22",
+    "passed": "2026-02-10",
+    "effective": "2026-02-20"
+  },
+  "sectors": ["online platforms"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Label synthetic audio-visual content prominently",
+    "Embed permanent provenance metadata or identifiers in synthetic content",
+    "Significant social media intermediaries must obtain and verify user declarations",
+    "Act on government or court takedown orders within three hours",
+    "Remove non-consensual intimate imagery within two hours"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2025-10-22", "source_url": "https://digitalpolicyalert.org/event/34586-ministry-of-electronics-and-information-technology-closes-consultation-on-draft-information-technology-intermediary-guidelines-and-digital-media-ethics-code-amendment-rules-addressing-synthetically-generated-information" },
+    { "status": "passed", "date": "2026-02-10", "source_url": "https://www.hlc.com/en/publications/india-introduces-mandatory-labelling-for-ai-and-3hour-takedown-for-illegal-content" },
+    { "status": "in_force", "date": "2026-02-20", "source_url": "https://www.hlc.com/en/publications/india-introduces-mandatory-labelling-for-ai-and-3hour-takedown-for-illegal-content" }
+  ],
+  "sources": [
+    { "url": "https://www.hlc.com/en/publications/india-introduces-mandatory-labelling-for-ai-and-3hour-takedown-for-illegal-content", "title": "India introduces mandatory labelling for AI and 3-hour takedown for illegal content", "publisher": "Hogan Lovells", "date": "2026-02-13", "lang": "en" },
+    { "url": "https://www.khaitanco.com/thought-leadership/MeitY-notifies-the-IT-Amendment-Rules-2026", "title": "MeitY notifies the IT Amendment Rules 2026", "publisher": "Khaitan & Co", "date": "2026-02", "lang": "en" },
+    { "url": "https://digitalpolicyalert.org/event/34586-ministry-of-electronics-and-information-technology-closes-consultation-on-draft-information-technology-intermediary-guidelines-and-digital-media-ethics-code-amendment-rules-addressing-synthetically-generated-information", "title": "MeitY closes consultation on draft IT Rules amendment addressing synthetically generated information", "publisher": "Digital Policy Alert", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

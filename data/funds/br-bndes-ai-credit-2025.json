@@ -1,0 +1,22 @@
+{
+  "id": "br-bndes-ai-credit-2025",
+  "jurisdiction": "BR",
+  "title": "BNDES credit approved for AI projects (2024 to June 2025)",
+  "title_original": "Crédito aprovado pelo BNDES para inteligência artificial",
+  "summary": "Credit for artificial intelligence projects approved by the Brazilian Development Bank (BNDES) between 2024 and June 2025, reported as R$ 1 billion, mostly through the BNDES Mais Inovação programme. By segment, integrators and developers received R$ 561 million, hardware such as chips and supercomputers R$ 258 million, and cloud and data-centre infrastructure R$ 180 million. The figure is approved credit, not disbursements, and relates to the Brazilian AI Plan's goal of financing business AI innovation.",
+  "streams": ["industry", "compute"],
+  "kind": "other",
+  "amount": 1000000000,
+  "currency": "BRL",
+  "stage": "allocated",
+  "fiscal_year": "2025",
+  "period": { "from": "2024", "to": "2025-06" },
+  "purpose": "Loans to companies developing or deploying AI, hardware and AI infrastructure.",
+  "sources": [
+    { "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-06/em-um-ano-bndes-aprovou-credito-de-r-1-bilhao-para-ia", "title": "Em um ano, BNDES aprovou crédito de R$ 1 bilhão para IA", "publisher": "Agência Brasil", "date": "2025-06-18", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

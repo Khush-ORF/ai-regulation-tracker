@@ -1,0 +1,21 @@
+{
+  "id": "br-bcb-ai-coe-2024",
+  "jurisdiction": "BR",
+  "title": "Central Bank of Brazil Centre of Excellence in Data Science and Artificial Intelligence",
+  "title_original": "Centro de Excelência de Ciência de Dados e Inteligência Artificial do Banco Central do Brasil (CdE IA)",
+  "summary": "Internal centre of excellence created by Central Bank of Brazil Resolution BCB No. 408 of 15 August 2024, in force from 1 September 2024. Coordinated by the bank's IT department, it is a community of practice of specialist staff from each area of the bank. It proposes governance guidelines for the safe and ethical use and development of data science and AI software inside the bank, requirements for generative AI products and services used by the bank, and a permanent staff training programme in data science and AI. It does not regulate financial institutions.",
+  "streams": ["public-sector", "skilling"],
+  "kind": "coe",
+  "agency": "Banco Central do Brasil",
+  "start": "2024-09-01",
+  "status": "active",
+  "beneficiaries": "Central Bank of Brazil staff and units",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.bcb.gov.br/api/conteudo/app/normativos/exibenormativo?p1=Resolu%C3%A7%C3%A3o%20BCB&p2=408", "title": "Resolução BCB nº 408, de 15 de agosto de 2024", "publisher": "Banco Central do Brasil", "date": "2024-08-15", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

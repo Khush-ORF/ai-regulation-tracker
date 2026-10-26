@@ -1,0 +1,22 @@
+{
+  "id": "br-ai-supercomputer-2026",
+  "jurisdiction": "BR",
+  "title": "National AI supercomputer at the Augusto Severo Science and Technology Park (Rio Grande do Norte)",
+  "title_original": "Supercomputador brasileiro de Inteligência Artificial",
+  "summary": "Compute project announced by the Ministry of Science, Technology and Innovation in August 2026 as part of the Brazilian AI Plan's infrastructure axis. The government plans to buy an AI supercomputer of about 7,200 petaflops, costing just over R$ 1 billion from the National Fund for Scientific and Technological Development (FNDCT), to be run by the National Laboratory for Scientific Computing (LNCC) at the Augusto Severo Science and Technology Park, linked to UFRN, in Macaíba near Natal. The tender, still to be published in the official gazette, requires technology transfer, local suppliers and training of 5,000 Brazilians over five years.",
+  "streams": ["compute", "research"],
+  "kind": "compute",
+  "agency": "MCTI / LNCC",
+  "start": "2026-08",
+  "status": "announced",
+  "beneficiaries": "Researchers, public bodies and companies needing AI compute",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/rn-vai-abrigar-supercomputador-brasileiro-de-inteligencia-artificial", "title": "RN vai abrigar supercomputador brasileiro de Inteligência Artificial", "publisher": "Agência Brasil", "date": "2026-08-20", "lang": "pt" },
+    { "url": "https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-08/brazil-get-its-own-ai-supercomputer", "title": "Brazil to get its own AI supercomputer", "publisher": "Agência Brasil", "date": "2026-08-21", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

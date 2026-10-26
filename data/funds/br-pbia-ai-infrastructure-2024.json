@@ -1,0 +1,23 @@
+{
+  "id": "br-pbia-ai-infrastructure-2024",
+  "jurisdiction": "BR",
+  "title": "PBIA axis 1: Infrastructure and AI Development (2024–2028)",
+  "title_original": "PBIA – Eixo Infraestrutura e Desenvolvimento de IA",
+  "summary": "Allocation of the Brazilian AI Plan's 2024–2028 envelope to its first axis, 'Infrastructure and AI Development', stated in the MCTI plan document as BRL 5.79 billion. The axis's National AI Infrastructure Programme includes buying a specialised AI supercomputer, expanding regional high-performance computing centres (Cenapads), high-speed networks for supercomputing, the Pro-Infra AI line for research institutions, and partnerships to develop supercomputer nodes and machine learning accelerators.",
+  "streams": ["compute", "research"],
+  "kind": "budget_allocation",
+  "amount": 5790000000,
+  "currency": "BRL",
+  "stage": "announced",
+  "fiscal_year": "2024",
+  "period": { "from": "2024", "to": "2028" },
+  "purpose": "Build national AI computing and data infrastructure under the Brazilian AI Plan.",
+  "parent": "br-pbia-investment-2024",
+  "sources": [
+    { "url": "https://api.oecd.ai/storage//policy-initiatives/Feb2026/117ojp3vhlml84rjxd-ai-for-the-good-of-all-2025.pdf", "title": "Brazilian Artificial Intelligence Plan – AI for the Good of All (Table: Investments 2024-28; Annex 2, Axis 1)", "publisher": "MCTI (hosted by OECD.AI)", "date": "2025", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

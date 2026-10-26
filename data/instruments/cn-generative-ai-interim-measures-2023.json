@@ -1,0 +1,36 @@
+{
+  "id": "cn-generative-ai-interim-measures-2023",
+  "jurisdiction": "CN",
+  "title": "Interim Measures for the Management of Generative Artificial Intelligence Services",
+  "title_original": "生成式人工智能服务管理暂行办法",
+  "summary": "Departmental rules issued as Order No. 15 by the Cyberspace Administration of China with the National Development and Reform Commission, the Ministries of Education, Science and Technology, Industry and Information Technology, and Public Security, and the National Radio and Television Administration. They apply to generative AI services that provide text, images, audio or video to the public in mainland China, and exclude research and development not offered to the domestic public. Providers must meet training-data and annotation requirements, label generated content, deal with illegal content, protect minors and run complaint channels. Services with public-opinion attributes need a security assessment and algorithm filing.",
+  "streams": ["safety", "content"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "CAC",
+  "dates": { "introduced": "2023-04-11", "passed": "2023-07-10", "effective": "2023-08-15" },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Meet training-data processing and data-annotation requirements",
+    "Label generated images, video and similar content under the deep synthesis rules",
+    "Take effective measures to stop minors becoming over-reliant on services",
+    "Run a security assessment and file the algorithm for public-opinion services",
+    "Set up complaint and reporting channels and promptly handle illegal content"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2023-04-11", "source_url": "https://digichina.stanford.edu/work/translation-measures-for-the-management-of-generative-artificial-intelligence-services-draft-for-comment-april-2023/" },
+    { "status": "passed", "date": "2023-07-10", "source_url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm" },
+    { "status": "in_force", "date": "2023-08-15", "source_url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm", "title": "生成式人工智能服务管理暂行办法（令第15号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2023-07-10", "lang": "zh" },
+    { "url": "https://www.cac.gov.cn/2023-07/13/c_1690898326795531.htm", "title": "国家网信办等七部门联合公布《生成式人工智能服务管理暂行办法》", "publisher": "Cyberspace Administration of China", "date": "2023-07-13", "lang": "zh" },
+    { "url": "https://digichina.stanford.edu/work/translation-measures-for-the-management-of-generative-artificial-intelligence-services-draft-for-comment-april-2023/", "title": "Translation: Measures for the Management of Generative Artificial Intelligence Services (Draft for Comment)", "publisher": "DigiChina, Stanford University", "date": "2023-04", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

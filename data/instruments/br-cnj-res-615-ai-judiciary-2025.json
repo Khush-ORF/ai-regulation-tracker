@@ -1,0 +1,34 @@
+{
+  "id": "br-cnj-res-615-ai-judiciary-2025",
+  "jurisdiction": "BR",
+  "title": "CNJ Resolution No. 615/2025 on the development, use and governance of AI in the Judiciary",
+  "title_original": "Resolução CNJ nº 615, de 11 de março de 2025 – Estabelece diretrizes para o desenvolvimento, utilização e governança de soluções desenvolvidas com recursos de inteligência artificial no Poder Judiciário",
+  "summary": "Resolution of the National Council of Justice (CNJ) dated 11 March 2025 and published in the CNJ electronic gazette on 14 March 2025. It replaces Resolution 332/2020 and sets rules for developing, governing, auditing, monitoring and using AI across Brazil's courts, except the Federal Supreme Court. It classifies AI uses as excessive risk (prohibited, Art. 10), high risk or low risk, with categories listed in an annex; requires impact assessments, human review by judges, privacy by design and transparency; adds specific rules for generative AI and large language models; and creates a National Committee on AI in the Judiciary.",
+  "streams": ["public-sector", "safety"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "CNJ",
+  "dates": {
+    "passed": "2025-03-11"
+  },
+  "sectors": ["judiciary"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Do not use AI solutions classed as excessive risk",
+    "Classify court AI uses as high or low risk per the annex",
+    "Carry out impact assessments and keep human review of AI-assisted decisions",
+    "Follow specific rules when using generative AI and LLMs",
+    "National Committee on AI in the Judiciary oversees implementation"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2025-03-11", "source_url": "https://revista.trf3.jus.br/index.php/rtrf3/article/download/742/700" }
+  ],
+  "sources": [
+    { "url": "https://revista.trf3.jus.br/index.php/rtrf3/article/download/742/700", "title": "Regulação da inteligência artificial no Judiciário brasileiro: análise do objeto e definições da Resolução CNJ nº 615/2025", "publisher": "Revista do Tribunal Regional Federal da 3ª Região", "date": "2025-12", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

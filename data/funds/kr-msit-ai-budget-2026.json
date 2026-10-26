@@ -1,0 +1,21 @@
+{
+  "id": "kr-msit-ai-budget-2026",
+  "jurisdiction": "KR",
+  "title": "MSIT 2026 budget for AI transformation",
+  "title_original": "과학기술정보통신부 2026년 예산 (AI 대전환)",
+  "summary": "AI share of the Ministry of Science and ICT's 2026 budget, which was finalised at KRW 23.7417 trillion after the National Assembly approved it on 2 December 2025. MSIT states that KRW 5.1 trillion of this goes to AI transformation: advancing the 'AI Highway' compute infrastructure, developing AI technologies and talent, promoting AI adoption and building an AI-ready society. The ministry's release does not break the AI figure down by programme in its text.",
+  "streams": ["compute", "research", "skilling"],
+  "kind": "budget_allocation",
+  "amount": 5100000000000,
+  "currency": "KRW",
+  "stage": "allocated",
+  "fiscal_year": "2026",
+  "purpose": "Fund MSIT's AI transformation programmes in 2026, including AI compute infrastructure, AI technology and talent, and AI adoption.",
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mPid=2&mId=4&bbsSeqNo=42&nttSeqNo=1195", "title": "MSIT's 2026 Budget Finalized at KRW 23.7 Trillion", "publisher": "MSIT", "date": "2025-12", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

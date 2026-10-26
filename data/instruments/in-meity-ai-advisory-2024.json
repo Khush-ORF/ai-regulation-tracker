@@ -1,0 +1,33 @@
+{
+  "id": "in-meity-ai-advisory-2024",
+  "jurisdiction": "IN",
+  "title": "MeitY Advisory to Intermediaries and Platforms on AI Models and Synthetic Content (15 March 2024)",
+  "summary": "MeitY issued this advisory to intermediaries and platforms on 15 March 2024. It replaced an advisory of 1 March 2024 that had asked for explicit government permission before deploying under-tested or unreliable AI models. The revised version dropped the permission requirement and eased the status-report requirement. It asks platforms to label under-tested or unreliable models, warn users about unreliable output (for example through a consent pop-up), make sure their AI tools do not enable unlawful content, bias or threats to electoral integrity, and identify AI-generated or synthetic content with labels, metadata or unique identifiers. It follows a December 2023 advisory on deepfakes. Its legal force has been disputed.",
+  "streams": ["content", "safety"],
+  "type": "advisory",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "MeitY",
+  "dates": {
+    "announced": "2024-03-15"
+  },
+  "sectors": ["online platforms"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Label under-tested or unreliable AI models before offering them in India",
+    "Inform users about possible unreliability of AI output",
+    "Identify synthetic content with labels, metadata or unique identifiers",
+    "Ensure AI tools do not enable unlawful content under the IT Rules"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2024-03-15", "source_url": "https://mondaq.com/india/new-technology/1500884/revised-meity-advisory-on-deployment-of-ai-models" }
+  ],
+  "sources": [
+    { "url": "https://mondaq.com/india/new-technology/1500884/revised-meity-advisory-on-deployment-of-ai-models", "title": "Revised MeitY Advisory on deployment of AI models", "publisher": "JSA (via Mondaq)", "date": "2024-03", "lang": "en" },
+    { "url": "https://inc42.com/buzz/it-ministry-removes-approval-need-for-new-ai-models-rollout", "title": "IT Ministry Removes Approval Need For New AI Models Rollout", "publisher": "Inc42", "date": "2024-03-16", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.6,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

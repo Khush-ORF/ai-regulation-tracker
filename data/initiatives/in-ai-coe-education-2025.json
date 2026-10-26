@@ -1,0 +1,22 @@
+{
+  "id": "in-ai-coe-education-2025",
+  "jurisdiction": "IN",
+  "title": "Centre of Excellence in Artificial Intelligence for Education",
+  "summary": "The Union Budget 2025-26 announced a Centre of Excellence in Artificial Intelligence for Education with an allocation of ₹500 crore, the fourth national AI centre of excellence after those for healthcare, agriculture and sustainable cities. According to a Ministry of Education reply in the Lok Sabha on 20 July 2026, the centre has been set up at IIT Madras for the period 2025-26 to 2029-30. It is meant to develop AI tools for education, such as personalised learning and assessment, in line with the National Education Policy 2020.",
+  "streams": ["skilling", "research", "public-sector"],
+  "kind": "coe",
+  "agency": "Ministry of Education",
+  "start": "2025",
+  "status": "active",
+  "beneficiaries": "Students, teachers and education institutions",
+  "linked_funds": ["in-ai-coe-education-fund-2025"],
+  "sources": [
+    { "url": "https://indiaai.gov.in/news/union-budget-2025-26-centre-allocates-500-crore-for-ai-centre-of-excellence-in-education", "title": "Union Budget 2025-26: Centre allocates ₹500 Crore for AI Centre of Excellence in Education", "publisher": "IndiaAI", "date": "2025", "lang": "en" },
+    { "url": "https://www.policyedge.in/p/lok-sabha-qa-government-operationalises-500-crore-ai-centre-at-iit-madras-expands-national-ai-skilling", "title": "Lok Sabha Q&A: Government operationalises ₹500 crore AI centre at IIT Madras", "publisher": "The Policy Edge", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

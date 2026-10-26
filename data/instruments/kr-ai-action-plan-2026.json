@@ -1,0 +1,29 @@
+{
+  "id": "kr-ai-action-plan-2026",
+  "jurisdiction": "KR",
+  "title": "Republic of Korea AI Action Plan (AI Basic Plan 2026–2028)",
+  "title_original": "대한민국 인공지능행동계획 (인공지능 기본계획(2026~2028))",
+  "summary": "Government-wide AI plan adopted by the presidential National AI Strategy Committee at its second plenary meeting on 25 February 2026, after a report to the Cabinet on 10 February 2026. It is the statutory AI Basic Plan required by Article 6 of the AI Basic Act and covers 2026–2028. A draft with 98 tasks was released in December 2025. The final plan sets 99 implementation tasks and 326 policy recommendations under three pillars (an AI innovation ecosystem, nationwide AI-based transformation, contribution to a global AI basic society) and 12 strategic areas, aimed at making Korea one of the top three AI powers.",
+  "streams": ["industry", "compute", "public-sector"],
+  "type": "strategy",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "National AI Strategy Committee",
+  "dates": {
+    "announced": "2025-12-15",
+    "passed": "2026-02-25"
+  },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2026-02-25", "source_url": "https://aikorea.go.kr/web/board/brdDetail.do?currentPage=1&menu_cd=000012&num=325&searchData=&searchText=" }
+  ],
+  "sources": [
+    { "url": "https://aikorea.go.kr/web/board/brdDetail.do?currentPage=1&menu_cd=000012&num=325&searchData=&searchText=", "title": "국가인공지능전략위원회, 제2차 전체회의 개최", "publisher": "National AI Strategy Committee (국가인공지능전략위원회)", "date": "2026-02-25", "lang": "ko" },
+    { "url": "https://www.etnews.com/20251215000294", "title": "국가AI전략위, 대·중소 데이터센터 등 'AI행동계획' 98개 과제 공개", "publisher": "Electronic Times (전자신문)", "date": "2025-12-15", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

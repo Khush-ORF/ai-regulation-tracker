@@ -1,0 +1,32 @@
+{
+  "id": "br-lei-15123-ai-violence-women-2025",
+  "jurisdiction": "BR",
+  "title": "Law No. 15.123/2025 increasing the penalty for psychological violence against women committed with AI",
+  "title_original": "Lei nº 15.123, de 24 de abril de 2025 – Altera o art. 147-B do Código Penal para estabelecer causa de aumento de pena no crime de violência psicológica contra a mulher quando praticado com o uso de inteligência artificial",
+  "summary": "Federal law of 24 April 2025 that amends Article 147-B of the Penal Code, which defines the crime of psychological violence against women. It adds a sole paragraph raising the penalty by half when the crime is committed using artificial intelligence or any other technology that alters the victim's image or voice, targeting deepfake-based abuse. The law took effect on its date of publication.",
+  "streams": ["content"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "Congresso Nacional",
+  "dates": {
+    "passed": "2025-04-24",
+    "effective": "2025-04"
+  },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Penalty raised by half when psychological violence uses AI to alter a woman's image or voice"
+  ],
+  "status_history": [
+    { "status": "in_force", "date": "2025-04", "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15123.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15123.htm", "title": "Lei nº 15.123, de 24 de abril de 2025", "publisher": "Presidência da República", "date": "2025-04-24", "lang": "pt" },
+    { "url": "https://legis.senado.leg.br/dadosabertos/legislacao/lista?tipo=LEI&ano=2025", "title": "Lista de leis federais de 2025 (Senado open data)", "publisher": "Senado Federal", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

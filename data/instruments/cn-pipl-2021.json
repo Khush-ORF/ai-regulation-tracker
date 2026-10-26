@@ -1,0 +1,33 @@
+{
+  "id": "cn-pipl-2021",
+  "jurisdiction": "CN",
+  "title": "Personal Information Protection Law of the People's Republic of China",
+  "title_original": "中华人民共和国个人信息保护法",
+  "summary": "National law adopted by the NPC Standing Committee on 20 August 2021 and in force since 1 November 2021. It is China's main personal data law. For AI, Article 24 requires automated decision-making to be transparent and fair and bars unreasonable differential pricing. It also requires a non-personalised option or easy refusal for automated push content and marketing, and lets individuals request an explanation of, and refuse, decisions made solely by automated means that significantly affect them. Article 55 requires a prior personal information protection impact assessment for automated decision-making, and Article 73 defines the term.",
+  "streams": ["data-protection"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "NPC Standing Committee",
+  "dates": { "passed": "2021-08-20", "effective": "2021-11-01" },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Keep automated decisions transparent, fair and free of unreasonable price discrimination",
+    "Offer non-personalised options or easy refusal for automated push and marketing",
+    "Explain significant automated decisions on request and allow refusal of solely automated ones",
+    "Run a personal information protection impact assessment before automated decision-making",
+    "Keep impact assessment reports and processing records for at least three years"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2021-08-20", "source_url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm" },
+    { "status": "in_force", "date": "2021-11-01", "source_url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm", "title": "中华人民共和国个人信息保护法", "publisher": "Cyberspace Administration of China", "date": "2021-08-20", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

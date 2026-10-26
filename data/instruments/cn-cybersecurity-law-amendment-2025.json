@@ -1,0 +1,31 @@
+{
+  "id": "cn-cybersecurity-law-amendment-2025",
+  "jurisdiction": "CN",
+  "title": "Decision of the NPC Standing Committee on Amending the Cybersecurity Law of the People's Republic of China",
+  "title_original": "全国人民代表大会常务委员会关于修改《中华人民共和国网络安全法》的决定",
+  "summary": "Amendment to the 2016 Cybersecurity Law, adopted by the NPC Standing Committee at its 18th session on 28 October 2025 and in force since 1 January 2026. It adds Article 20, the law's first AI provision. Under it, the state supports basic AI theory and algorithm research, building training-data and computing infrastructure, improving AI ethics norms, and strengthening AI risk monitoring, assessment and security supervision. It also supports using AI to improve cybersecurity. The amendment raises fines for breaches of security duties, prohibited online content and uncertified critical network equipment, and links personal information handling to the Personal Information Protection Law.",
+  "streams": ["safety", "data-protection"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "NPC Standing Committee",
+  "dates": { "passed": "2025-10-28", "effective": "2026-01-01" },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Operators breaching security duties face fines up to 10 million yuan in especially serious cases",
+    "Operators handling personal information must also comply with the Civil Code and PIPL",
+    "Spreading prohibited content can bring fines up to 2 million yuan and service suspension"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2025-10-28", "source_url": "https://www.news.cn/20251029/bc3a57483dbf4b748c9626c0097ff3b4/c.html" },
+    { "status": "in_force", "date": "2026-01-01", "source_url": "https://www.news.cn/20251029/bc3a57483dbf4b748c9626c0097ff3b4/c.html" }
+  ],
+  "sources": [
+    { "url": "https://www.news.cn/20251029/bc3a57483dbf4b748c9626c0097ff3b4/c.html", "title": "受权发布丨全国人民代表大会常务委员会关于修改《中华人民共和国网络安全法》的决定", "publisher": "Xinhua News Agency", "date": "2025-10-28", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

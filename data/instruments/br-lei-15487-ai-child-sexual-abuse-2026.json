@@ -1,0 +1,34 @@
+{
+  "id": "br-lei-15487-ai-child-sexual-abuse-2026",
+  "jurisdiction": "BR",
+  "title": "Law No. 15.487/2026 on combating sexual violence against children and adolescents, including in the digital environment and with AI",
+  "title_original": "Lei nº 15.487, de 6 de agosto de 2026 – Institui medidas de enfrentamento e repressão ao crime de violência sexual contra criança ou adolescente, inclusive no ambiente digital e com uso de inteligência artificial",
+  "summary": "Federal law of 6 August 2026, published on 7 August 2026 and in force from publication. It amends the Penal Code, the Code of Criminal Procedure, the Child and Adolescent Statute (ECA), the Heinous Crimes Law and the Organized Crime Law. For AI, it creates an ECA offence (Art. 241-C) of simulating a child's participation in sexual content by altering images, video or voice, including with AI (3 to 5 years' imprisonment); raises penalties when offenders use AI or deepfakes to pose as minors; and defines abuse material to include AI-generated content.",
+  "streams": ["content", "safety"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "Congresso Nacional",
+  "dates": {
+    "passed": "2026-08-06",
+    "effective": "2026-08-07"
+  },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Crime to simulate a minor in sexual content by altering media, including with AI",
+    "Higher penalty when AI or deepfakes are used to pose as a child",
+    "Abuse material includes content generated or manipulated with AI"
+  ],
+  "status_history": [
+    { "status": "in_force", "date": "2026-08-07", "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15487.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15487.htm", "title": "Lei nº 15.487, de 6 de agosto de 2026", "publisher": "Presidência da República", "date": "2026-08-06", "lang": "pt" },
+    { "url": "https://legis.senado.leg.br/dadosabertos/legislacao/lista?tipo=LEI&ano=2026", "title": "Lista de leis federais de 2026 (Senado open data)", "publisher": "Senado Federal", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

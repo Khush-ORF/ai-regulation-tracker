@@ -1,0 +1,23 @@
+{
+  "id": "in-indiaai-startups-global-2025",
+  "jurisdiction": "IN",
+  "title": "IndiaAI Startups Global Acceleration Programme",
+  "summary": "IndiaAI Startups Global is an acceleration programme of MeitY's IndiaAI Mission, run with Station F and HEC Paris. The government lists it as the main activity under the mission's startup financing pillar. Launched on 6 March 2025, it takes ten Indian AI startups per cohort through an online phase and a three-month residency at Station F in Paris, with mentoring, investor meetings and support for entering European markets. IndiaAI covers programme fees, and for the first cohort also travel and accommodation. A second cohort of ten startups was selected in April 2026, each eligible for up to ₹5 lakh in prize money.",
+  "streams": ["industry"],
+  "kind": "startup_support",
+  "agency": "IndiaAI (MeitY)",
+  "start": "2025-03-06",
+  "status": "active",
+  "beneficiaries": "Indian AI startups, early stage to Series C",
+  "linked_funds": ["in-indiaai-mission-outlay-2024"],
+  "sources": [
+    { "url": "https://indiaai.gov.in/article/indiaai-startups-global-international-acceleration-program-for-indian-ai-startups", "title": "IndiaAI Startups Global: International Acceleration Program for Indian AI Startups", "publisher": "IndiaAI", "date": "2025-03-06", "lang": "en" },
+    { "url": "https://indiaai.gov.in/article/indiaai-startups-global-international-acceleration-programs-for-indian-ai-startups-2026-2nd-cohort", "title": "IndiaAI Startups Global: International Acceleration Programs for Indian AI Startups - 2026 2nd Cohort", "publisher": "IndiaAI", "date": "2026", "lang": "en" },
+    { "url": "https://biospectrumindia.com/news/100/27675/indiaai-startups-global-acceleration-programme-selects-10-startups-for-second-batch.html", "title": "IndiaAI Startups Global Acceleration Programme selects 10 startups for second batch", "publisher": "BioSpectrum India", "date": "2026-04-17", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

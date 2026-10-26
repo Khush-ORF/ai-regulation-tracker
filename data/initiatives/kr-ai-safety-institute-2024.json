@@ -1,0 +1,22 @@
+{
+  "id": "kr-ai-safety-institute-2024",
+  "jurisdiction": "KR",
+  "title": "Korea AI Safety Institute",
+  "title_original": "AI안전연구소",
+  "summary": "National AI safety research body launched by MSIT on 27 November 2024 at the Global R&D Center in Pangyo, following the AI Seoul Summit in May 2024. It evaluates risks from AI, including technical limits, misuse and loss of control, develops policies and technologies to prevent them, and represents Korea in the International Network of AI Safety Institutes. Its first director described it as a collaborative organisation, not a regulator. A Korea AI Safety Consortium of 24 industry, academic and research bodies was formed at launch. The AI Basic Act and its Enforcement Decree now give it a legal basis.",
+  "streams": ["safety", "research"],
+  "kind": "research",
+  "agency": "MSIT",
+  "start": "2024-11-27",
+  "status": "active",
+  "beneficiaries": "Government, AI developers and researchers",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?nttSeqNo=1058&bbsSeqNo=42&mId=4", "title": "\"AI Safety Institute\" Launched Following the AI Seoul Summit in May", "publisher": "MSIT", "date": "2024-11-27", "lang": "en" },
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mPid=2&mId=4&bbsSeqNo=42&nttSeqNo=1191", "title": "MSIT Announces Legislative Notice for the Enforcement Decree of the AI Basic Act", "publisher": "MSIT", "date": "2025-11", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

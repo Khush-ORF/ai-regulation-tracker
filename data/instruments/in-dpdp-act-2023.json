@@ -1,0 +1,39 @@
+{
+  "id": "in-dpdp-act-2023",
+  "jurisdiction": "IN",
+  "title": "Digital Personal Data Protection Act, 2023",
+  "summary": "The Digital Personal Data Protection Act, 2023 is India's general data protection law. Parliament passed it in August 2023 and the President assented on 11 August 2023. It covers digital personal data processed in India, and processing abroad linked to offering goods or services in India. Processing needs notice and consent or a listed legitimate use. Data fiduciaries must keep data accurate and secure and report breaches, and individuals gain rights of access, correction and erasure. It creates the Data Protection Board of India. Commencement is phased: Board provisions took effect on 13 November 2025, consent-manager provisions follow in November 2026, and most substantive duties apply from May 2027.",
+  "streams": ["data-protection"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "Parliament of India",
+  "dates": {
+    "introduced": "2023-08-03",
+    "passed": "2023-08-11",
+    "effective": "2025-11-13"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Give notice and obtain consent, or rely on a listed legitimate use",
+    "Maintain reasonable security safeguards and report personal data breaches",
+    "Obtain verifiable parental consent before processing children's data",
+    "Erase personal data once its purpose is served",
+    "Penalties up to Rs 250 crore for failing to prevent data breaches"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2023-08-03", "source_url": "https://prsindia.org/billtrack/digital-personal-data-protection-bill-2023" },
+    { "status": "passed", "date": "2023-08-11", "source_url": "https://www.scconline.com/blog/post/2023/08/12/digital-personal-data-protection-bill-2023-receives-presidents-assent/" },
+    { "status": "in_force", "date": "2025-11-13", "source_url": "https://www.azbpartners.com/bank/indias-digital-personal-data-protection-act-phased-rollout-and-key-compliance-milestones/" }
+  ],
+  "sources": [
+    { "url": "https://prsindia.org/billtrack/digital-personal-data-protection-bill-2023", "title": "The Digital Personal Data Protection Bill, 2023 (Bill track)", "publisher": "PRS Legislative Research", "lang": "en" },
+    { "url": "https://www.scconline.com/blog/post/2023/08/12/digital-personal-data-protection-bill-2023-receives-presidents-assent/", "title": "Digital Personal Data Protection Bill, 2023 receives President's assent", "publisher": "SCC Online", "date": "2023-08-12", "lang": "en" },
+    { "url": "https://www.azbpartners.com/bank/indias-digital-personal-data-protection-act-phased-rollout-and-key-compliance-milestones/", "title": "India's Digital Personal Data Protection Act: Phased Rollout and Key Compliance Milestones", "publisher": "AZB & Partners", "date": "2025-11-14", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

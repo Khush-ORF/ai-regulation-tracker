@@ -1,0 +1,38 @@
+{
+  "id": "in-dpdp-rules-2025",
+  "jurisdiction": "IN",
+  "title": "Digital Personal Data Protection Rules, 2025",
+  "summary": "MeitY notified the Digital Personal Data Protection Rules, 2025 in November 2025 under the DPDP Act, 2023, after publishing a draft for public comment in January 2025. The Rules set out how notices are given, how consent managers register, security and breach-reporting duties, verifiable parental consent for children's data, extra duties such as annual audits for significant data fiduciaries, and how the Data Protection Board works. Board rules applied at once; consent-manager rules apply after 12 months and most fiduciary duties after 18 months (May 2027). In early 2026 MeitY consulted industry on shortening the 18-month window, but no amending instrument had been found as of October 2026.",
+  "streams": ["data-protection"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "MeitY",
+  "dates": {
+    "announced": "2025-01-03",
+    "passed": "2025-11-13",
+    "effective": "2025-11-13"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Notices must itemise data collected, purpose and how to withdraw consent",
+    "Consent managers must register with the Data Protection Board",
+    "Significant data fiduciaries must undergo a compliance audit every 12 months",
+    "Verifiable consent of an adult parent needed for children's data"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2025-01-03", "source_url": "https://innovateindia.mygov.in/dpdp-rules-2025/" },
+    { "status": "in_force", "date": "2025-11-13", "source_url": "https://www.azbpartners.com/bank/indias-digital-personal-data-protection-act-phased-rollout-and-key-compliance-milestones/" }
+  ],
+  "sources": [
+    { "url": "https://prsindia.org/policy/monthly-policy-review/november-2025", "title": "Monthly Policy Review: November 2025", "publisher": "PRS Legislative Research", "lang": "en" },
+    { "url": "https://www.azbpartners.com/bank/indias-digital-personal-data-protection-act-phased-rollout-and-key-compliance-milestones/", "title": "India's Digital Personal Data Protection Act: Phased Rollout and Key Compliance Milestones", "publisher": "AZB & Partners", "date": "2025-11-14", "lang": "en" },
+    { "url": "https://innovateindia.mygov.in/dpdp-rules-2025/", "title": "Draft Digital Personal Data Protection Rules, 2025 (consultation)", "publisher": "MyGov, Government of India", "date": "2025-01-03", "lang": "en" },
+    { "url": "https://dpdprules.org/blog/dpdp-18-months-to-12-months-proposal", "title": "DPDP deadline: is the 18 month window being cut to 12 months?", "publisher": "dpdprules.org", "date": "2026-10-20", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

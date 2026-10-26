@@ -1,0 +1,22 @@
+{
+  "id": "kr-naicc-government-investment-2025",
+  "jurisdiction": "KR",
+  "title": "Government contribution to the National AI Computing Center",
+  "title_original": "국가 AI 컴퓨팅센터 정부 출자",
+  "summary": "Government funding commitment for the National AI Computing Center set out by MSIT on 8 September 2025, when it relaunched the operator call. MSIT said the government would contribute KRW 80 billion by 2030, with matching funds from the Korea Development Bank and the Industrial Bank of Korea, subject to fiscal conditions. Total investment in the centre, through public-private equity and policy loans, was put at more than KRW 2 trillion, with public equity below 30% of the special-purpose company.",
+  "streams": ["compute"],
+  "kind": "other",
+  "amount": 80000000000,
+  "currency": "KRW",
+  "stage": "announced",
+  "fiscal_year": "2025",
+  "period": { "from": "2025", "to": "2030" },
+  "purpose": "Government equity contribution to the special-purpose company building and running the National AI Computing Center.",
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&nttSeqNo=1166&pageIndex=2&searchTxt=&searchOpt=ALL&bbsSeqNo=42&mId=4&mPid=2", "title": "MSIT to Establish the National AI Computing Center as a \"Catalyst for Genuine Growth in AI\"", "publisher": "MSIT", "date": "2025-09-08", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

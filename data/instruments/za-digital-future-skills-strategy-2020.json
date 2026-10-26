@@ -1,0 +1,27 @@
+{
+  "id": "za-digital-future-skills-strategy-2020",
+  "jurisdiction": "ZA",
+  "title": "National Digital and Future Skills Strategy",
+  "summary": "A national strategy for building digital and future skills, approved by Cabinet on 5 August 2020 and published by the Minister of Communications and Digital Technologies as General Notice 513 in Government Gazette 43730 on 23 September 2020. It sets priorities for digital skills across schooling, post-school education and the workforce, and created a Digital Skills Forum to coordinate delivery. Its 2021-2025 implementation programme lists data science, analytics, AI and machine learning among priority skills. A July 2026 ministerial reply says DCDT is reviewing the strategy and plans a National Competency Framework.",
+  "streams": ["skilling"],
+  "type": "strategy",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "DCDT",
+  "dates": { "passed": "2020-08-05" },
+  "sectors": ["education", "all"],
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2020-09-23", "source_url": "https://www.gov.za/documents/notices/national-digital-and-future-skills-strategy-south-africa-23-sep-2020" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.za/documents/notices/national-digital-and-future-skills-strategy-south-africa-23-sep-2020", "title": "National Digital and Future Skills Strategy South Africa", "publisher": "South African Government (gov.za)", "date": "2020-09-23", "lang": "en" },
+    { "url": "https://www.gov.za/sites/default/files/gcis_document/202203/digital-and-future-skillsimplementation-programmefinal.pdf", "title": "Implementation Programme for the National Digital and Future Skills Strategy of South Africa, 2021-2025", "publisher": "DCDT / gov.za", "lang": "en" },
+    { "url": "https://www.sanews.gov.za/south-africa/another-step-forward-digital-skills-building-sa", "title": "Another step forward for digital skills building in SA", "publisher": "SAnews (GCIS)", "date": "2024-03-04", "lang": "en" },
+    { "url": "https://pmg.org.za/committee-question/39587/", "title": "Question NW3567 to the Minister of Communications and Digital Technologies", "publisher": "Parliamentary Monitoring Group (CC BY 3.0 ZA)", "date": "2026-07-23", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

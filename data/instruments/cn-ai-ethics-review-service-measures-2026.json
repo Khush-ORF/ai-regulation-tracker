@@ -1,0 +1,33 @@
+{
+  "id": "cn-ai-ethics-review-service-measures-2026",
+  "jurisdiction": "CN",
+  "title": "Measures for Ethics Review and Services for Artificial Intelligence Science and Technology (Trial)",
+  "title_original": "人工智能科技伦理审查与服务办法（试行）",
+  "summary": "AI-specific trial ethics measures (MIIT Lianke [2026] No. 75), dated 20 March 2026. They were issued by MIIT with NDRC, the Ministries of Education, Science and Technology, and Agriculture and Rural Affairs, the National Health Commission, the People's Bank of China, the CAC, the Chinese Academy of Sciences and the China Association for Science and Technology. They set ethics review procedures for AI research and development and an ethics service system for risk monitoring, testing, certification and consulting. Expert re-review applies to human-machine fusion systems that strongly affect behaviour, emotions or health, to public-opinion-mobilising algorithms and to highly autonomous automated decision systems. MIIT began a pilot programme in May 2026.",
+  "streams": ["safety", "research"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "MIIT",
+  "dates": { "passed": "2026-03-20", "effective": "2026-03-20" },
+  "sectors": ["all"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Put AI research and development with ethical risks through ethics review",
+    "Get expert re-review for human-machine fusion systems affecting behaviour, emotion or health",
+    "Get expert re-review for public-opinion algorithms and highly autonomous decision systems"
+  ],
+  "status_history": [
+    { "status": "in_force", "date": "2026-03-20", "source_url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=105505" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.cn/zhengce/zhengceku/202604/content_7064646.htm", "title": "工业和信息化部等十部门关于印发《人工智能科技伦理审查与服务办法（试行）》的通知", "publisher": "State Council of the PRC (gov.cn)", "date": "2026-03-20", "lang": "zh" },
+    { "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=105505", "title": "工业和信息化部等十部门关于印发《人工智能科技伦理审查与服务办法（试行）》的通知（全球法规网）", "publisher": "Ministry of Commerce of the PRC (policy database)", "date": "2026-03-20", "lang": "zh" },
+    { "url": "https://www.news.cn/sci-tech/20260408/ceb323ca441140deacc932a7eac15817/c.html", "title": "十部门联合印发《办法》 规范人工智能科技活动伦理治理", "publisher": "Xinhua News Agency (Science and Technology Daily)", "date": "2026-04-08", "lang": "zh" },
+    { "url": "https://www.news.cn/tech/20260515/aa522493208a48f092034eea122bf473/c.html", "title": "工信部启动人工智能科技伦理审查与服务先导计划", "publisher": "Xinhua News Agency", "date": "2026-05-15", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

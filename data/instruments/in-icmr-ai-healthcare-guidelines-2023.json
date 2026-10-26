@@ -1,0 +1,32 @@
+{
+  "id": "in-icmr-ai-healthcare-guidelines-2023",
+  "jurisdiction": "IN",
+  "title": "Ethical Guidelines for Application of Artificial Intelligence in Biomedical Research and Healthcare, 2023",
+  "summary": "The Indian Council of Medical Research, through the DHR-ICMR Artificial Intelligence Cell, published these ethical guidelines in March 2023. They give a framework for ethical decision-making across the development, deployment and adoption of AI in biomedical research and healthcare, with sections on ethical principles, guidance for each group of stakeholders, ethics committee review, governance of AI use, and informed consent. They address concerns such as explainability, responsibility for harm, and bias. They are aimed at developers, researchers, clinicians, ethics committees, institutions, sponsors and funders. ICMR describes them as a living document to be updated as AI ethics evolves.",
+  "streams": ["sector-rules", "safety"],
+  "type": "guideline",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "ICMR",
+  "dates": {
+    "announced": "2023-03"
+  },
+  "sectors": ["health"],
+  "approach": "principles",
+  "key_obligations": [
+    "Ethics committee review of AI-based biomedical research",
+    "Informed consent for AI use in research and care",
+    "Stakeholder responsibilities from developers to funders"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2023-03", "source_url": "https://biospectrumindia.com/news/22/22845/icmr-updates-ethical-guidelines-for-application-of-ai-in-biomedical-research-and-healthcare.html" }
+  ],
+  "sources": [
+    { "url": "https://www.icmr.gov.in/ethical-guidelines-for-application-of-artificial-intelligence-in-biomedical-research-and-healthcare", "title": "Ethical guidelines for application of Artificial Intelligence in Biomedical Research and Healthcare", "publisher": "Indian Council of Medical Research", "date": "2023", "lang": "en" },
+    { "url": "https://biospectrumindia.com/news/22/22845/icmr-updates-ethical-guidelines-for-application-of-ai-in-biomedical-research-and-healthcare.html", "title": "ICMR updates ethical guidelines for application of AI in biomedical research and healthcare", "publisher": "BioSpectrum India", "date": "2023-03-24", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "br-tse-res-23732-ai-2024",
+  "jurisdiction": "BR",
+  "title": "TSE Resolution No. 23.732/2024 amending the electoral propaganda rules on AI-generated content and deepfakes",
+  "title_original": "Resolução TSE nº 23.732, de 27 de fevereiro de 2024 (altera a Resolução nº 23.610/2019)",
+  "summary": "Resolution of the Superior Electoral Court (TSE) adopted on 27 February 2024 for the 2024 municipal elections. It amended Resolution 23.610/2019 on electoral propaganda by adding rules on synthetic content made with AI (new Articles 9-B and 9-C): campaign material created or altered with AI must be explicitly labelled, and deepfakes used to harm or favour a candidacy are prohibited. The provisions remain part of Resolution 23.610, which was further amended for 2026 by Resolution 23.755/2026.",
+  "streams": ["content"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "TSE",
+  "dates": {
+    "passed": "2024-02-27"
+  },
+  "sectors": ["elections"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Label campaign content created or altered by AI",
+    "Do not use deepfakes to harm or favour a candidacy"
+  ],
+  "status_history": [
+    { "status": "in_force", "date": "2024-02-27", "source_url": "https://suffragium.tre-ce.jus.br/suffragium/en/article/view/224" }
+  ],
+  "sources": [
+    { "url": "https://suffragium.tre-ce.jus.br/suffragium/en/article/view/224", "title": "Artificial Intelligence and Democracy: Legal Analysis of the Use of Deepfake in the Electoral Context in Light of TRE-MA Jurisprudence", "publisher": "Suffragium (TRE-CE journal)", "date": "2026-06-16", "lang": "en" },
+    { "url": "https://investnews.com.br/economia/ia-nas-eleicoes-2026/", "title": "IA nas eleições 2026", "publisher": "InvestNews", "date": "2026-07-16", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

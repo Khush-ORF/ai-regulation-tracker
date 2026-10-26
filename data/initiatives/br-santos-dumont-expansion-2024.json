@@ -1,0 +1,23 @@
+{
+  "id": "br-santos-dumont-expansion-2024",
+  "jurisdiction": "BR",
+  "title": "Santos Dumont supercomputer capacity expansion (LNCC)",
+  "title_original": "Ampliação do supercomputador Santos Dumont",
+  "summary": "Upgrade of Santos Dumont, the supercomputer run by the National Laboratory for Scientific Computing (LNCC) in Petrópolis, Rio de Janeiro, and Brazil's most powerful machine. In April 2024 LNCC signed a US$ 19.4 million contract with Eviden (Atos group), funded by Petrobras, to raise capacity from 5.1 to 17 petaflops, with the new configuration open to researchers from January 2025. The July 2024 Brazilian AI Plan set a further upgrade target, aiming to place it among the five most powerful computers on the TOP500 list within five years, with an estimated R$ 1.8 billion. By August 2026 it was reported at 27 petaflops.",
+  "streams": ["compute", "research"],
+  "kind": "compute",
+  "agency": "LNCC / MCTI",
+  "start": "2024-04",
+  "status": "active",
+  "beneficiaries": "Academic researchers and industry users of high-performance computing",
+  "linked_funds": ["br-santos-dumont-ai-upgrade-2024"],
+  "sources": [
+    { "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-04/supercomputador-mais-potente-do-pais-tera-capacidade-aumentada", "title": "Supercomputador mais potente do país terá capacidade aumentada", "publisher": "Agência Brasil", "date": "2024-04-06", "lang": "pt" },
+    { "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-07/brasil-quer-ter-supercomputador-e-desenvolver-modelos-nacionais-de-ia", "title": "Brasil quer ter supercomputador e desenvolver modelos nacionais de IA", "publisher": "Agência Brasil", "date": "2024-07-30", "lang": "pt" },
+    { "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-08/rn-vai-abrigar-supercomputador-brasileiro-de-inteligencia-artificial", "title": "RN vai abrigar supercomputador brasileiro de Inteligência Artificial", "publisher": "Agência Brasil", "date": "2026-08-20", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

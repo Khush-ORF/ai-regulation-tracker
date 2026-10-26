@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { COUNTRIES, CODES, STATUS_LABEL, STATUS_RANK, STREAM_LABEL, TYPE_LABEL, fmtDate, fmtMoney, loadAll, url, type Code } from '../../lib/site';
+import { COUNTRIES, CODES, STATUS_LABEL, STATUS_RANK, STREAM_LABEL, TYPE_LABEL, fmtDate, fmtMoney, isAiSpecific, loadAll, url, type Code } from '../../lib/site';
 
 export function getStaticPaths() {
   return CODES.map((code) => ({ params: { slug: COUNTRIES[code].slug }, props: { code } }));
@@ -15,7 +15,7 @@ const ins = instruments.filter((r) => r.jurisdiction === code)
 const ini = initiatives.filter((r) => r.jurisdiction === code).sort((a, b) => byDateDesc(a.start || '', b.start || ''));
 const fun = funds.filter((r) => r.jurisdiction === code).sort((a, b) => b.amount - a.amount);
 const count = (s: string) => ins.filter((r) => r.status === s).length;
-const strongest = STATUS_RANK.find((s) => count(s) > 0);
+const strongest = STATUS_RANK.find((s) => ins.some((r) => r.status === s && isAiSpecific(r)));
 const streams = Object.entries(
   [...ins, ...ini, ...fun].flatMap((r) => r.streams).reduce<Record<string, number>>((m, s) => ((m[s] = (m[s] || 0) + 1), m), {}),
 ).sort((a, b) => b[1] - a[1]);
@@ -29,7 +29,7 @@ const dateLine = (d: Record<string, string | undefined>) =>
     <h1>{c.name}</h1>
     <p class="lede">
       {ins.length} instrument{ins.length === 1 ? '' : 's'}, {ini.length} initiative{ini.length === 1 ? '' : 's'} and {fun.length} fund{fun.length === 1 ? '' : 's'} tracked at national level.
-      {strongest && <>Strongest status: <span class={`stamp s-${strongest}`}>{STATUS_LABEL[strongest]}</span></>}
+      {strongest && <>Most advanced AI-specific instrument: <span class={`stamp s-${strongest}`}>{STATUS_LABEL[strongest]}</span></>}
     </p>
     <dl class="figs" style="margin-top:22px">
       <div><dt>In force</dt><dd>{count('in_force')}</dd></div>
@@ -49,7 +49,7 @@ const dateLine = (d: Record<string, string | undefined>) =>
             <li class="rec" id={r.id}>
               <time>{fmtDate(insDate(r), true)}</time>
               <div>
-                <div class="top-line"><span class={`stamp s-${r.status}`}>{STATUS_LABEL[r.status]}</span><span class="chip">{TYPE_LABEL[r.type]}</span><span class="chip">{r.binding ? 'Binding' : 'Non-binding'}</span></div>
+                <div class="top-line"><span class={`stamp s-${r.status}`}>{STATUS_LABEL[r.status]}</span><span class="chip">{TYPE_LABEL[r.type]}</span><span class="chip">{!r.binding ? 'Non-binding' : r.status === 'in_force' ? 'Binding' : r.status === 'lapsed' ? 'Was binding' : 'Binding once in force'}</span></div>
                 <h3>{r.title}</h3>
                 {r.title_original && <p class="orig" lang={r.sources[0].lang}>{r.title_original}</p>}
                 <p class="sum">{r.summary}</p>

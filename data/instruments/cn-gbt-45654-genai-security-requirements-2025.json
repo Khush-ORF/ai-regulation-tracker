@@ -1,0 +1,28 @@
+{
+  "id": "cn-gbt-45654-genai-security-requirements-2025",
+  "jurisdiction": "CN",
+  "title": "Cybersecurity technology — Basic security requirements for generative artificial intelligence service (GB/T 45654-2025)",
+  "title_original": "网络安全技术 生成式人工智能服务安全基本要求（GB/T 45654-2025）",
+  "summary": "Recommended national standard GB/T 45654-2025, issued by the State Administration for Market Regulation and the Standardization Administration of China and published on the website of the National Cybersecurity Standardization Technical Committee (TC260). It was drafted from technical documentation TC260 published in February 2024. It sets requirements for training-data security, model security and security measures in generative AI services, mainly those with public-opinion or social-mobilisation capacity. Annexes list major risks in training data and generated content and give a reference method for security assessment. Providers, regulators and third-party assessors use it as a reference.",
+  "streams": ["safety"],
+  "type": "standard",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "SAMR / SAC (TC260)",
+  "dates": { "passed": "2025-04" },
+  "sectors": ["all"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Meet training-data security requirements for generative AI services",
+    "Meet model security requirements and apply security management measures",
+    "Assess security using the standard's risk list and reference assessment method"
+  ],
+  "sources": [
+    { "url": "https://cset.georgetown.edu/publication/china-gen-ai-safety-standard-final/", "title": "Translation: Cybersecurity Technology – Basic Safety Requirements for Generative Artificial Intelligence Services (GB/T 45654-2025)", "publisher": "Center for Security and Emerging Technology, Georgetown University", "date": "2025-06-30", "lang": "en" },
+    { "url": "https://cset.georgetown.edu/publication/translation-snapshot-chinese-generative-ai-safety-standards/", "title": "Translation Snapshot: Chinese Generative AI Safety Standards", "publisher": "Center for Security and Emerging Technology, Georgetown University", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

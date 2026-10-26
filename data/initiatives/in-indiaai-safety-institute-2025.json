@@ -1,0 +1,22 @@
+{
+  "id": "in-indiaai-safety-institute-2025",
+  "jurisdiction": "IN",
+  "title": "IndiaAI Safety Institute (Safe & Trusted AI pillar)",
+  "summary": "MeitY announced the IndiaAI Safety Institute in January 2025 under the Safe and Trusted AI pillar of the IndiaAI Mission. It works on a hub-and-spoke model: partner institutions host IndiaAI Safety Institute cells, recruited through an expression of interest published on 9 May 2025. Its mandate covers indigenous tools, benchmarks and measurement for AI risks, India-specific governance frameworks and standards, training and awareness, and preparedness for next-generation AI systems. Under the same pillar the government reported 13 selected projects by December 2025, on machine unlearning, bias mitigation, privacy-preserving machine learning, explainability, auditing and governance testing.",
+  "streams": ["safety", "research"],
+  "kind": "research",
+  "agency": "IndiaAI (MeitY)",
+  "start": "2025-01",
+  "status": "active",
+  "beneficiaries": "Academic institutions, R&D bodies, startups and government agencies as partners",
+  "linked_funds": ["in-indiaai-mission-outlay-2024"],
+  "sources": [
+    { "url": "https://indiaai.gov.in/article/call-for-partnerships-as-part-of-the-indiaai-safety-institute", "title": "Call for Partnerships as part of the IndiaAI Safety Institute", "publisher": "IndiaAI", "date": "2025-05-09", "lang": "en" },
+    { "url": "https://indiaai.gov.in/article/indiaai-mission-call-for-proposals-to-build-foundational-ai-models", "title": "IndiaAI mission: Call for Proposals to Build Foundational AI Models", "publisher": "IndiaAI", "date": "2025-01-31", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

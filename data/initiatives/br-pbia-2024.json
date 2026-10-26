@@ -1,0 +1,25 @@
+{
+  "id": "br-pbia-2024",
+  "jurisdiction": "BR",
+  "title": "Brazilian Artificial Intelligence Plan 2024–2028 (PBIA): AI for the Good of All",
+  "title_original": "Plano Brasileiro de Inteligência Artificial (PBIA) 2024–2028 – IA para o Bem de Todos",
+  "summary": "National AI plan drafted by the National Council for Science and Technology, approved on 29 July 2024 and presented to President Lula on 30 July 2024; MCTI coordinates it. It foresees R$ 23.03 billion of investment from 2024 to 2028 across 54 actions in immediate-impact actions and five axes: AI infrastructure and development, diffusion and training, AI for public services, AI for business innovation, and support for regulation and governance. Flagship actions include an AI supercomputer, Portuguese-language models trained on national data and a national AI observatory. A 15-member inter-ministerial working group created in May 2025 monitors execution.",
+  "streams": ["compute", "industry", "public-sector"],
+  "kind": "mission",
+  "agency": "MCTI",
+  "start": "2024-07-30",
+  "end": "2028",
+  "status": "active",
+  "beneficiaries": "Researchers, companies, public services and AI professionals in Brazil",
+  "linked_funds": ["br-pbia-investment-2024", "br-pbia-business-innovation-2024", "br-pbia-ai-infrastructure-2024", "br-santos-dumont-ai-upgrade-2024"],
+  "sources": [
+    { "url": "https://api.oecd.ai/storage//policy-initiatives/Feb2026/117ojp3vhlml84rjxd-ai-for-the-good-of-all-2025.pdf", "title": "Brazilian Artificial Intelligence Plan – AI for the Good of All (English edition)", "publisher": "MCTI (hosted by OECD.AI)", "date": "2025", "lang": "en" },
+    { "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-07/brasil-quer-ter-supercomputador-e-desenvolver-modelos-nacionais-de-ia", "title": "Brasil quer ter supercomputador e desenvolver modelos nacionais de IA", "publisher": "Agência Brasil", "date": "2024-07-30", "lang": "pt" },
+    { "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2025-05/governo-cria-grupo-para-coordenar-plano-de-inteligencia-artificial", "title": "Governo cria grupo para coordenar plano de inteligência artificial", "publisher": "Agência Brasil", "date": "2025-05-12", "lang": "pt" },
+    { "url": "https://oecd.ai/en/dashboards/policy-initiatives/ai-for-the-good-of-all-brazilian-artificial-intelligence-plan", "title": "AI for the Good of All: Brazilian Artificial Intelligence Plan", "publisher": "OECD.AI Policy Observatory", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

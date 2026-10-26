@@ -1,0 +1,35 @@
+{
+  "id": "br-tse-res-23755-ai-2026",
+  "jurisdiction": "BR",
+  "title": "TSE Resolution No. 23.755/2026 on AI and synthetic content in electoral propaganda for the 2026 elections",
+  "title_original": "Resolução TSE nº 23.755, de 2 de março de 2026 (altera a Resolução nº 23.610/2019)",
+  "summary": "Resolution approved unanimously by the Superior Electoral Court (TSE) on 2 March 2026, rapporteur Minister Nunes Marques, as part of the rules package for the October 2026 general elections. It amends Resolution 23.610/2019 to tighten AI rules: format-specific labelling of AI content, a ban on deepfakes that harm or favour candidacies and on sexual manipulations of candidates, a ban on new synthetic content from 72 hours before to 24 hours after the vote, limits on chatbots, a bar on systems recommending candidates, and joint liability for platforms that fail to remove unlabelled content.",
+  "streams": ["content"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "TSE",
+  "dates": {
+    "passed": "2026-03-02"
+  },
+  "sectors": ["elections"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Label AI-made content clearly, in a format suited to audio, image, video or print",
+    "No new synthetic candidate content from 72 hours before to 24 hours after voting",
+    "Chatbots may not impersonate candidates or real people",
+    "Platforms jointly liable if they fail to remove unlabelled synthetic content",
+    "Fines of R$5,000 to R$30,000 per violation"
+  ],
+  "status_history": [
+    { "status": "in_force", "date": "2026-03-02", "source_url": "https://www.tribunapr.com.br/noticias/brasil/eleicoes-2026-uso-de-inteligencia-artificial-e-regulamentado-pelo-tse/" }
+  ],
+  "sources": [
+    { "url": "https://investnews.com.br/economia/ia-nas-eleicoes-2026/", "title": "IA nas eleições 2026", "publisher": "InvestNews", "date": "2026-07-16", "lang": "pt" },
+    { "url": "https://www.tribunapr.com.br/noticias/brasil/eleicoes-2026-uso-de-inteligencia-artificial-e-regulamentado-pelo-tse/", "title": "Eleições 2026: uso de inteligência artificial é regulamentado pelo TSE", "publisher": "Tribuna PR", "date": "2026-03-04", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

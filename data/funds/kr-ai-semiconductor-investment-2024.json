@@ -1,0 +1,22 @@
+{
+  "id": "kr-ai-semiconductor-investment-2024",
+  "jurisdiction": "KR",
+  "title": "Public investment pledge for AI and AI semiconductors to 2027",
+  "title_original": "AI-반도체 이니셔티브 공공투자",
+  "summary": "Pledge made by President Yoon Suk Yeol on 9 April 2024, under the AI-Semiconductor Initiative, of KRW 9.4 trillion in public investment in AI and related semiconductors by 2027. It was announced alongside a separate KRW 1.4 trillion fund for AI chip companies. The pledge covers R&D on AI chips such as neural processing units and next-generation high-bandwidth memory, and next-generation general-purpose AI and safety work. No yearly or ministry breakdown was found.",
+  "streams": ["industry", "compute", "research"],
+  "kind": "other",
+  "amount": 9400000000000,
+  "currency": "KRW",
+  "stage": "announced",
+  "fiscal_year": "2024",
+  "period": { "from": "2024", "to": "2027" },
+  "purpose": "Public investment in AI and AI semiconductor R&D and industry through 2027.",
+  "sources": [
+    { "url": "https://www.korea.net/NewsFocus/policies/view?articleId=249796", "title": "President pledges KRW 9.4T investment in AI, chips by 2027", "publisher": "Korea.net", "date": "2024-04-11", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

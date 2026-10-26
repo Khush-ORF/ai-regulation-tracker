@@ -1,0 +1,32 @@
+{
+  "id": "in-rbi-model-risk-guidance-draft-2026",
+  "jurisdiction": "IN",
+  "title": "Draft Guidance on Regulatory Principles for Model Risk Management, 2026",
+  "summary": "On 24 June 2026 the Reserve Bank of India released draft guidance on model risk management for 11 categories of regulated entities, including commercial, small finance, payments, regional rural and co-operative banks, all-India financial institutions, NBFCs, asset reconstruction companies and credit information companies. It covers every model these entities use, including AI/ML models and models from third parties. It would require a board-approved model risk framework, model risk appetite and tiering, and human oversight of AI models with override or deactivation arrangements. The RBI cites the FREE-AI committee report as background. Comments were due by 24 July 2026; no final version was found as of 26 October 2026.",
+  "streams": ["sector-rules", "safety"],
+  "type": "guideline",
+  "status": "in_progress",
+  "binding": true,
+  "issuing_body": "RBI",
+  "dates": {
+    "announced": "2026-06-24"
+  },
+  "sectors": ["finance"],
+  "approach": "sectoral",
+  "key_obligations": [
+    "Maintain a board-approved model risk management framework (proposed)",
+    "Apply model risk controls to AI/ML and third-party models (proposed)",
+    "Keep human oversight of AI models, including kill-switch arrangements (proposed)"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2026-06-24", "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63006" }
+  ],
+  "sources": [
+    { "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63006", "title": "RBI issues draft 'Guidance on Regulatory Principles for Model Risk Management'", "publisher": "Reserve Bank of India", "date": "2026-06-24", "lang": "en" },
+    { "url": "https://www.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=5089", "title": "Guidance on Regulatory Principles for Model Risk Management (draft)", "publisher": "Reserve Bank of India", "date": "2026-06-24", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

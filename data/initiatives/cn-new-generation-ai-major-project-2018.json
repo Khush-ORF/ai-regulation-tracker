@@ -1,0 +1,22 @@
+{
+  "id": "cn-new-generation-ai-major-project-2018",
+  "jurisdiction": "CN",
+  "title": "Science and Technology Innovation 2030 \"New Generation Artificial Intelligence\" Major Project",
+  "title_original": "科技创新2030—“新一代人工智能”重大项目",
+  "summary": "National AI research programme run under the Ministry of Science and Technology. MOST issued its first annual call for proposals in October 2018 (Guokefazi [2018] No. 208), and annual guides followed, including in 2020, 2021 and 2022. The programme now runs as the 'New Generation Artificial Intelligence' national science and technology major program. Its programme office opened the first batch of 2026 open projects in June 2026. Projects are applied for through the national science and technology management information system.",
+  "streams": ["research"],
+  "kind": "research",
+  "agency": "MOST",
+  "start": "2018-10",
+  "status": "active",
+  "beneficiaries": "Universities, research institutes and firms doing AI research",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://service.most.gov.cn/kjjh_tztg_all/20181012/2731.html", "title": "科技部关于发布科技创新2030—“新一代人工智能”重大项目2018年度项目申报指南的通知（国科发资〔2018〕208号）", "publisher": "Ministry of Science and Technology of the PRC", "date": "2018-10-12", "lang": "zh" },
+    { "url": "https://research.shanghai.nyu.edu/node/4622", "title": "2026 National Science and Technology Major Program on \"Next-Generation Artificial Intelligence\" (First Round)", "publisher": "NYU Shanghai Research Office", "date": "2026-06-17", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

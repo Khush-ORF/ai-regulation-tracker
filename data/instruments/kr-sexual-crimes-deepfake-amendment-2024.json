@@ -1,0 +1,34 @@
+{
+  "id": "kr-sexual-crimes-deepfake-amendment-2024",
+  "jurisdiction": "KR",
+  "title": "Act on Special Cases Concerning the Punishment of Sexual Crimes, amended by Act No. 20459 (sexual deepfakes)",
+  "title_original": "성폭력범죄의 처벌 등에 관한 특례법 일부개정법률 (법률 제20459호, 허위영상물)",
+  "summary": "Amendment passed by the National Assembly on 26 September 2024 and promulgated and in effect on 16 October 2024, responding to the spread of sexual deepfakes. It makes it a crime to possess, buy, store or view sexually explicit false video made by editing or synthesising a person's image (new Article 14-2(4)). It removes the 'purpose of distribution' element from the production offence, raises penalties for editing and distributing such material to the level for illegally filmed material, and covers threats and coercion using deepfakes. The Ministry of Justice announced the promulgation.",
+  "streams": ["content"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "National Assembly / Ministry of Justice",
+  "dates": {
+    "passed": "2024-09-26",
+    "effective": "2024-10-16"
+  },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Possessing, buying, storing or viewing sexual deepfakes is a criminal offence",
+    "Producing sexual deepfakes is punishable without proof of intent to distribute",
+    "Threats or coercion using deepfakes punished like those using filmed material"
+  ],
+  "status_history": [
+    { "status": "in_force", "date": "2024-10-16", "source_url": "https://mojhome.moj.go.kr/bbs/moj/159/588549/artclView.do" }
+  ],
+  "sources": [
+    { "url": "https://mojhome.moj.go.kr/bbs/moj/159/588549/artclView.do", "title": "「성폭력범죄의 처벌 등에 관한 특례법」 및 「형사소송법」 일부개정법률 공포·시행 알림", "publisher": "Ministry of Justice", "date": "2024-10-16", "lang": "ko" },
+    { "url": "https://www.moj.go.kr/bbs/moj/85/590644/artclView.do", "title": "딥페이크 영상물? 이젠 소지만 해도 처벌받습니다!", "publisher": "Ministry of Justice", "date": "2024-12-30", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "kr-ai-basic-act-enforcement-decree-2026",
+  "jurisdiction": "KR",
+  "title": "Enforcement Decree of the Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust",
+  "title_original": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 시행령",
+  "summary": "Presidential decree prepared by MSIT to implement the AI Basic Act. A draft was released in September 2025 and put to legislative notice from 12 November to 22 December 2025. The Cabinet approved it on 20 January 2026 and it took effect with the Act on 22 January 2026. It sets the 10^26 FLOPs training-compute threshold for safety duties, criteria for judging high-impact AI, flexible methods for user notice and labelling, and designates the AI Safety Institute and an AI Policy Center. An amending decree, approved by the Cabinet on 14 July 2026, adds public-procurement and AI-inclusion provisions.",
+  "streams": ["safety", "industry"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "MSIT",
+  "dates": {
+    "announced": "2025-09-08",
+    "introduced": "2025-11-12",
+    "passed": "2026-01-20",
+    "effective": "2026-01-22"
+  },
+  "sectors": ["all"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Safety duties apply to models trained with more than 10^26 FLOPs of cumulative compute",
+    "MSIT confirms high-impact status within 30 days on request, extendable once",
+    "Deepfakes must carry labels users can clearly recognise",
+    "Exported AI outputs need visible watermarks or machine-readable marks"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2025-11-12", "source_url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mPid=2&mId=4&bbsSeqNo=42&nttSeqNo=1191" },
+    { "status": "passed", "date": "2026-01-20", "source_url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng" },
+    { "status": "in_force", "date": "2026-01-22", "source_url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng" }
+  ],
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng", "title": "The AI Basic Act Comes into Force to Lay the Foundation for Korea to Become an AI G3", "publisher": "MSIT", "date": "2026-01", "lang": "en" },
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mPid=2&mId=4&bbsSeqNo=42&nttSeqNo=1191", "title": "MSIT Announces Legislative Notice for the Enforcement Decree of the AI Basic Act", "publisher": "MSIT", "date": "2025-11", "lang": "en" },
+    { "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=33598", "title": "인공지능기본법 관련 최신 동향", "publisher": "Kim & Chang", "date": "2025-12-24", "lang": "ko" },
+    { "url": "https://www.newsis.com/view/NISX20260714_0003708990", "title": "AI발전기본법 시행령 등 국무회의서 의결", "publisher": "Newsis", "date": "2026-07-14", "lang": "ko" },
+    { "url": "https://www.aitimes.kr/news/articleView.html?idxno=40149", "title": "정부, 인공지능 산업 육성 강화 위한 AI기본법 시행령 개정안 입법예고", "publisher": "AI Times (인공지능신문)", "date": "2026-05-21", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

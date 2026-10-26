@@ -1,0 +1,20 @@
+{
+  "id": "za-fdcr-allocation-2024",
+  "jurisdiction": "ZA",
+  "title": "DSI funding for the Foundational Digital Capabilities Research platform, 2024/25",
+  "summary": "In a written reply to Parliament (question NW955, asked 25 September 2024), the Minister of Science, Technology and Innovation said the Department of Science and Innovation would invest R110 million in the Foundational Digital Capabilities Research platform in 2024/25, with funding projected to grow by a compounded 5% a year over the following eight years. The platform is a CSIR-run digital research programme in which AI, robotics and cybernetics is one of five domains, so the figure is not AI-only.",
+  "streams": ["research"],
+  "kind": "budget_allocation",
+  "amount": 110000000,
+  "currency": "ZAR",
+  "stage": "allocated",
+  "fiscal_year": "2024-25",
+  "purpose": "Fund CSIR research on foundational digital capabilities, including AI, robotics and cybernetics.",
+  "sources": [
+    { "url": "https://pmg.org.za/committee-question/26140/", "title": "Question NW955 to the Minister of Science, Technology and Innovation", "publisher": "Parliamentary Monitoring Group (CC BY 3.0 ZA)", "date": "2024-09-25", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

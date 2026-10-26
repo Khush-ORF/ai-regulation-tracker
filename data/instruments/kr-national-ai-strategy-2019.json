@@ -1,0 +1,29 @@
+{
+  "id": "kr-national-ai-strategy-2019",
+  "jurisdiction": "KR",
+  "title": "National Strategy for Artificial Intelligence",
+  "title_original": "인공지능 국가전략",
+  "summary": "Government-wide AI strategy announced on 17 December 2019 under President Moon Jae-in, with MSIT as lead ministry. Under the vision 'Toward AI World Leader beyond IT', it set 100 action tasks under nine strategies across three areas: the AI ecosystem, AI use, and people-centred AI. Targets for 2030 included third place in digital competitiveness, KRW 455 trillion in economic gains from AI and a top-ten ranking for quality of life. OECD.AI lists it as covering 2020–2022 and now inactive. Later documents, including the 2024 National AI Strategy Policy Directions and the 2026 AI Action Plan, took its place.",
+  "streams": ["industry", "research", "skilling"],
+  "type": "strategy",
+  "status": "lapsed",
+  "binding": false,
+  "issuing_body": "MSIT",
+  "dates": {
+    "announced": "2019-12-17"
+  },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2019-12-17", "source_url": "https://www.korea.net/NewsFocus/policies/view?articleId=180703" }
+  ],
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=10&mPid=9&pageIndex=2&bbsSeqNo=46&nttSeqNo=9", "title": "National Strategy for Artificial Intelligence", "publisher": "MSIT", "date": "2019-12-17", "lang": "en" },
+    { "url": "https://www.korea.net/NewsFocus/policies/view?articleId=180703", "title": "Gov't strategy seeks to raise growth, living standards via AI", "publisher": "Korea.net", "date": "2019-12-18", "lang": "en" },
+    { "url": "https://oecd.ai/en/dashboards/policy-initiatives/national-strategy-for-ai-9369", "title": "National Strategy for AI (Korea)", "publisher": "OECD.AI", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

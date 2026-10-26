@@ -1,0 +1,38 @@
+{
+  "id": "kr-ai-basic-act-2025",
+  "jurisdiction": "KR",
+  "title": "Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust (AI Basic Act)",
+  "title_original": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
+  "summary": "Korea's horizontal AI law, merging 19 bills, passed by the National Assembly on 26 December 2024 and promulgated as Act No. 20676 on 21 January 2025. It took effect on 22 January 2026. It sets up the presidential National AI Strategy Committee, a three-year AI Basic Plan, the AI Safety Institute and industry support measures. It places transparency duties on high-impact and generative AI, safety duties on very large models, and risk-management duties on high-impact AI operators. Act No. 21311 (20 January 2026) amended it. MSIT has said fact-finding and fines are deferred for at least one year.",
+  "streams": ["safety", "industry", "content"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "National Assembly / MSIT",
+  "dates": {
+    "passed": "2024-12-26",
+    "effective": "2026-01-22"
+  },
+  "sectors": ["all"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Notify users in advance when a product uses high-impact or generative AI (Art. 31)",
+    "Label generative AI outputs; clearly mark deepfakes hard to tell from reality",
+    "High-impact AI operators: risk management, explanation, user protection and human oversight (Art. 34)",
+    "Foreign operators meeting decree thresholds must designate a domestic representative (Art. 36)",
+    "Fines up to KRW 30 million for notice, representative or order violations (Art. 43)"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2024-12-26", "source_url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&bbsSeqNo=42&nttSeqNo=1071" },
+    { "status": "in_force", "date": "2026-01-22", "source_url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng" }
+  ],
+  "sources": [
+    { "url": "https://elaw.klri.re.kr/eng_service/lawViewContent.do?hseq=73499", "title": "Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust (English translation)", "publisher": "Korea Legislation Research Institute", "lang": "en" },
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng", "title": "The AI Basic Act Comes into Force to Lay the Foundation for Korea to Become an AI G3", "publisher": "MSIT", "date": "2026-01", "lang": "en" },
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&bbsSeqNo=42&nttSeqNo=1071", "title": "A New Chapter in the Age of AI: Basic Act on AI Passed at the National Assembly Plenary Session", "publisher": "MSIT", "date": "2024-12", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

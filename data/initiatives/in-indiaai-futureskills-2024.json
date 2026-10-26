@@ -1,0 +1,21 @@
+{
+  "id": "in-indiaai-futureskills-2024",
+  "jurisdiction": "IN",
+  "title": "IndiaAI FutureSkills",
+  "summary": "IndiaAI FutureSkills is the IndiaAI Mission's skilling pillar. It funds AI fellowships, expanded in September 2025 to support 8,000 undergraduates, 5,000 postgraduates and 500 PhD scholars across disciplines, and sets up Data and AI Labs in Tier 2 and Tier 3 cities. The first 27 labs opened at NIELIT centres and offer NCVET-recognised courses in data annotation, data curation, AI and data science, within a planned network of 570 labs. The IndiaAI site reports 686 fellowship students so far, over 5,500 lab course registrations, and more than nine million enrolments in its 'Yuva AI for All' course.",
+  "streams": ["skilling"],
+  "kind": "skilling",
+  "agency": "IndiaAI (MeitY)",
+  "status": "active",
+  "beneficiaries": "Students and learners, including in Tier 2 and Tier 3 cities",
+  "linked_funds": ["in-indiaai-mission-outlay-2024"],
+  "sources": [
+    { "url": "https://indiaai.gov.in/hub/indiaai-futureskills", "title": "IndiaAI FutureSkills", "publisher": "IndiaAI", "lang": "en" },
+    { "url": "https://indiaai.gov.in/article/indiaai-data-ai-labs-empowering-india-s-youth-for-jobs-in-data-economy", "title": "IndiaAI Data & AI Labs: Empowering India's Youth for Jobs in Data Economy", "publisher": "IndiaAI", "date": "2025-11-06", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/oct/doc20251012664501.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-10-12", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

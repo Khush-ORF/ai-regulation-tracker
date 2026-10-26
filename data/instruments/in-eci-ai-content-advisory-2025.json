@@ -1,0 +1,33 @@
+{
+  "id": "in-eci-ai-content-advisory-2025",
+  "jurisdiction": "IN",
+  "title": "Election Commission of India Advisory on Labelling of AI-Generated and Synthetic Content in Election Campaigns",
+  "summary": "On 24 October 2025 the Election Commission of India issued an advisory to recognised political parties, with candidates and campaign representatives also expected to comply, on AI-generated campaign material, effective immediately for all general elections and bye-elections. AI-generated or altered images, audio and video must carry a label such as 'AI-Generated' or 'Synthetic Content' covering at least 10% of the display area, or the first 10% of an audio clip. Metadata or captions must name the creator, misleading synthetic content on official channels must come down within three hours, and parties must keep records of AI material. It cites Article 324 of the Constitution and builds on advisories of May 2024 and January 2025.",
+  "streams": ["content"],
+  "type": "advisory",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "Election Commission of India",
+  "dates": {
+    "announced": "2025-10-24"
+  },
+  "sectors": ["elections"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Label AI-generated campaign content on at least 10% of display area",
+    "Disclose the creating entity in metadata or captions",
+    "Remove misleading synthetic content within three hours of notice",
+    "Keep internal records of AI-generated campaign material"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2025-10-24", "source_url": "https://www.businesstoday.in/amp/india/story/eci-mandates-clear-labelling-of-ai-generated-content-in-political-campaigns-499535-2025-10-24" }
+  ],
+  "sources": [
+    { "url": "https://www.businesstoday.in/amp/india/story/eci-mandates-clear-labelling-of-ai-generated-content-in-political-campaigns-499535-2025-10-24", "title": "ECI mandates clear labelling of AI-generated content in political campaigns", "publisher": "Business Today", "date": "2025-10-24", "lang": "en" },
+    { "url": "https://indiaai.gov.in/article/election-commission-of-india-embraces-ai-ethics-in-campaigning-advisory-on-labelling-ai-generated-content", "title": "Election Commission of India embraces AI ethics in campaigning: Advisory on labelling AI-generated content", "publisher": "IndiaAI", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

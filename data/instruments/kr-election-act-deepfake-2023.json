@@ -1,0 +1,36 @@
+{
+  "id": "kr-election-act-deepfake-2023",
+  "jurisdiction": "KR",
+  "title": "Public Official Election Act, Article 82-8 (election campaigning using deepfake videos)",
+  "title_original": "공직선거법 제82조의8 (딥페이크영상등을 이용한 선거운동)",
+  "summary": "Amendment to the Public Official Election Act added in December 2023 and in effect since 29 January 2024. From 90 days before an election until election day, no one may make, edit, distribute, screen or post AI-generated sounds, images or videos that are hard to tell from reality for campaign purposes, whatever their truth, consent or labelling. Outside that window, such content must be labelled as virtual under National Election Commission rules. The National Election Commission monitors and requests removal of such content. Open Net Korea filed a constitutional complaint against the ban on 1 October 2025.",
+  "streams": ["content"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "National Assembly / NEC",
+  "dates": {
+    "passed": "2023-12",
+    "effective": "2024-01-29"
+  },
+  "sectors": ["elections"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "No deepfake campaign content from 90 days before election day",
+    "Label deepfake campaign content as virtual outside the 90-day window",
+    "Ban penalty: up to 7 years' prison or KRW 10–50 million fine",
+    "Failure to label: administrative fine up to KRW 10 million"
+  ],
+  "status_history": [
+    { "status": "in_force", "date": "2024-01-29", "source_url": "https://www.journalist.or.kr/news/article.html?no=55321" }
+  ],
+  "sources": [
+    { "url": "https://www.journalist.or.kr/news/article.html?no=55321", "title": "'딥페이크' 선거운동, 최대 징역 7년… 과잉 입법 지적도", "publisher": "Journalists Association of Korea (기자협회보)", "date": "2024-02-27", "lang": "ko" },
+    { "url": "https://www.opennetkorea.org/en/wp/7058", "title": "Open Net files constitutional complaint against deepfake election campaign ban", "publisher": "Open Net Korea", "date": "2025-10-02", "lang": "en" },
+    { "url": "https://www.heraldk.com/article/2026022516521625034", "title": "중앙선관위 \"3월 5일부터 딥페이크 영상 등 이용한 선거운동 금지\"", "publisher": "Herald Korea (헤럴드경제)", "date": "2026-02-25", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

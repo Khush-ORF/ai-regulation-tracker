@@ -1,0 +1,31 @@
+{
+  "id": "in-trai-ai-big-data-recommendations-2023",
+  "jurisdiction": "IN",
+  "title": "TRAI Recommendations on Leveraging Artificial Intelligence and Big Data in Telecommunication Sector",
+  "summary": "The Telecom Regulatory Authority of India issued these recommendations to the government in July 2023. TRAI proposed a risk-based framework for AI that would apply across all sectors, with legally binding obligations for high-risk uses that directly affect people. It also proposed an independent statutory body, the Artificial Intelligence and Data Authority of India, advised by a multi-stakeholder body, to oversee responsible AI, data sharing and regulatory sandboxes. For telecom, it suggested using AI to detect duplicate SIM cards, improve grievance handling and curb spam. The recommendations are advisory; the 2025 India AI Governance Guidelines did not adopt a separate AI law or regulator.",
+  "streams": ["safety", "sector-rules"],
+  "type": "advisory",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "TRAI",
+  "dates": {
+    "announced": "2023-07"
+  },
+  "sectors": ["telecom", "all"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Regulate high-risk AI uses through legally binding obligations (proposed)",
+    "Create an Artificial Intelligence and Data Authority of India (proposed)"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2023-07", "source_url": "https://www.medianama.com/2023/07/223-trai-ai-big-data-use-telecom-sector/" }
+  ],
+  "sources": [
+    { "url": "https://www.medianama.com/2023/07/223-trai-ai-big-data-use-telecom-sector/", "title": "TRAI recommends setting up regulator for Artificial Intelligence in India", "publisher": "MediaNama", "date": "2023-07-21", "lang": "en" },
+    { "url": "https://indiaai.gov.in/news/trai-calls-for-an-independent-authority-to-regulate-ai", "title": "TRAI calls for an independent authority to regulate AI", "publisher": "IndiaAI", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.6,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

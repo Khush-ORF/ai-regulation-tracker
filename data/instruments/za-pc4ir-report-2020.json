@@ -1,0 +1,26 @@
+{
+  "id": "za-pc4ir-report-2020",
+  "jurisdiction": "ZA",
+  "title": "Report of the Presidential Commission on the 4th Industrial Revolution",
+  "summary": "Report of the commission appointed by President Ramaphosa to advise on the Fourth Industrial Revolution, handed to the President on 6 August 2020, approved by Cabinet in September 2020 and published in the Government Gazette in October 2020. Its recommendations include investing in human capital, establishing an artificial intelligence institute, setting up a platform for advanced manufacturing and new materials, securing and making data available for innovation, incentivising future industries, and building 4IR infrastructure. DCDT was tasked with coordinating implementation. The AI institute recommendation led to the AI Institute of South Africa in 2022, and later AI policy drafts cite the report.",
+  "streams": ["research", "skilling", "industry"],
+  "type": "advisory",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "PC4IR",
+  "dates": { "announced": "2020-08-06", "passed": "2020-09" },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2020-10-23", "source_url": "https://www.gov.za/documents/report-presidential-commission-4th-industrial-revolution-23-oct-2020-0000" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.za/documents/report-presidential-commission-4th-industrial-revolution-23-oct-2020-0000", "title": "Report of the Presidential Commission on the 4th Industrial Revolution", "publisher": "South African Government (gov.za)", "date": "2020-10-23", "lang": "en" },
+    { "url": "https://www.gov.za/news/media-statements/president-cyril-ramaphosa-receives-recommendations-presidential-commission", "title": "President Cyril Ramaphosa receives recommendations from Presidential Commission on 4IR", "publisher": "The Presidency / gov.za", "date": "2020-08-06", "lang": "en" },
+    { "url": "https://www.sanews.gov.za/south-africa/4ir-commission-report-recommendations-gazetted", "title": "4IR Commission Report Recommendations gazetted", "publisher": "SAnews (GCIS)", "date": "2020-10-06", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

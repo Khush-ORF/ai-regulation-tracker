@@ -1,0 +1,22 @@
+{
+  "id": "in-aikosh-2025",
+  "jurisdiction": "IN",
+  "title": "AIKosh (IndiaAI Datasets Platform)",
+  "summary": "AIKosh is the IndiaAI Mission's national platform for AI-ready datasets, models, notebooks, toolkits and use cases, under the IndiaAI Datasets Platform pillar. It was launched on 6 March 2025, the mission's first anniversary. It pools data from government and non-government sources, and organisations can contribute datasets through an open expression of interest. The government reported over 5,500 datasets and 251 models across 20 sectors by December 2025. In October 2026 the platform's home page listed more than 16,000 datasets, 372 models, 22 sectors and 672 contributing organisations.",
+  "streams": ["research", "public-sector"],
+  "kind": "data_platform",
+  "agency": "IndiaAI (MeitY)",
+  "start": "2025-03-06",
+  "status": "active",
+  "beneficiaries": "AI developers, startups, researchers and government departments",
+  "linked_funds": ["in-indiaai-mission-outlay-2024"],
+  "sources": [
+    { "url": "https://aikosh.indiaai.gov.in/", "title": "AIKosh home", "publisher": "IndiaAI", "date": "2026-10", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" },
+    { "url": "https://www.theweek.in/wire-updates/business/2025/03/06/dcm55-biz-vaishnaw-india-ai.html", "title": "Vaishnaw launches IndiaAI compute portal, dataset platform AIKosha, other initiatives", "publisher": "The Week (PTI)", "date": "2025-03-06", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

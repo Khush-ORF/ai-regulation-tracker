@@ -1,0 +1,24 @@
+{
+  "id": "in-indiaai-compute-2024",
+  "jurisdiction": "IN",
+  "title": "IndiaAI Compute Capacity",
+  "summary": "The IndiaAI Compute Capacity pillar gives startups, MSMEs, academia, researchers and government bodies subsidised access to GPUs through empanelled cloud providers. MeitY's IndiaAI division issued a request for empanelment on 16 August 2024; ten bidders qualified and their prices were opened in January 2025, and the compute portal launched on 6 March 2025. The original target was 10,000 GPUs. The government reported 38,000 GPUs onboarded by late 2025 at a subsidised rate of about ₹65 per hour, and announced 20,000 more in February 2026. The IndiaAI site lists individual allocations, including 4,096 H100 GPUs to Sarvam AI.",
+  "streams": ["compute"],
+  "kind": "compute",
+  "agency": "IndiaAI (MeitY)",
+  "start": "2024-08-16",
+  "status": "active",
+  "beneficiaries": "Startups, MSMEs, academia, researchers and government entities",
+  "linked_funds": ["in-indiaai-mission-outlay-2024"],
+  "sources": [
+    { "url": "https://indiaai.gov.in/article/union-minister-of-electronics-it-railways-and-i-b-announces-the-availability-of-18-000-affordable-ai-compute-units", "title": "Union Minister announces the availability of 18,000+ affordable AI compute units", "publisher": "IndiaAI", "lang": "en" },
+    { "url": "https://indiaai.gov.in/hub/indiaai-compute-capacity", "title": "IndiaAI Compute Capacity: GPU compute allocation", "publisher": "IndiaAI", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" },
+    { "url": "https://prsindia.org/files/budget/budget_parliament/2026/DFG_Analysis_2026-27_MeITY.pdf", "title": "Demand for Grants 2026-27 Analysis: Electronics and Information Technology", "publisher": "PRS Legislative Research", "date": "2026-03-04", "lang": "en" },
+    { "url": "https://www.theweek.in/wire-updates/business/2025/03/06/dcm55-biz-vaishnaw-india-ai.html", "title": "Vaishnaw launches IndiaAI compute portal, dataset platform AIKosha, other initiatives", "publisher": "The Week (PTI)", "date": "2025-03-06", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

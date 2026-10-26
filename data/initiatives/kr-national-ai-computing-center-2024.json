@@ -1,0 +1,23 @@
+{
+  "id": "kr-national-ai-computing-center-2024",
+  "jurisdiction": "KR",
+  "title": "National AI Computing Center",
+  "title_original": "국가 AI 컴퓨팅센터",
+  "summary": "Public-private AI data centre led by MSIT to give industry, universities and research institutes affordable AI compute. First set out in the National AI Strategy Policy Directions of September 2024. Two calls for operators in 2025 drew no selection, so MSIT relaunched it in September 2025 as a private-led special-purpose company with public equity under 30%. A Samsung SDS-led consortium was chosen, the operating company Korea AI Computing Center Co. was set up in June 2026, and construction began on 3 August 2026 at the Solasido Data Center Park in Haenam, Jeollanam-do. MSIT targets more than 15,000 GPUs there by 2028.",
+  "streams": ["compute"],
+  "kind": "compute",
+  "agency": "MSIT",
+  "start": "2024-09-26",
+  "status": "active",
+  "beneficiaries": "Companies, universities and research institutes needing AI compute; domestic AI chip developers",
+  "linked_funds": ["kr-naicc-government-investment-2025"],
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&nttSeqNo=1166&pageIndex=2&searchTxt=&searchOpt=ALL&bbsSeqNo=42&mId=4&mPid=2", "title": "MSIT to Establish the National AI Computing Center as a \"Catalyst for Genuine Growth in AI\"", "publisher": "MSIT", "date": "2025-09-08", "lang": "en" },
+    { "url": "https://www.korea.net/NewsFocus/policies/view?articleId=297207&koreanId=297173", "title": "Construction of Nat'l AI Computing Center begins, to end in 2028", "publisher": "Korea.net", "date": "2026-08-04", "lang": "en" },
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&pageIndex=&bbsSeqNo=42&nttSeqNo=1040&searchOpt=ALL&searchTxt=", "title": "National AI Strategy Policy Directions", "publisher": "MSIT", "date": "2024-09-26", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

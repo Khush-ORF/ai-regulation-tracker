@@ -1,0 +1,31 @@
+{
+  "id": "cn-sci-tech-ethics-review-measures-2023",
+  "jurisdiction": "CN",
+  "title": "Measures for Science and Technology Ethics Review (Trial)",
+  "title_original": "科技伦理审查办法（试行）",
+  "summary": "Trial measures (Guokefajian [2023] No. 167) issued by the Ministry of Science and Technology with nine other bodies, including the Ministry of Education, MIIT, the National Health Commission and the Chinese Academy of Sciences. They are dated 7 September 2023 and in force since 1 December 2023. They set up ethics review for science and technology activities that carry ethical risks. Algorithms, models and systems must follow principles of fairness, justice, transparency, reliability and controllability. An annexed list requires expert re-review for R&D of algorithm models that can mobilise public opinion, and of highly autonomous automated decision-making systems used where safety or health is at risk.",
+  "streams": ["safety", "research"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "MOST",
+  "dates": { "passed": "2023-09-07", "effective": "2023-12-01" },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Design and apply algorithms, models and systems fairly, transparently, reliably and controllably",
+    "Get expert re-review for R&D of public-opinion-mobilising algorithm models",
+    "Get expert re-review for highly autonomous automated decision systems in risky settings"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2023-09-07", "source_url": "https://www.gov.cn/zhengce/zhengceku/202310/content_6908045.htm" },
+    { "status": "in_force", "date": "2023-12-01", "source_url": "https://www.gov.cn/zhengce/zhengceku/202310/content_6908045.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.cn/zhengce/zhengceku/202310/content_6908045.htm", "title": "关于印发《科技伦理审查办法（试行）》的通知（国科发监〔2023〕167号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2023-09-07", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

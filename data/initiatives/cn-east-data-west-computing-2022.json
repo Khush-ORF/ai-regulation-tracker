@@ -1,0 +1,23 @@
+{
+  "id": "cn-east-data-west-computing-2022",
+  "jurisdiction": "CN",
+  "title": "\"East Data, West Computing\" project and national integrated computing network",
+  "title_original": "“东数西算”工程 / 全国一体化算力网",
+  "summary": "National computing infrastructure programme launched in February 2022 by NDRC, the Cyberspace Administration of China, MIIT and the National Energy Administration. It sets up eight national computing hubs (Beijing-Tianjin-Hebei, Yangtze River Delta, Greater Bay Area, Chengdu-Chongqing, Inner Mongolia, Guizhou, Gansu and Ningxia) and ten data centre clusters. Back-end and offline work moves to western hubs, while latency-sensitive services such as AI inference stay in eastern hubs. A December 2023 implementation opinion from NDRC, the National Data Administration and others extended it into a national integrated computing network. It targets over 60% of new computing capacity in hub regions by end-2025.",
+  "streams": ["compute"],
+  "kind": "compute",
+  "agency": "NDRC",
+  "start": "2022-02",
+  "status": "active",
+  "beneficiaries": "Data centre operators and users of cloud and AI computing capacity",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202202/t20220217_1315795.html", "title": "国家发展改革委高技术司负责同志就实施“东数西算”工程答记者问", "publisher": "National Development and Reform Commission", "date": "2022-02-17", "lang": "zh" },
+    { "url": "https://www.gov.cn/zhengce/zhengceku/202401/content_6924596.htm", "title": "关于深入实施“东数西算”工程加快构建全国一体化算力网的实施意见（发改数据〔2023〕1779号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2023-12-25", "lang": "zh" },
+    { "url": "https://www.gov.cn/zhengce/content/202508/content_7037861.htm", "title": "国务院关于深入实施“人工智能+”行动的意见（国发〔2025〕11号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2025-08-26", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

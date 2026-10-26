@@ -1,0 +1,23 @@
+{
+  "id": "br-pbia-business-innovation-2024",
+  "jurisdiction": "BR",
+  "title": "PBIA axis 4: AI for Business Innovation (2024–2028)",
+  "title_original": "PBIA – Eixo IA para Inovação Empresarial",
+  "summary": "Largest share of the Brazilian AI Plan's 2024–2028 investment envelope, stated in the MCTI plan document as BRL 13.79 billion for the 'AI for Business Innovation' axis. The axis covers support for AI adoption and development by Brazilian companies. The plan document does not split this axis by funding source or by year.",
+  "streams": ["industry"],
+  "kind": "budget_allocation",
+  "amount": 13790000000,
+  "currency": "BRL",
+  "stage": "announced",
+  "fiscal_year": "2024",
+  "period": { "from": "2024", "to": "2028" },
+  "purpose": "Support AI innovation and adoption by Brazilian businesses under the Brazilian AI Plan.",
+  "parent": "br-pbia-investment-2024",
+  "sources": [
+    { "url": "https://api.oecd.ai/storage//policy-initiatives/Feb2026/117ojp3vhlml84rjxd-ai-for-the-good-of-all-2025.pdf", "title": "Brazilian Artificial Intelligence Plan – AI for the Good of All (Table: Investments 2024-28)", "publisher": "MCTI (hosted by OECD.AI)", "date": "2025", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}
