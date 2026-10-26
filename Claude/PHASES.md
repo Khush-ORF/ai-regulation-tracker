@@ -13,7 +13,8 @@ Goal: agree the design before any code.
 
 **Exit:** the owner approves `DESIGN.md` and the mockup; ADRs move from *Proposed* to *Accepted*.
 
-## Phase 1 — Static site and national data ← **current**
+## Phase 1 — Static site and national data ✓ **done 2026-10-26**
+Live at https://khush-orf.github.io/ai-regulation-tracker/ with 118 national records (India 30, China 26, Brazil 24, South Korea 24, South Africa 14), merged via PR #1. Lighthouse accessibility scores: home 96, profile 100, explorer 100, about 100. Pagefind was swapped for in-page filters (T-105).
 Goal: a live URL on GitHub Pages with all 5 countries at national level.
 - Create the public repo and the Astro skeleton; `deploy.yml` deploys to Pages
 - Design tokens, top bar, theme toggle, fonts
@@ -25,7 +26,7 @@ Goal: a live URL on GitHub Pages with all 5 countries at national level.
 
 **Exit:** live site; ≥ 10 sourced records per country; Lighthouse accessibility ≥ 90.
 
-## Phase 2 — Automation
+## Phase 2 — Automation ← **next**
 Goal: the tracker keeps itself up to date.
 - `sources/registry.json` built from `SOURCES.md`
 - Crawlers per source type (RSS, JSON API, HTML change detection, PDF text)

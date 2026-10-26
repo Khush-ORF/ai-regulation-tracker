@@ -5,7 +5,8 @@
 .home .crumbs button{background:none;border:0;padding:0;color:var(--ink-2);cursor:pointer;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
 .home .crumbs button:hover{color:var(--ink)}
 .goto{display:flex;gap:6px;flex-wrap:wrap;align-items:center;flex:1;font-size:13px;color:var(--ink-3)}
-.goto button{background:none;border:1px solid var(--rule);padding:3px 9px;font-size:13px;color:var(--ink-2);cursor:pointer}
+.goto button{background:none;border:1px solid var(--rule);padding:3px 9px;min-height:28px;font-size:13px;color:var(--ink-2);cursor:pointer}
+.home .crumbs button{min-height:24px}
 .goto button:hover{border-color:var(--ink-3);color:var(--ink)}
 .goto button[aria-current="true"]{border-color:var(--ink);color:var(--ink)}
 .seg{display:inline-flex;border:1px solid var(--rule)}

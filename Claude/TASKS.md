@@ -20,7 +20,7 @@ Claim a task by setting `Owner` and `Status` before starting (see README rule 1)
 | T-008 | Freeze the data schema v1 | claude-opus | done | Zod schema in `src/content.config.ts`, checked on every build |
 | T-009 | Write a 30-question chatbot test set with expected cited answers | — | todo | Phase 4 exit criterion; can start early |
 
-## Phase 1 — Static site and national data (backlog)
+## Phase 1 — Static site and national data (done 2026-10-26)
 
 | ID | Task | Owner | Status | Notes |
 |---|---|---|---|---|
@@ -30,11 +30,11 @@ Claim a task by setting `Owner` and `Status` before starting (see README rule 1)
 | T-104 | Country profile template | claude-opus | done | `src/pages/country/[slug].astro` |
 | T-105 | Regulations explorer | claude-opus | done | Client-side filters (country, type, status, stream, text). Pagefind deferred: the data is small enough to filter in the page |
 | T-106 | `validate.yml` | claude-opus | done | Build-time schema check, plus id/filename and duplicate check |
-| T-107 | Seed data: India | claude-opus (subagent) | review | 30 records (15/10/5). Report: `Claude/research/T-107-seed-india.md`. Re-check DPDP phase dates mid-Nov 2026 |
-| T-108 | Seed data: Brazil | claude-opus (subagent) | review | 24 records (13/6/5). Report: `T-108-seed-brazil.md`. ANPD order against Meta (2024) still to add |
-| T-109 | Seed data: South Africa | claude-opus (subagent) | review | 14 records (9/4/1). Report: `T-109-seed-south-africa.md`. The 2026 draft policy was withdrawn; the revised policy is pending |
-| T-110 | Seed data: South Korea | claude-opus (subagent) | review | 24 records (13/6/5). Report: `T-110-seed-south-korea.md`. MSIT final notices not yet sourced |
-| T-111 | Seed data: China | claude-opus (subagent) | review | 26 records (18/6/2). Report: `T-111-seed-china.md`. China Law Translate returned 403 to our fetcher |
+| T-107 | Seed data: India | claude-opus (subagent) | done | 30 records (15/10/5). Report: `Claude/research/T-107-seed-india.md`. Re-check DPDP phase dates mid-Nov 2026 |
+| T-108 | Seed data: Brazil | claude-opus (subagent) | done | 24 records (13/6/5). Report: `T-108-seed-brazil.md`. ANPD order against Meta (2024) still to add |
+| T-109 | Seed data: South Africa | claude-opus (subagent) | done | 14 records (9/4/1). Report: `T-109-seed-south-africa.md`. The 2026 draft policy was withdrawn; the revised policy is pending |
+| T-110 | Seed data: South Korea | claude-opus (subagent) | done | 24 records (13/6/5). Report: `T-110-seed-south-korea.md`. MSIT final notices not yet sourced |
+| T-111 | Seed data: China | claude-opus (subagent) | done | 26 records (18/6/2). Report: `T-111-seed-china.md`. China Law Translate returned 403 to our fetcher |
 | T-112 | `/about` methodology and disclaimer | claude-opus | done | Includes SoI/Natural Earth attribution and the South Korea note (ADR-013, ADR-018) |
 
 ## Phase 2 — Automation (backlog)
