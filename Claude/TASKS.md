@@ -15,7 +15,7 @@ Claim a task by setting `Owner` and `Status` before starting (see README rule 1)
 | T-005 | Confirm the Key Streams taxonomy (Q1) | owner | done | Draft list of 9 kept (ADR-012) |
 | T-006 | Find a licensable, Survey of India–compliant India boundary dataset (national + states) | claude-opus (subagent) | review | Recipe in `Claude/research/T-006-india-boundaries.md`; awaiting owner answers to Q9–Q11 |
 | T-010 | Build the boundary TopoJSON files with mapshaper and run the QA checklist | claude-opus | review | Built 2026-10-26 by `geo/build-geo.ps1` → `public/geo/` (india 189 KB, world 299 KB, admin1 43 KB). Automated QA passed (`geo/README.md`); rendered views show the full J&K, Ladakh, Aksai Chin and Arunachal. A close-up check of Sir Creek, the northern tip and the island UTs is still to do |
-| T-011 | Install git on this machine (needed for T-101) | owner | todo | `git` is not installed |
+| T-011 | Install git on this machine (needed for T-101) | claude-opus | done | Git 2.56 via winget, 2026-10-26. Repo initialised on `main`, remote `https://github.com/Khush-ORF/ai-regulation-tracker.git`, commit identity `Khush-ORF` (noreply email, repo-local) |
 | T-007 | Choose the repo name and site name (Q5) | owner | done | `ai-regulation-tracker` / "AI Regulation Tracker"; the owning GitHub account is named at T-101 |
 | T-008 | Freeze the data schema v1 | claude-opus | done | Zod schema in `src/content.config.ts`, checked on every build |
 | T-009 | Write a 30-question chatbot test set with expected cited answers | — | todo | Phase 4 exit criterion; can start early |
