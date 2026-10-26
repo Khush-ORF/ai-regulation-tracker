@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/home.css';
+import { countrySummaries, url, STATUS_LABEL } from '../lib/site';
+
+const summaries = await countrySummaries();
+const data = {
+  base: url(''),
+  statusLabel: STATUS_LABEL,
+  countries: Object.fromEntries(summaries.map((s) => [s.iso3, {
+    code: s.code, name: s.name, units: s.units, href: s.href, status: s.status, counts: s.counts,
+    initiatives: s.initiatives, funds: s.funds, topFund: s.topFund, latest: s.latest,
+  }])),
+};
+---
+<Base current="map" app>
+  <main class="home">
+    <section class="mapcol gutter" aria-label="Globe">
+      <div class="bar">
+        <div class="crumbs" id="crumbs"><strong>All countries</strong></div>
+        <div class="goto" id="goto" aria-label="Go to a country"></div>
+        <div class="seg" role="group" aria-label="View" id="viewSeg" hidden>
+          <button type="button" data-mode="map" aria-pressed="true">Globe</button><button type="button" data-mode="grid" aria-pressed="false">Grid</button>
+        </div>
+      </div>
+      <div class="frame" id="frame">
+        <div class="loading" id="loading">Loading the globe…</div>
+        <svg id="map" tabindex="0" role="application" aria-label="Globe. Drag to turn, scroll or pinch to zoom, arrow keys to turn, plus and minus to zoom.">
+          <defs>
+            <radialGradient id="shadeGrad" cx="38%" cy="34%" r="70%">
+              <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:.10"/>
+              <stop offset="55%" style="stop-color:#FFFFFF;stop-opacity:0"/>
+              <stop offset="100%" style="stop-color:var(--shade);stop-opacity:.22"/>
+            </radialGradient>
+          </defs>
+        </svg>
+        <svg id="grid" role="img" aria-label="Tile grid of India's states and union territories" hidden></svg>
+        <div class="hint" id="hint">Drag to turn · scroll or pinch to zoom · click a country</div>
+        <div class="zoomctl" id="zoomctl">
+          <button type="button" id="zIn" aria-label="Zoom in">+</button>
+          <button type="button" id="zOut" aria-label="Zoom out">−</button>
+          <button type="button" id="zReset" aria-label="Reset view"><svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><ellipse cx="8" cy="8" rx="2.6" ry="6" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M2 8h12" stroke="currentColor" stroke-width="1.2"/></svg></button>
+        </div>
+        <div class="readout" id="readout"></div>
+        <details class="ref" id="ref" open><summary>Reference</summary><div id="refBody"></div></details>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+    </section>
+    <aside class="reg gutter" aria-live="polite">
+      <div id="regBody"></div>
+      <div class="reg-foot"><span>Every record links to its official source.</span><a href={url('explorer/')}>All records →</a></div>
+    </aside>
+  </main>
+  <script type="application/json" id="tracker-data" set:html={JSON.stringify(data)} />
+  <script>import '../scripts/globe.js';</script>
+</Base>

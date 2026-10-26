@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.claude/launch.json
+.astro/
+geo/sources/
+geo/build/
+geo/null.json

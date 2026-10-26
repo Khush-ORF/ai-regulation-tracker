@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/site';
+---
+<Base title="Page not found">
+  <main class="page gutter">
+    <p class="eyebrow">Error 404</p>
+    <h1>That page isn't on the map</h1>
+    <p class="lede">The link may be old, or the record may have moved. <a href={url('')}>Go back to the globe</a> or <a href={url('explorer/')}>search all records</a>.</p>
+  </main>
+</Base>

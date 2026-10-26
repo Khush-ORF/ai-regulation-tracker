@@ -1,0 +1,77 @@
+---
+import '@fontsource/spectral/400.css';
+import '@fontsource/spectral/500.css';
+import '@fontsource/spectral/400-italic.css';
+import '@fontsource/spectral-sc/500.css';
+import '@fontsource/public-sans/400.css';
+import '@fontsource/public-sans/500.css';
+import '@fontsource/public-sans/600.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
+import '../styles/global.css';
+import { url } from '../lib/site';
+
+interface Props { title?: string; description?: string; current?: 'map' | 'explorer' | 'about' | 'country'; app?: boolean }
+const { title, description = 'AI regulation, government AI initiatives and AI funding in India, Brazil, South Africa, South Korea and China, kept up to date automatically from official sources.', current, app = false } = Astro.props;
+const siteName = 'Global South AI Regulation Tracker';
+const fullTitle = title ? `${title} · ${siteName}` : siteName;
+const built = new Date();
+const synced = built.toLocaleString('en-GB', { timeZone: 'Asia/Kolkata', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).replace(',', ' ·').replace(/\//g, '.');
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>{fullTitle}</title>
+  <meta name="description" content={description}>
+  <link rel="icon" href={url('favicon.svg')} type="image/svg+xml">
+  <script is:inline>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body class={app ? 'app' : undefined}>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="top gutter">
+    <a class="mark" href={url('')} aria-label={`${siteName}, home`}>
+      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+        <defs>
+          <clipPath id="southHalf"><rect x="0" y="18" width="36" height="18"/></clipPath>
+          <pattern id="southHatch" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="3.2" style="stroke:var(--ink);stroke-width:1.3"/></pattern>
+        </defs>
+        <circle cx="18" cy="18" r="16" style="fill:url(#southHatch)" clip-path="url(#southHalf)"/>
+        <circle cx="18" cy="18" r="16" fill="none" style="stroke:var(--ink)" stroke-width="1.5"/>
+        <ellipse cx="18" cy="18" rx="7" ry="16" fill="none" style="stroke:var(--ink)" stroke-width="1"/>
+        <line x1="2" y1="18" x2="34" y2="18" style="stroke:var(--ink)" stroke-width="1.5"/>
+      </svg>
+      <span class="words">
+        <span class="eb">Global South <span title="India · Brazil · South Africa · South Korea · China">IN · BR · ZA · KR · CN</span></span>
+        <b>AI Regulation <i>Tracker</i></b>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href={url('')} aria-current={current === 'map' ? 'page' : undefined}>Map</a>
+      <a href={url('explorer/')} aria-current={current === 'explorer' ? 'page' : undefined}>Explorer</a>
+      <a href={url('about/')} aria-current={current === 'about' ? 'page' : undefined}>About</a>
+    </nav>
+    <div class="meta">
+      <span class="sync" title="When this copy of the site was built">Built {synced} IST</span>
+      <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch between light and dark theme"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg></button>
+    </div>
+  </header>
+  <div id="content" style="display:contents"><slot /></div>
+  {!app && (
+    <footer class="foot-site gutter">
+      <span>Records are collected automatically from official sources. Check the linked source before relying on any item.</span>
+      <span>Map data: Survey of India (India), Natural Earth (elsewhere). <a href={url('about/')}>Method and sources</a></span>
+    </footer>
+  )}
+  <script>
+    document.getElementById('themeBtn')?.addEventListener('click', () => {
+      const r = document.documentElement;
+      const cur = r.dataset.theme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      const next = cur === 'dark' ? 'light' : 'dark';
+      r.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch {}
+    });
+  </script>
+</body>
+</html>

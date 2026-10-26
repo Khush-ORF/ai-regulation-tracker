@@ -1,0 +1,497 @@
+<title>AI Regulation Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&family=Spectral+SC:wght@500&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* Layout: a survey sheet. Map in a double-ruled frame with a live coordinate collar on the left; a "register" of records on the right.
+   Dark-first: cyanotype print. Light: Survey of India sheet (buff land, grey-blue water). */
+:root{
+  color-scheme:dark;
+  --paper:#0C1C2C; --sea:#0F2437; --land:#173149; --land-hi:#22415F; --ink:#E6EDF2; --ink-2:#A3B6C6; --ink-3:#6E8AA3; --rule:#2A4964; --panel:#0A1826; --sel:#FFFFFF;
+  --s-proposed:#B3C0CB; --s-progress:#EDBE62; --s-passed:#86B8EE; --s-force:#74D39C; --s-vol:#C3AEF4; --heat:#8ED8CB; --fund:#EDBE62;
+  --f-display:'Spectral',Georgia,'Times New Roman',serif; --f-sc:'Spectral SC','Spectral',Georgia,serif; --f-ui:'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --f-mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  color-scheme:light;
+  --paper:#EEF0EA; --sea:#D3E0E1; --land:#E8E3D1; --land-hi:#DCCD9C; --ink:#1C2A31; --ink-2:#4C5C64; --ink-3:#7B898F; --rule:#B4BEBB; --panel:#F7F8F4; --sel:#1C2A31;
+  --s-proposed:#5F6D75; --s-progress:#9A5B06; --s-passed:#24578A; --s-force:#266B43; --s-vol:#644795; --heat:#2B786D; --fund:#9A5B06;
+}}
+:root[data-theme="light"]{
+  color-scheme:light;
+  --paper:#EEF0EA; --sea:#D3E0E1; --land:#E8E3D1; --land-hi:#DCCD9C; --ink:#1C2A31; --ink-2:#4C5C64; --ink-3:#7B898F; --rule:#B4BEBB; --panel:#F7F8F4; --sel:#1C2A31;
+  --s-proposed:#5F6D75; --s-progress:#9A5B06; --s-passed:#24578A; --s-force:#266B43; --s-vol:#644795; --heat:#2B786D; --fund:#9A5B06;
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0C1C2C; --sea:#0F2437; --land:#173149; --land-hi:#22415F; --ink:#E6EDF2; --ink-2:#A3B6C6; --ink-3:#6E8AA3; --rule:#2A4964; --panel:#0A1826; --sel:#FFFFFF;
+  --s-proposed:#B3C0CB; --s-progress:#EDBE62; --s-passed:#86B8EE; --s-force:#74D39C; --s-vol:#C3AEF4; --heat:#8ED8CB; --fund:#EDBE62;
+}
+html,body{height:100%}
+body{background:var(--paper);color:var(--ink);font:15px/1.5 var(--f-ui);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--sel);outline-offset:2px}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Header */
+.top{display:flex;align-items:center;gap:14px 24px;flex-wrap:wrap;padding-block:14px;border-bottom:1px solid var(--rule)}
+.mark{display:flex;flex-direction:column;gap:1px}
+.mark b{font:500 23px/1.1 var(--f-display);letter-spacing:-.005em}
+.mark span{font:12px/1.2 var(--f-mono);color:var(--ink-2);letter-spacing:.02em}
+.nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+.nav a{color:var(--ink-2);text-decoration:none;padding-block:4px;border-bottom:1px solid transparent}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current]{color:var(--ink);border-bottom-color:var(--ink)}
+.search{flex:1 1 180px;max-width:260px;display:flex;align-items:center;gap:8px;border:1px solid var(--rule);background:var(--panel);padding:6px 10px}
+.search input{border:0;background:none;outline:none;width:100%;font-size:14px}
+.search input::placeholder{color:var(--ink-3)}
+.meta{display:flex;align-items:center;gap:14px;margin-left:auto;font:12px var(--f-mono);color:var(--ink-2)}
+.sync::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--s-force);margin-right:7px;vertical-align:1px}
+.tag{border:1px solid var(--rule);padding:2px 6px;color:var(--ink-3)}
+.iconbtn{background:none;border:1px solid var(--rule);width:32px;height:32px;display:grid;place-items:center;cursor:pointer}
+.iconbtn:hover{border-color:var(--ink-3)}
+
+/* Main grid */
+.main{display:grid;grid-template-columns:minmax(0,1fr) 400px;grid-template-rows:minmax(0,1fr);flex:1 1 0;min-height:560px}
+.mapcol{display:flex;flex-direction:column;gap:10px;padding-block:14px 16px;min-width:0}
+.bar{display:flex;align-items:center;gap:10px 16px;flex-wrap:wrap}
+.crumbs{display:flex;gap:6px;align-items:baseline;font-size:14px;color:var(--ink-2);flex:1;min-width:0}
+.crumbs button{background:none;border:0;padding:0;color:var(--ink-2);cursor:pointer;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+.crumbs button:hover{color:var(--ink)}
+.crumbs strong{font:500 15px var(--f-display);color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--rule)}
+.seg button{background:none;border:0;padding:5px 11px;font-size:13px;color:var(--ink-2);cursor:pointer}
+.seg button+button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.frame{position:relative;flex:1;min-height:380px;border:1px solid var(--ink-3);outline:1px solid var(--rule);outline-offset:5px;margin:6px;background:var(--sea);overflow:hidden}
+.frame svg{display:block;position:absolute;inset:0}
+.corner{position:absolute;font:11px var(--f-mono);color:var(--ink-2);background:var(--sea);padding:2px 5px;pointer-events:none;font-variant-numeric:tabular-nums}
+.c-nw{top:6px;left:6px}.c-se{bottom:6px;right:6px}
+.scale{position:absolute;left:12px;bottom:12px;font:11px var(--f-mono);color:var(--ink-2);pointer-events:none}
+.scale i{display:block;height:5px;border:1px solid var(--ink-2);border-top:0;margin-top:3px}
+.ref{position:absolute;right:12px;bottom:34px;background:var(--panel);border:1px solid var(--ink-3);padding:9px 11px 10px;font-size:12px;max-width:250px}
+.ref h4{margin:0 0 6px;font:500 12px var(--f-sc);letter-spacing:.14em;color:var(--ink)}
+.ref ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.ref li{display:flex;align-items:center;gap:8px;color:var(--ink-2)}
+.ref svg{position:static;flex:none}
+.ref .note{margin:7px 0 0;color:var(--ink-3);font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--panel);border:1px solid var(--ink-3);padding:6px 9px;font-size:12px;line-height:1.35;max-width:220px;transform:translate(12px,-50%)}
+.tip b{display:block;font:500 14px var(--f-display)}
+.loading{position:absolute;inset:0;display:grid;place-items:center;font:13px var(--f-mono);color:var(--ink-2)}
+
+/* Map styles */
+.grat{fill:none;stroke:var(--rule);stroke-width:.5;opacity:.7}
+.land{fill:var(--land);stroke:var(--rule);stroke-width:.6}
+.land.focus{fill:var(--land-hi);cursor:pointer}
+.land.drilled{fill:var(--land-hi)}
+.land.other{fill:var(--land);cursor:pointer}
+.land.other:hover{fill:var(--land-hi)}
+.land.focus:hover{stroke:var(--ink);stroke-width:1.2}
+.unit{stroke:var(--ink-3);stroke-width:.6}
+.unit.off{fill:none;stroke:none;pointer-events:none}
+.unit.on{cursor:pointer}
+.unit.on:hover{stroke:var(--ink);stroke-width:1.3}
+.unit.nodata{fill:var(--land-hi)}
+.unit.neutral{fill:var(--land);pointer-events:none}
+.unit.sel{stroke:var(--sel);stroke-width:2.4}
+.f-proposed,.land.f-proposed{fill:var(--s-proposed)} .f-in_progress,.land.f-in_progress{fill:var(--s-progress)} .f-passed,.land.f-passed{fill:var(--s-passed)} .f-in_force,.land.f-in_force{fill:var(--s-force)} .f-voluntary,.land.f-voluntary{fill:var(--s-vol)}
+.land[class*="f-"]{fill-opacity:.5}
+.unit[class*="f-"]{fill-opacity:.58}
+.i0{fill:var(--land-hi)} .i1,.i2,.i3,.i4{fill:var(--heat)} .i1{fill-opacity:.2} .i2{fill-opacity:.4} .i3{fill-opacity:.6} .i4{fill-opacity:.82}
+.ib{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-dasharray:8 3 1.5 3;pointer-events:none}
+.ib.world{stroke-width:.9;stroke-dasharray:none}
+.grat,.land,.unit,.ib{vector-effect:non-scaling-stroke}
+.lbl{font:500 13px var(--f-sc);letter-spacing:.22em;fill:var(--ink);paint-order:stroke;stroke:var(--sea);stroke-width:3px;pointer-events:none}
+.sea-lbl{font:italic 400 13px var(--f-display);letter-spacing:.3em;fill:var(--ink-3);pointer-events:none}
+.fund{fill:var(--fund);fill-opacity:.35;stroke:var(--fund);stroke-width:1.2;pointer-events:none}
+.tile rect{stroke:var(--ink-3);stroke-width:.8}
+.tile{cursor:pointer}
+.tile:hover rect{stroke:var(--ink);stroke-width:1.4}
+.tile.sel rect{stroke:var(--sel);stroke-width:2.4}
+.tile text{font:500 11px var(--f-mono);fill:var(--ink);pointer-events:none}
+
+/* Register (right panel) */
+.reg{border-left:1px solid var(--rule);background:var(--panel);overflow:auto;padding-block:22px 24px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.eyebrow{margin:0;font:12px var(--f-mono);color:var(--ink-2);letter-spacing:.04em}
+.reg h2{margin:2px 0 0;font:500 34px/1.05 var(--f-display);letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:8px 0 0;color:var(--ink-2);font-size:14px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.tabs{display:flex;gap:16px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.tabs button{background:none;border:0;padding:6px 0 8px;font-size:13px;color:var(--ink-2);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.figs div{padding:10px 0 9px;display:flex;flex-direction:column;gap:2px}
+.figs div+div{border-left:1px solid var(--rule);padding-left:12px}
+.figs dt{font-size:12px;color:var(--ink-2)}
+.figs dd{margin:0;font:500 24px/1.1 var(--f-display);font-variant-numeric:tabular-nums lining-nums}
+.money{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.money span{font-size:13px;color:var(--ink-2)}
+.money b{font:500 20px var(--f-display);font-variant-numeric:lining-nums}
+.money small{display:block;text-align:right;font:12px var(--f-mono);color:var(--ink-3)}
+.reg h3{margin:0;font:500 12px var(--f-sc);letter-spacing:.14em;color:var(--ink-2)}
+.log{list-style:none;margin:8px 0 0;padding:0}
+.log li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;padding:11px 0;border-top:1px solid var(--rule)}
+.log time{font:12px var(--f-mono);color:var(--ink-2);text-transform:uppercase;padding-top:2px}
+.log p{margin:0}
+.log .t{font:400 16px/1.3 var(--f-display);margin-top:5px}
+.log .m{font-size:12px;color:var(--ink-2);margin-top:3px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.log .sl{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.prov{font-size:12px;color:var(--ink-2)}
+.prov::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;border:1.2px solid var(--ink-2);margin-right:5px;vertical-align:0}
+.prov.reviewed::before{background:var(--ink-2)}
+.src{color:var(--ink);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:2px}
+.empty{margin:8px 0 0;padding:12px 0;border-top:1px solid var(--rule);color:var(--ink-2);font-size:14px}
+.stamp{display:inline-block;font:600 10.5px/1 var(--f-ui);letter-spacing:.09em;text-transform:uppercase;padding:3px 6px 2px;border:1.5px solid currentColor;border-radius:2px;white-space:nowrap}
+.s-proposed{color:var(--s-proposed);border-style:dotted} .s-in_progress{color:var(--s-progress);border-style:dashed} .s-passed{color:var(--s-passed)}
+.s-in_force{color:var(--s-force);border-width:3px;border-style:double;padding:2px 5px 1px} .s-voluntary{color:var(--s-vol);border-radius:999px} .s-active{color:var(--ink-2)}
+.ask{align-self:flex-start;background:var(--ink);color:var(--paper);border:0;padding:9px 14px;font-size:14px;cursor:pointer;display:inline-flex;gap:8px;align-items:center}
+.ask:hover{opacity:.88}
+.chat{border:1px solid var(--rule);background:var(--paper);display:flex;flex-direction:column}
+.chat header{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-bottom:1px solid var(--rule);font:500 12px var(--f-sc);letter-spacing:.14em;color:var(--ink-2)}
+.chat header button{background:none;border:0;cursor:pointer;color:var(--ink-2);font-size:13px}
+.msgs{padding:10px 12px;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.q{align-self:flex-end;background:var(--land-hi);padding:7px 10px;max-width:85%}
+.a{max-width:95%}
+.a .cite{display:inline-block;margin-top:5px;font:11px var(--f-mono);border:1px solid var(--rule);padding:1px 6px;color:var(--ink-2)}
+.chat form{display:flex;border-top:1px solid var(--rule)}
+.chat input{flex:1;min-width:0;border:0;background:none;padding:9px 12px;outline:none;font-size:14px}
+.chat form button{background:none;border:0;border-left:1px solid var(--rule);padding:0 12px;cursor:pointer;font-size:13px}
+.foot{margin-top:auto;display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:10px}
+.foot a{color:var(--ink);font-size:13px;white-space:nowrap}
+
+@media (max-width: 920px){
+  .main{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;flex:none}
+  .frame{min-height:62vh}
+  .reg{border-left:0;border-top:1px solid var(--rule);overflow:visible}
+  .ref{max-width:200px}
+  .meta{margin-left:0}
+}
+@media (max-width: 520px){
+  .ref{display:none}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .figs div:nth-child(3){border-left:0;padding-left:0}
+  .reg h2{font-size:28px}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<header class="top gutter">
+  <div class="mark"><b>AI Regulation Tracker</b><span>India · Brazil · South Africa · South Korea · China</span></div>
+  <nav class="nav" aria-label="Sections"><a href="#map" aria-current="page">Map</a><a href="#explorer">Explorer</a><a href="#initiatives">Initiatives</a><a href="#funds">Funds</a><a href="#streams">Key streams</a><a href="#updates">Updates</a></nav>
+  <form class="search" id="searchForm" role="search">
+    <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.5"/></svg>
+    <input id="q" list="places" placeholder="Karnataka, São Paulo, Gauteng…" aria-label="Find a country or state" autocomplete="off">
+    <datalist id="places"></datalist>
+  </form>
+  <div class="meta"><span class="sync">Synced 27.10.2026 · 02:14 IST</span>
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch between light and dark theme"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg></button>
+  </div>
+</header>
+
+<main class="main">
+  <section class="mapcol gutter" aria-label="Map">
+    <div class="bar">
+      <div class="crumbs" id="crumbs"></div>
+      <div class="seg" role="group" aria-label="Map layer">
+        <button type="button" data-layer="regs" aria-pressed="true">Regulations</button><button type="button" data-layer="inits" aria-pressed="false">Initiatives</button><button type="button" data-layer="funds" aria-pressed="false">Funds</button>
+      </div>
+      <div class="seg" role="group" aria-label="View" id="viewSeg" hidden>
+        <button type="button" data-mode="map" aria-pressed="true">Map</button><button type="button" data-mode="grid" aria-pressed="false">Grid</button>
+      </div>
+    </div>
+    <div class="frame" id="frame">
+      <div class="loading" id="loading">Loading boundaries…</div>
+      <svg id="map" role="img" aria-label="Map of the five tracked countries"></svg>
+      <svg id="grid" role="img" aria-label="Tile grid of India's states and union territories" hidden></svg>
+      <div class="corner c-nw" id="cNW"></div><div class="corner c-se" id="cSE"></div>
+      <div class="scale" id="scale"></div>
+      <div class="ref" id="ref"></div>
+      <div class="tip" id="tip" hidden></div>
+    </div>
+  </section>
+
+  <aside class="reg gutter" id="reg" aria-live="polite">
+    <div id="regBody"></div>
+    <button class="ask" id="askBtn" type="button"></button>
+    <section class="chat" id="chat" hidden aria-label="Ask the tracker">
+      <header><span>Ask the tracker</span><button type="button" id="chatClose">Close</button></header>
+      <div class="msgs" id="msgs"></div>
+      <form id="chatForm"><input id="chatIn" placeholder="Ask about rules, funds or initiatives" aria-label="Your question" autocomplete="off"><button type="submit">Ask</button></form>
+    </section>
+    <div class="foot"><span>Mockup v3. Records are samples for layout only.</span><a href="#profile">Open full profile →</a></div>
+  </aside>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+const STATUS={proposed:'Proposed',in_progress:'In progress',passed:'Passed',in_force:'In force',voluntary:'Voluntary',active:'Active'};
+const RANK=['proposed','in_progress','voluntary','passed','in_force'];
+const FOCUS=['IND','BRA','ZAF','KOR','CHN'];
+const NAT={
+  IND:{name:'India',units:'36 states and union territories',status:'voluntary',figs:[['In force',2],['In progress',3],['Voluntary',6],['Initiatives',38]],funds:['₹10,372 crore','IndiaAI Mission, 2024–29'],items:[['Nov 2025','voluntary','AI governance guidelines','MeitY','reviewed'],['Nov 2025','passed','Digital Personal Data Protection Rules','MeitY','reviewed'],['Mar 2024','active','IndiaAI Mission approved','Union Cabinet','reviewed']]},
+  BRA:{name:'Brazil',units:'26 states and the Federal District',status:'in_progress',figs:[['In force',1],['In progress',4],['Voluntary',3],['Initiatives',21]],funds:['R$23 billion','Brazilian AI Plan, 2024–28'],items:[['Sep 2026','in_progress','PL 2338/2023, the AI bill','Câmara dos Deputados','auto'],['Jul 2024','active','Brazilian AI Plan (PBIA)','MCTI','reviewed'],['2025','voluntary','AI regulatory sandbox','ANPD','auto']]},
+  ZAF:{name:'South Africa',units:'9 provinces',status:'proposed',figs:[['In force',0],['In progress',1],['Voluntary',2],['Initiatives',11]],funds:['Not yet tracked',''],items:[['Aug 2024','proposed','National AI policy framework','DCDT','reviewed'],['2025','voluntary','Guidance on automated decision-making','Information Regulator','auto'],['2026','active','Digital and AI skills programme','gov.za','auto']]},
+  KOR:{name:'South Korea',units:'17 provinces and metropolitan cities',status:'in_force',figs:[['In force',3],['In progress',2],['Voluntary',4],['Initiatives',26]],funds:['Not yet tracked',''],items:[['Jan 2026','in_force','AI Basic Act takes effect','MSIT','reviewed'],['Jan 2026','in_force','Enforcement decree of the AI Basic Act','MSIT','auto'],['2025','active','National AI computing centre','MSIT','auto']]},
+  CHN:{name:'China',units:'31 provinces and regions, plus Hong Kong and Macao',status:'in_force',figs:[['In force',6],['In progress',2],['Voluntary',5],['Initiatives',33]],funds:['Not yet tracked',''],items:[['Sep 2025','in_force','Labelling measures for AI-generated content','CAC','reviewed'],['Aug 2025','active','AI+ action plan','State Council','auto'],['Aug 2023','in_force','Interim measures for generative AI services','CAC','reviewed']]}
+};
+const IN_UNITS=[['JK','Jammu and Kashmir',0,2,1],['LA','Ladakh',0,3,37],['PB','Punjab',1,2,3],['HP','Himachal Pradesh',1,3,2],['CH','Chandigarh',2,1,4],['HR','Haryana',2,2,6],['UK','Uttarakhand',2,3,5],['RJ','Rajasthan',3,1,8],['DL','Delhi',3,2,7],['UP','Uttar Pradesh',3,3,9],['BR','Bihar',3,4,10],['SK','Sikkim',3,5,11],['AS','Assam',3,6,18],['AR','Arunachal Pradesh',3,7,12],['GJ','Gujarat',4,1,24],['MP','Madhya Pradesh',4,2,23],['CG','Chhattisgarh',4,3,22],['JH','Jharkhand',4,4,20],['WB','West Bengal',4,5,19],['ML','Meghalaya',4,6,17],['NL','Nagaland',4,7,13],['DH','Dadra and Nagar Haveli and Daman and Diu',5,1,38],['MH','Maharashtra',5,2,27],['TS','Telangana',5,3,36],['OD','Odisha',5,4,21],['TR','Tripura',5,6,16],['MN','Manipur',5,7,14],['GA','Goa',6,1,30],['KA','Karnataka',6,2,29],['AP','Andhra Pradesh',6,3,28],['MZ','Mizoram',6,6,15],['KL','Kerala',7,2,32],['TN','Tamil Nadu',7,3,33],['PY','Puducherry',7,4,34],['LD','Lakshadweep',8,0,31],['AN','Andaman and Nicobar Islands',8,6,35]];
+const IN_UT=new Set(['JK','LA','CH','DL','DH','PY','LD','AN']);
+// Sample state records: [strongest status, initiatives, funds in ₹ crore (India only)]
+const ST={KA:['voluntary',4,180],TN:['voluntary',3,140],TS:['voluntary',5,210],KL:['voluntary',2,60],OD:['voluntary',2,75],AP:['voluntary',3,120],MH:['in_progress',3,160],GJ:['in_progress',2,95],UP:['proposed',2,110],WB:['proposed',1,40],DL:['proposed',1,30],RJ:['proposed',1,25],
+  'BR-SP':['in_progress',3,0],'BR-RJ':['proposed',1,0],'BR-MG':['voluntary',1,0],'BR-PR':['voluntary',1,0],'BR-SC':['proposed',1,0],'BR-PE':['voluntary',1,0],'BR-RS':['proposed',1,0],
+  'ZA-GT':['proposed',2,0],'ZA-WC':['voluntary',1,0],'ZA-NL':['proposed',1,0],
+  'KR-11':['in_force',3,0],'KR-41':['voluntary',2,0],'KR-29':['voluntary',2,0],'KR-26':['proposed',1,0],'KR-30':['voluntary',1,0],
+  'CN-BJ':['in_force',4,0],'CN-SH':['in_force',4,0],'CN-GD':['in_force',3,0],'CN-ZJ':['voluntary',2,0],'CN-JS':['voluntary',2,0]};
+const RENAME={'CN-NM':'Inner Mongolia','KR-45':'Jeonbuk'};
+const DEPT={IND:'State IT department',BRA:'State science secretariat',ZAF:'Provincial government',KOR:'Metropolitan government',CHN:'Provincial government'};
+function kindOf(code,iso){
+  if(iso==='IND')return IN_UT.has(code)?'Union territory':'State';
+  if(iso==='BRA')return code==='BR-DF'?'Federal District':'State';
+  if(iso==='ZAF')return 'Province';
+  if(iso==='KOR'){if(code==='KR-11')return 'Special city';if(code==='KR-50')return 'Special self-governing city';if(['KR-42','KR-45','KR-49'].includes(code))return 'Special self-governing province';if(['KR-26','KR-27','KR-28','KR-29','KR-30','KR-31'].includes(code))return 'Metropolitan city';return 'Province';}
+  if(['CN-BJ','CN-SH','CN-TJ','CN-CQ'].includes(code))return 'Municipality';
+  if(['CN-GX','CN-NM','CN-NX','CN-XJ','CN-XZ'].includes(code))return 'Autonomous region';
+  if(['CN-HK','CN-MO'].includes(code))return 'Special administrative region';
+  return 'Province';
+}
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const units=new Map();
+let worldF=[],unitF=[],outline=null,W=0,H=0,projection,geo,T={k:1,tx:0,ty:0};
+let view=null,sel=null,layer='regs',mode='map',tab='overview';
+const svg=d3.select('#map');
+let gZoom,gOver;
+
+function stamp(s){return `<span class="stamp s-${s}">${STATUS[s]}</span>`}
+function fmtDeg(v,p,n){return Math.abs(Math.round(v))+'°'+(v>=0?p:n)}
+
+async function init(){
+  try{
+    const [w,i,a]=await Promise.all(['geo/world.topojson','geo/india.topojson','geo/admin1.topojson'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()})));
+    worldF=topojson.feature(w,w.objects.world).features;
+    outline=topojson.feature(i,i.objects.india_outline);
+    const inStates=topojson.feature(i,i.objects.states).features;
+    const byLgd=new Map(IN_UNITS.map(u=>[u[4],u]));
+    inStates.forEach(f=>{
+      const p=f.properties;
+      if(p.disputed){f.u={key:'disp-'+unitF.length,iso:'IND',disputed:true};}
+      else{const u=byLgd.get(p.lgd);f.u={key:u[0],iso:'IND',name:u[1],kind:kindOf(u[0],'IND'),lgd:p.lgd};units.set(u[0],f.u);}
+      unitF.push(f);
+    });
+    topojson.feature(a,a.objects.admin1).features.forEach(f=>{
+      const p=f.properties;f.u={key:p.code,iso:p.iso3,name:RENAME[p.code]||p.name,kind:kindOf(p.code,p.iso3),code:p.code};units.set(p.code,f.u);unitF.push(f);
+    });
+  }catch(e){$('#loading').textContent='Boundaries could not load. Reload the page to try again.';return;}
+  $('#loading').remove();
+  build();setup();restyle();overlays();showCountry('IND');crumbs();legend();fillSearch();
+  let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(()=>{setup();applyView(false)},150)});
+}
+
+function build(){
+  svg.append('rect').attr('class','sea').attr('width','100%').attr('height','100%').style('fill','var(--sea)').on('click',()=>{if(view)home()});
+  gZoom=svg.append('g');
+  gZoom.append('path').attr('class','grat');
+  gZoom.append('g').attr('class','world').selectAll('path').data(worldF).join('path')
+    .on('click',(e,d)=>{const iso=d.properties.iso3;if(FOCUS.includes(iso)&&iso!==view)drill(iso)})
+    .on('mousemove',(e,d)=>{const iso=d.properties.iso3;if(FOCUS.includes(iso)&&iso!==view)tip(e,NAT[iso].name,(NAT[iso].status?STATUS[NAT[iso].status]+' at national level':''),'Select to see states');else hideTip()})
+    .on('mouseleave',hideTip);
+  gZoom.append('g').attr('class','units').selectAll('path').data(unitF).join('path')
+    .on('click',(e,d)=>{if(!d.u.disputed&&d.u.iso===view)select(d.u.key)})
+    .on('mousemove',(e,d)=>{if(d.u.disputed||d.u.iso!==view)return hideTip();const r=ST[d.u.key];tip(e,d.u.name,r?STATUS[r[0]]+' · '+r[1]+' initiatives':'No records yet',d.u.kind)})
+    .on('mouseleave',hideTip);
+  gZoom.append('path').attr('class','ib');
+  gOver=svg.append('g');
+}
+
+function setup(){
+  const b=$('#frame').getBoundingClientRect();W=b.width;H=b.height;
+  svg.attr('viewBox',`0 0 ${W} ${H}`);
+  projection=d3.geoEqualEarth().fitExtent([[30,46],[W-30,H-70]],{type:'FeatureCollection',features:worldF.filter(f=>FOCUS.includes(f.properties.iso3))});
+  geo=d3.geoPath(projection);
+  gZoom.select('.grat').attr('d',geo(d3.geoGraticule().step([15,15])()));
+  gZoom.selectAll('.world path').attr('d',geo);
+  gZoom.selectAll('.units path').attr('d',geo);
+  gZoom.select('.ib').attr('d',geo(outline));
+  if(mode==='grid')grid();
+}
+
+function restyle(){
+  gZoom.selectAll('.world path').attr('class',d=>{
+    const iso=d.properties.iso3;
+    if(!FOCUS.includes(iso))return 'land';
+    if(iso===view)return 'land drilled';
+    return view?'land other':'land focus f-'+NAT[iso].status;
+  });
+  gZoom.selectAll('.units path').attr('class',d=>unitClass(d.u)).filter(d=>d.u.key===sel).raise();
+  gZoom.select('.ib').attr('class',view?'ib':'ib world').raise();
+  if(mode==='grid')grid();
+}
+function unitClass(u){
+  if(u.iso!==view)return 'unit off';
+  if(u.disputed)return 'unit neutral';
+  const r=ST[u.key];let c='unit on';
+  if(layer==='regs')c+=r?' f-'+r[0]:' nodata';
+  else if(layer==='inits')c+=' i'+Math.min(r?r[1]:0,4);
+  else c+=' nodata';
+  if(u.key===sel)c+=' sel';
+  return c;
+}
+
+function zoomFor(f){
+  if(!f)return {k:1,tx:0,ty:0};
+  const [[x0,y0],[x1,y1]]=geo.bounds(f);
+  const ref=$('#ref'),rw=W>700&&ref.offsetParent?ref.offsetWidth+24:0;
+  const k=Math.min(14,0.86/Math.max((x1-x0)/(W-80-rw),(y1-y0)/(H-150)));
+  return {k,tx:(W-rw)/2-k*(x0+x1)/2,ty:(H-40)/2-k*(y0+y1)/2};
+}
+function applyView(animate){
+  const f=view?worldF.find(d=>d.properties.iso3===view):null;
+  T=zoomFor(f);
+  gOver.attr('opacity',0);
+  const tr=`translate(${T.tx},${T.ty}) scale(${T.k})`;
+  if(!animate||reduceMotion){gZoom.attr('transform',tr);overlays();return;}
+  gZoom.transition().duration(850).ease(d3.easeCubicInOut).attr('transform',tr).on('end',overlays);
+}
+function toScreen(p){return [p[0]*T.k+T.tx,p[1]*T.k+T.ty]}
+function inv(x,y){return projection.invert([(x-T.tx)/T.k,(y-T.ty)/T.k])}
+
+function overlays(){
+  gOver.selectAll('*').remove();
+  if(!view){
+    const off={KOR:[8,38,'end'],CHN:[-60,-24,'middle'],IND:[-6,4,'middle'],BRA:[0,6,'middle'],ZAF:[0,4,'middle']};
+    FOCUS.forEach(iso=>{const f=worldF.find(d=>d.properties.iso3===iso);const c=toScreen(geo.centroid(f));const o=off[iso];
+      gOver.append('text').attr('class','lbl').attr('x',c[0]+o[0]).attr('y',c[1]+o[1]).attr('text-anchor',o[2]).text(NAT[iso].name);});
+    const oc=toScreen(projection([75,-28]));
+    gOver.append('text').attr('class','sea-lbl').attr('x',oc[0]).attr('y',oc[1]).attr('text-anchor','middle').text('Indian Ocean');
+    const ac=toScreen(projection([-20,-15]));
+    gOver.append('text').attr('class','sea-lbl').attr('x',ac[0]).attr('y',ac[1]).attr('text-anchor','middle').text('Atlantic Ocean');
+  }
+  if(view==='IND'&&layer==='funds'&&mode==='map'){
+    const max=d3.max(Object.values(ST),r=>r[2]);
+    unitF.filter(f=>f.u.iso==='IND'&&ST[f.u.key]&&ST[f.u.key][2]).forEach(f=>{const c=toScreen(geo.centroid(f));
+      gOver.append('circle').attr('class','fund').attr('cx',c[0]).attr('cy',c[1]).attr('r',4+18*Math.sqrt(ST[f.u.key][2]/max));});
+  }
+  gOver.transition().duration(reduceMotion?0:250).attr('opacity',1);
+  const nw=inv(0,0),se=inv(W,H);
+  $('#cNW').textContent=nw&&isFinite(nw[0])?fmtDeg(nw[1],'N','S')+' '+fmtDeg(nw[0],'E','W'):'';
+  $('#cSE').textContent=se&&isFinite(se[0])?fmtDeg(se[1],'N','S')+' '+fmtDeg(se[0],'E','W'):'';
+  const a=inv(W/2-60,H/2),b=inv(W/2+60,H/2);
+  if(a&&b&&isFinite(a[0])&&isFinite(b[0])){
+    const kmPx=d3.geoDistance(a,b)*6371/120;
+    const nice=[10,20,50,100,200,250,500,1000,2000,2500,5000].find(n=>n/kmPx>=60)||5000;
+    $('#scale').innerHTML=`0 — ${nice.toLocaleString('en-IN')} km<i style="width:${Math.round(nice/kmPx)}px"></i>`;
+  }
+}
+
+function legend(){
+  const ib='<svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" style="stroke:var(--ink);stroke-width:1.4;stroke-dasharray:8 3 1.5 3"/></svg>';
+  const sw=(cls,op)=>`<svg width="18" height="12" aria-hidden="true"><rect width="18" height="12" class="${cls}" style="fill-opacity:${op};stroke:var(--ink-3);stroke-width:.8"/></svg>`;
+  let rows='';
+  if(layer==='regs')rows=RANK.slice().reverse().map(s=>`<li>${sw('f-'+s,.6)}${STATUS[s]}</li>`).join('')+`<li>${sw('i0',1)}No records yet</li>`;
+  else if(layer==='inits')rows=[1,2,3,4].map(n=>`<li>${sw('i'+n,[.2,.4,.6,.82][n-1])}${n===4?'4 or more':n} initiative${n>1?'s':''}</li>`).join('');
+  else rows=`<li><svg width="18" height="18" aria-hidden="true"><circle cx="9" cy="9" r="7" class="fund"/></svg>Funds allocated, by area of circle</li>`;
+  const note=layer==='funds'&&view!=='IND'?'<p class="note">State funds appear for India in this mockup.</p>':'';
+  $('#ref').innerHTML=`<h4>Reference</h4><ul>${rows}<li>${ib}Boundary of India</li></ul>${note}<p class="note">India: Survey of India. Elsewhere: Natural Earth.</p>`;
+}
+
+function drill(iso){view=iso;sel=null;hideTip();restyle();applyView(true);showCountry(iso);crumbs();legend();
+  $('#viewSeg').hidden=iso!=='IND';if(iso!=='IND'&&mode==='grid')setMode('map');}
+function home(){const last=view;view=null;sel=null;hideTip();setMode('map');$('#viewSeg').hidden=true;restyle();applyView(true);showCountry(last||'IND');crumbs();legend();}
+function select(key){sel=key;restyle();showUnit(key);crumbs();}
+function crumbs(){
+  const c=$('#crumbs');let h=view?'<button type="button" data-go="home">All countries</button>':'<strong>All countries</strong>';
+  if(view){h+=' / '+(sel?`<button type="button" data-go="${view}">${esc(NAT[view].name)}</button>`:`<strong>${esc(NAT[view].name)}</strong>`);}
+  if(sel)h+=` / <strong>${esc(units.get(sel).name)}</strong>`;
+  c.innerHTML=h;
+}
+$('#crumbs').addEventListener('click',e=>{const g=e.target.dataset.go;if(!g)return;if(g==='home')home();else{sel=null;restyle();showCountry(g);crumbs();}});
+
+let current=null;
+function showCountry(iso){current={type:'country',iso};tab='overview';renderReg();}
+function showUnit(key){current={type:'unit',key};tab='overview';renderReg();}
+function record(){
+  if(current.type==='country'){const n=NAT[current.iso];return {name:n.name,eyebrow:'Country · '+n.units,status:n.status,figs:n.figs,funds:n.funds,items:n.items};}
+  const u=units.get(current.key),r=ST[u.key];
+  const eyebrow=u.kind+' · '+NAT[u.iso].name+(u.lgd?' · LGD '+u.lgd:(u.code?' · '+u.code:''));
+  if(!r)return {name:u.name,eyebrow,status:null,figs:[['In force',0],['In progress',0],['Voluntary',0],['Initiatives',0]],funds:['Not yet tracked',''],items:[]};
+  const s=r[0],items=[['Oct 2026',s,'State AI policy',DEPT[u.iso],'auto'],['2026','active','AI centre of excellence',DEPT[u.iso],'auto']];
+  if(r[1]>2)items.push(['2025','active','AI startup grant scheme',DEPT[u.iso],'reviewed']);
+  return {name:u.name,eyebrow,status:s,figs:[['In force',s==='in_force'?1:0],['In progress',s==='in_progress'?1:0],['Voluntary',s==='voluntary'?1:0],['Initiatives',r[1]]],funds:r[2]?['₹'+r[2]+' crore','State budget, 2026–27']:['Not yet tracked',''],items};
+}
+function renderReg(){
+  const d=record();
+  const total=d.figs.slice(0,3).reduce((a,f)=>a+f[1],0);
+  const lede=d.status?`${total} instrument${total===1?'':'s'} tracked · strongest status ${stamp(d.status)}`:'No instruments tracked yet';
+  const tabs=[['overview','Overview'],['regs','Regulations'],['inits','Initiatives'],['funds','Funds']].map(t=>`<button type="button" role="tab" data-tab="${t[0]}" aria-selected="${tab===t[0]}">${t[1]}</button>`).join('');
+  let items=d.items;
+  if(tab==='regs')items=items.filter(i=>i[1]!=='active');
+  if(tab==='inits')items=items.filter(i=>i[1]==='active');
+  const log=items.length?`<ol class="log">${items.map(i=>`<li><time>${esc(i[0])}</time><div><div class="sl">${stamp(i[1])}<span class="prov ${i[4]}">${i[4]==='reviewed'?'Reviewed':'Auto-extracted'}</span></div><p class="t">${esc(i[2])}</p><p class="m"><span>${esc(i[3])}</span>·<span class="src">Source ↗</span></p></div></li>`).join('')}</ol>`
+    :`<p class="empty">No records yet. New items appear here when the daily check finds them.</p>`;
+  const figs=`<dl class="figs">${d.figs.map(f=>`<div><dt>${f[0]}</dt><dd>${f[1]}</dd></div>`).join('')}</dl>`;
+  const money=`<div class="money"><span>Funds allocated</span><div><b>${esc(d.funds[0])}</b>${d.funds[1]?`<small>${esc(d.funds[1])}</small>`:''}</div></div>`;
+  const body=tab==='funds'?money:(tab==='overview'?figs+money:'');
+  const heading=tab==='funds'?'':`<div><h3>${tab==='overview'?'Latest changes':tab==='regs'?'Regulations':'Initiatives'}</h3>${log}</div>`;
+  $('#regBody').innerHTML=`<div style="display:flex;flex-direction:column;gap:16px"><div><p class="eyebrow">${esc(d.eyebrow)}</p><h2>${esc(d.name)}</h2><p class="lede">${lede}</p></div><div class="tabs" role="tablist">${tabs}</div>${body}${heading}</div>`;
+  $('#askBtn').textContent='Ask about '+d.name;
+  if(!$('#chat').hidden)seedChat();
+}
+$('#regBody').addEventListener('click',e=>{const t=e.target.closest('[data-tab]');if(t){tab=t.dataset.tab;renderReg();}});
+
+function seedChat(){
+  const d=record();const it=d.items[0];
+  const q=`What changed in ${d.name} recently?`;
+  const a=it?`The latest tracked item is “${esc(it[2])}”, marked ${STATUS[it[1]].toLowerCase()} (${esc(it[0])}).<br><span class="cite">${esc(it[3])} · ${it[4]==='reviewed'?'reviewed':'auto-extracted'}</span>`:`Nothing is tracked for ${esc(d.name)} yet, so there's nothing to report.`;
+  $('#msgs').innerHTML=`<div class="q">${esc(q)}</div><div class="a">${a}</div>`;
+}
+$('#askBtn').addEventListener('click',()=>{const c=$('#chat');c.hidden=!c.hidden;if(!c.hidden){seedChat();$('#chatIn').focus();}});
+$('#chatClose').addEventListener('click',()=>{$('#chat').hidden=true;});
+$('#chatForm').addEventListener('submit',e=>{e.preventDefault();const v=$('#chatIn').value.trim();if(!v)return;
+  $('#msgs').insertAdjacentHTML('beforeend',`<div class="q">${esc(v)}</div><div class="a">In the live tracker, this question is answered from sourced records, with a citation for every claim. This mockup only shows sample answers.</div>`);
+  $('#chatIn').value='';});
+
+function tip(e,title,line,sub){
+  const t=$('#tip'),b=$('#frame').getBoundingClientRect();
+  t.innerHTML=`<b>${esc(title)}</b>${line?esc(line)+'<br>':''}<span style="color:var(--ink-2)">${esc(sub||'')}</span>`;
+  t.hidden=false;let x=e.clientX-b.left,y=e.clientY-b.top;
+  t.style.left=Math.min(x,b.width-240)+'px';t.style.top=y+'px';
+}
+function hideTip(){$('#tip').hidden=true}
+
+function grid(){
+  const g=d3.select('#grid');g.attr('viewBox','0 0 356 346');
+  g.selectAll('*').remove();
+  IN_UNITS.forEach(u=>{const x=4+u[3]*44,y=4+u[2]*38;const cls=unitClass(units.get(u[0])).replace(' on','').replace(' sel','');
+    const t=g.append('g').attr('class','tile'+(sel===u[0]?' sel':'')).attr('tabindex',0).attr('role','button').attr('aria-label',u[1])
+      .on('click',()=>select(u[0])).on('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(u[0]);}})
+      .on('mousemove',e=>{const r=ST[u[0]];tip(e,u[1],r?STATUS[r[0]]+' · '+r[1]+' initiatives':'No records yet',IN_UT.has(u[0])?'Union territory':'State')}).on('mouseleave',hideTip);
+    t.append('rect').attr('x',x).attr('y',y).attr('width',40).attr('height',34).attr('class',cls);
+    t.append('text').attr('x',x+20).attr('y',y+18).attr('text-anchor','middle').attr('dominant-baseline','central').text(u[0]);});
+}
+function setMode(m){mode=m;document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===m));
+  $('#map').hidden=m!=='map';$('#grid').hidden=m!=='grid';['#cNW','#cSE','#scale'].forEach(s=>$(s).hidden=m!=='map');
+  if(m==='grid')grid();else overlays();}
+document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
+document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{layer=b.dataset.layer;
+  document.querySelectorAll('[data-layer]').forEach(x=>x.setAttribute('aria-pressed',x===b));restyle();overlays();legend();}));
+
+function fillSearch(){
+  const opts=FOCUS.map(i=>NAT[i].name).concat([...units.values()].map(u=>u.name));
+  $('#places').innerHTML=opts.map(o=>`<option value="${esc(o)}">`).join('');
+}
+function find(v){
+  v=v.trim().toLowerCase();if(!v)return;
+  const c=FOCUS.find(i=>NAT[i].name.toLowerCase()===v);if(c){drill(c);return;}
+  const u=[...units.values()].find(x=>x.name.toLowerCase()===v)||[...units.values()].find(x=>x.name.toLowerCase().startsWith(v));
+  if(u){if(view!==u.iso)drill(u.iso);select(u.key);}
+}
+$('#searchForm').addEventListener('submit',e=>{e.preventDefault();find($('#q').value);});
+$('#q').addEventListener('change',e=>find(e.target.value));
+
+$('#themeBtn').addEventListener('click',()=>{const r=document.documentElement;const cur=r.dataset.theme||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');r.dataset.theme=cur==='dark'?'light':'dark';});
+
+init();
+</script>

@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import { COUNTRIES, CODES, STATUS_LABEL, STREAM_LABEL, TYPE_LABEL, fmtDate, fmtMoney, loadAll, url } from '../lib/site';
+
+const { instruments, initiatives, funds } = await loadAll();
+const href = (code: keyof typeof COUNTRIES, id: string) => url(`country/${COUNTRIES[code].slug}/#${id}`);
+type Row = { id: string; kind: string; country: string; status: string; streams: string; date: string; title: string; sub: string; who: string; href: string; text: string };
+const rows: Row[] = [
+  ...instruments.map((r) => ({ id: r.id, kind: 'regulation', country: r.jurisdiction, status: r.status, streams: r.streams.join(' '),
+    date: r.dates.effective || r.dates.passed || r.dates.introduced || r.dates.announced || r.sources[0].date || '',
+    title: r.title, sub: `${TYPE_LABEL[r.type]} · ${COUNTRIES[r.jurisdiction].name}`, who: r.issuing_body, href: href(r.jurisdiction, r.id), text: `${r.title} ${r.title_original ?? ''} ${r.summary} ${r.issuing_body}` })),
+  ...initiatives.map((r) => ({ id: r.id, kind: 'initiative', country: r.jurisdiction, status: r.status, streams: r.streams.join(' '),
+    date: r.start || r.sources[0].date || '', title: r.title, sub: `${TYPE_LABEL[r.kind]} · ${COUNTRIES[r.jurisdiction].name}`, who: r.agency, href: href(r.jurisdiction, r.id), text: `${r.title} ${r.title_original ?? ''} ${r.summary} ${r.agency}` })),
+  ...funds.map((r) => ({ id: r.id, kind: 'fund', country: r.jurisdiction, status: r.stage, streams: r.streams.join(' '),
+    date: r.period?.from || r.sources[0].date || r.fiscal_year.slice(0, 4), title: `${fmtMoney(r.amount, r.currency)}: ${r.title}`, sub: `${TYPE_LABEL[r.kind]} · ${COUNTRIES[r.jurisdiction].name}`, who: r.sources[0].publisher, href: href(r.jurisdiction, r.id), text: `${r.title} ${r.purpose}` })),
+].sort((a, b) => b.date.localeCompare(a.date));
+const statuses = [...new Set(rows.map((r) => r.status))];
+---
+<Base title="Explorer" current="explorer" description="Search and filter every tracked AI regulation, initiative and fund.">
+  <main class="page gutter">
+    <p class="eyebrow">All records</p>
+    <h1>Explorer</h1>
+    <p class="lede">Every regulation, initiative and fund the tracker holds, newest first. Filter to narrow the list, then open a record to see its sources.</p>
+    <form class="filters" id="filters" role="search" aria-label="Filter records">
+      <label>Search<input id="f-q" type="search" placeholder="Deepfake, consent, compute…" autocomplete="off"></label>
+      <label>Country<select id="f-country"><option value="">All countries</option>{CODES.map((c) => <option value={c}>{COUNTRIES[c].name}</option>)}</select></label>
+      <label>Record type<select id="f-kind"><option value="">All types</option><option value="regulation">Regulations</option><option value="initiative">Initiatives</option><option value="fund">Funds</option></select></label>
+      <label>Status<select id="f-status"><option value="">Any status</option>{statuses.map((s) => <option value={s}>{STATUS_LABEL[s]}</option>)}</select></label>
+      <label>Key stream<select id="f-stream"><option value="">All streams</option>{Object.entries(STREAM_LABEL).map(([k, v]) => <option value={k}>{v}</option>)}</select></label>
+    </form>
+    <p class="result-count" id="count" aria-live="polite">{rows.length} records</p>
+    {rows.length === 0 ? <p class="empty">No records yet. The first records appear after the initial data load.</p> : (
+      <ol class="rows" id="rows">
+        {rows.map((r) => (
+          <li class="row" data-country={r.country} data-kind={r.kind} data-status={r.status} data-streams={r.streams} data-text={r.text.toLowerCase()}>
+            <time>{fmtDate(r.date, true)}</time>
+            <span><span class={`stamp s-${r.status}`}>{STATUS_LABEL[r.status]}</span></span>
+            <span class="t"><a href={r.href}>{r.title}</a><span class="sub">{r.sub}</span></span>
+            <span class="who">{r.who}</span>
+          </li>
+        ))}
+      </ol>
+    )}
+  </main>
+  <script>
+    const $ = (id: string) => document.getElementById(id) as HTMLInputElement | HTMLSelectElement;
+    const rows = [...document.querySelectorAll<HTMLElement>('#rows .row')];
+    const fields = ['f-q', 'f-country', 'f-kind', 'f-status', 'f-stream'];
+    // Pre-fill from the query string so profile pages can link to a filtered view.
+    const qs = new URLSearchParams(location.search);
+    if (qs.get('country')) $('f-country').value = qs.get('country')!;
+    if (qs.get('stream')) $('f-stream').value = qs.get('stream')!;
+    function apply() {
+      const q = $('f-q').value.trim().toLowerCase(), c = $('f-country').value, k = $('f-kind').value, s = $('f-status').value, st = $('f-stream').value;
+      let n = 0;
+      for (const r of rows) {
+        const ok = (!q || r.dataset.text!.includes(q)) && (!c || r.dataset.country === c) && (!k || r.dataset.kind === k)
+          && (!s || r.dataset.status === s) && (!st || r.dataset.streams!.split(' ').includes(st));
+        r.hidden = !ok; if (ok) n++;
+      }
+      document.getElementById('count')!.textContent = n === rows.length ? `${n} records` : `${n} of ${rows.length} records`;
+    }
+    fields.forEach((f) => $(f).addEventListener('input', apply));
+    document.getElementById('filters')!.addEventListener('submit', (e) => e.preventDefault());
+    apply();
+  </script>
+</Base>

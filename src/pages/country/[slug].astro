@@ -1,0 +1,137 @@
+---
+import Base from '../../layouts/Base.astro';
+import { COUNTRIES, CODES, STATUS_LABEL, STATUS_RANK, STREAM_LABEL, TYPE_LABEL, fmtDate, fmtMoney, loadAll, url, type Code } from '../../lib/site';
+
+export function getStaticPaths() {
+  return CODES.map((code) => ({ params: { slug: COUNTRIES[code].slug }, props: { code } }));
+}
+const { code } = Astro.props as { code: Code };
+const c = COUNTRIES[code];
+const { instruments, initiatives, funds } = await loadAll();
+const byDateDesc = (a: string, b: string) => b.localeCompare(a);
+const insDate = (r: (typeof instruments)[number]) => r.dates.effective || r.dates.passed || r.dates.introduced || r.dates.announced || r.sources[0].date || '';
+const ins = instruments.filter((r) => r.jurisdiction === code)
+  .sort((a, b) => STATUS_RANK.indexOf(a.status as never) - STATUS_RANK.indexOf(b.status as never) || byDateDesc(insDate(a), insDate(b)));
+const ini = initiatives.filter((r) => r.jurisdiction === code).sort((a, b) => byDateDesc(a.start || '', b.start || ''));
+const fun = funds.filter((r) => r.jurisdiction === code).sort((a, b) => b.amount - a.amount);
+const count = (s: string) => ins.filter((r) => r.status === s).length;
+const strongest = STATUS_RANK.find((s) => count(s) > 0);
+const streams = Object.entries(
+  [...ins, ...ini, ...fun].flatMap((r) => r.streams).reduce<Record<string, number>>((m, s) => ((m[s] = (m[s] || 0) + 1), m), {}),
+).sort((a, b) => b[1] - a[1]);
+const dateLine = (d: Record<string, string | undefined>) =>
+  (['announced', 'introduced', 'passed', 'effective', 'lapsed'] as const).filter((k) => d[k]).map((k) => `${k[0].toUpperCase()}${k.slice(1)} ${fmtDate(d[k])}`).join(' · ');
+---
+<Base title={c.name} current="country" description={`AI regulation, initiatives and funds in ${c.name}, with links to official sources.`}>
+  <main class="page gutter">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href={url('')}>All countries</a> / <strong>{c.name}</strong></nav>
+    <p class="eyebrow" style="margin-top:22px">Country · {c.units} · ISO {code}</p>
+    <h1>{c.name}</h1>
+    <p class="lede">
+      {ins.length} instrument{ins.length === 1 ? '' : 's'}, {ini.length} initiative{ini.length === 1 ? '' : 's'} and {fun.length} fund{fun.length === 1 ? '' : 's'} tracked at national level.
+      {strongest && <>Strongest status: <span class={`stamp s-${strongest}`}>{STATUS_LABEL[strongest]}</span></>}
+    </p>
+    <dl class="figs" style="margin-top:22px">
+      <div><dt>In force</dt><dd>{count('in_force')}</dd></div>
+      <div><dt>Passed or in progress</dt><dd>{count('passed') + count('in_progress')}</dd></div>
+      <div><dt>Voluntary</dt><dd>{count('voluntary')}</dd></div>
+      <div><dt>Initiatives</dt><dd>{ini.length}</dd></div>
+    </dl>
+    <nav class="jump" aria-label="On this page">
+      <a href="#regulations">Regulations</a><a href="#initiatives">Initiatives</a><a href="#funds">Incentives and funds</a><a href="#streams">Key streams</a>
+    </nav>
+
+    <section class="section" id="regulations" aria-labelledby="h-reg">
+      <div class="section-head"><h2 id="h-reg">Regulations</h2><span class="sc">Strongest status first</span></div>
+      {ins.length === 0 ? <p class="empty">No instruments tracked yet.</p> : (
+        <ol class="records">
+          {ins.map((r) => (
+            <li class="rec" id={r.id}>
+              <time>{fmtDate(insDate(r), true)}</time>
+              <div>
+                <div class="top-line"><span class={`stamp s-${r.status}`}>{STATUS_LABEL[r.status]}</span><span class="chip">{TYPE_LABEL[r.type]}</span><span class="chip">{r.binding ? 'Binding' : 'Non-binding'}</span></div>
+                <h3>{r.title}</h3>
+                {r.title_original && <p class="orig" lang={r.sources[0].lang}>{r.title_original}</p>}
+                <p class="sum">{r.summary}</p>
+                {r.key_obligations.length > 0 && <ul class="obl">{r.key_obligations.map((o) => <li>{o}</li>)}</ul>}
+                <p class="facts">
+                  <span>{r.issuing_body}</span>
+                  {dateLine(r.dates) && <span>{dateLine(r.dates)}</span>}
+                  <span class="tags">{r.streams.map((s) => <span class="chip">{STREAM_LABEL[s]}</span>)}</span>
+                </p>
+                <p class="facts">
+                  {r.sources.map((s) => <a href={s.url} rel="noopener" target="_blank">{s.publisher}: {s.title} ↗</a>)}
+                  <span class={`prov ${r.provenance}`}>{r.provenance === 'reviewed' ? 'Reviewed' : 'Auto-extracted'}, checked {fmtDate(r.last_checked)}</span>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      )}
+    </section>
+
+    <section class="section" id="initiatives" aria-labelledby="h-ini">
+      <div class="section-head"><h2 id="h-ini">Initiatives</h2><span class="sc">Programmes that spread AI use</span></div>
+      {ini.length === 0 ? <p class="empty">No initiatives tracked yet.</p> : (
+        <ol class="records">
+          {ini.map((r) => (
+            <li class="rec" id={r.id}>
+              <time>{fmtDate(r.start, true)}</time>
+              <div>
+                <div class="top-line"><span class={`stamp s-${r.status}`}>{STATUS_LABEL[r.status]}</span><span class="chip">{TYPE_LABEL[r.kind]}</span></div>
+                <h3>{r.title}</h3>
+                {r.title_original && <p class="orig" lang={r.sources[0].lang}>{r.title_original}</p>}
+                <p class="sum">{r.summary}</p>
+                <p class="facts">
+                  <span>{r.agency}</span>
+                  {(r.start || r.end) && <span>{[r.start && `From ${fmtDate(r.start)}`, r.end && `to ${fmtDate(r.end)}`].filter(Boolean).join(' ')}</span>}
+                  {r.beneficiaries && <span>For {r.beneficiaries}</span>}
+                  <span class="tags">{r.streams.map((s) => <span class="chip">{STREAM_LABEL[s]}</span>)}</span>
+                </p>
+                <p class="facts">
+                  {r.sources.map((s) => <a href={s.url} rel="noopener" target="_blank">{s.publisher}: {s.title} ↗</a>)}
+                  <span class={`prov ${r.provenance}`}>{r.provenance === 'reviewed' ? 'Reviewed' : 'Auto-extracted'}, checked {fmtDate(r.last_checked)}</span>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      )}
+    </section>
+
+    <section class="section" id="funds" aria-labelledby="h-fun">
+      <div class="section-head"><h2 id="h-fun">Incentives and funds</h2><span class="sc">Largest first, in the original currency</span></div>
+      {fun.length === 0 ? <p class="empty">No funds with an official figure tracked yet.</p> : (
+        <ol class="records">
+          {fun.map((r) => (
+            <li class="rec money-row" id={r.id}>
+              <time>{r.period ? `${fmtDate(r.period.from).slice(-4)}–${fmtDate(r.period.to).slice(-4)}` : r.fiscal_year}</time>
+              <div>
+                <div class="top-line"><span class={`stamp s-${r.stage}`}>{STATUS_LABEL[r.stage]}</span><span class="chip">{TYPE_LABEL[r.kind]}</span></div>
+                <h3><span class="amount">{fmtMoney(r.amount, r.currency)}</span></h3>
+                <p class="sum"><strong style="font-weight:500">{r.title}.</strong> {r.purpose}</p>
+                <p class="facts">
+                  <span>Fiscal year {r.fiscal_year}</span>
+                  <span class="tags">{r.streams.map((s) => <span class="chip">{STREAM_LABEL[s]}</span>)}</span>
+                </p>
+                <p class="facts">
+                  {r.sources.map((s) => <a href={s.url} rel="noopener" target="_blank">{s.publisher}: {s.title} ↗</a>)}
+                  <span class={`prov ${r.provenance}`}>{r.provenance === 'reviewed' ? 'Reviewed' : 'Auto-extracted'}, checked {fmtDate(r.last_checked)}</span>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      )}
+    </section>
+
+    <section class="section" id="streams" aria-labelledby="h-str">
+      <div class="section-head"><h2 id="h-str">Key streams</h2><span class="sc">Records per theme</span></div>
+      {streams.length === 0 ? <p class="empty">No records yet.</p> : (
+        <p class="facts" style="display:flex;flex-wrap:wrap;gap:8px;margin:0">
+          {streams.map(([s, n]) => <a class="chip" href={url(`explorer/?country=${code}&stream=${s}`)}>{STREAM_LABEL[s]} · {n}</a>)}
+        </p>
+      )}
+    </section>
+  </main>
+</Base>

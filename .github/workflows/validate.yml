@@ -1,0 +1,40 @@
+# Checks every pull request (including the daily data PRs in Phase 2): the build fails if any record
+# in data/ breaks the schema in src/content.config.ts, or if a page fails to render.
+name: Validate
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate records and build
+        run: npm run validate
+      - name: Every record has a unique id that matches its file name
+        run: |
+          node -e '
+            const fs = require("fs"), path = require("path");
+            const seen = new Map(); let bad = 0;
+            for (const dir of ["instruments", "initiatives", "funds"]) {
+              const d = path.join("data", dir);
+              if (!fs.existsSync(d)) continue;
+              for (const f of fs.readdirSync(d).filter((f) => f.endsWith(".json"))) {
+                const r = JSON.parse(fs.readFileSync(path.join(d, f), "utf8"));
+                if (r.id + ".json" !== f) { console.error(`${dir}/${f}: id "${r.id}" does not match the file name`); bad++; }
+                if (seen.has(r.id)) { console.error(`${dir}/${f}: duplicate id, also in ${seen.get(r.id)}`); bad++; }
+                seen.set(r.id, `${dir}/${f}`);
+              }
+            }
+            if (bad) process.exit(1); console.log(`${seen.size} records OK`);
+          '

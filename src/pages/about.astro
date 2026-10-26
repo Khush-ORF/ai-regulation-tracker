@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/site';
+---
+<Base title="Method and sources" current="about" description="How the Global South AI Regulation Tracker collects, checks and maps its records.">
+  <main class="page gutter">
+    <p class="eyebrow">About the tracker</p>
+    <h1>Method and sources</h1>
+    <div class="prose">
+      <p class="lede">The tracker follows AI regulation, government programmes that spread AI use, and public AI funding in India, Brazil, South Africa, South Korea and China, at national and, increasingly, state level.</p>
+
+      <h2>Why these five</h2>
+      <p>India, Brazil, South Africa and China are major Global South economies building their own approaches to AI. South Korea is not usually counted as Global South. It's included as a comparison point: it passed one of the first comprehensive AI laws in Asia, and its state-led model is often cited by the other four.</p>
+
+      <h2>How records are collected</h2>
+      <p>Every day, an automated job checks official sources: government gazettes, ministries, parliaments and regulators. When a source changes, a language model reads the new document, translates it if needed, and fills in a structured record. Each record keeps its source links and a confidence score.</p>
+      <p>Changes are proposed as a reviewable update rather than published directly. Updates where every record has high confidence and no money figures are published automatically. Anything with a fund amount, or with lower confidence, waits for a person to check it.</p>
+      <p>Each record shows how it was checked:</p>
+      <ul>
+        <li><span class="prov auto">Auto-extracted</span>: collected and structured automatically, not yet checked by a person.</li>
+        <li><span class="prov reviewed">Reviewed</span>: checked by a person against the source.</li>
+      </ul>
+      <p class="note">The crawler always identifies itself and respects each site's rules. It doesn't get around logins, paywalls or bot protection. Where an official site blocks automated access, the tracker uses other official or reputable sources and lowers its confidence.</p>
+
+      <h2>Statuses</h2>
+      <ul>
+        <li><span class="stamp s-proposed">Proposed</span> announced or drafted, not yet introduced or put to consultation.</li>
+        <li><span class="stamp s-in_progress">In progress</span> in public consultation, or before parliament or a committee.</li>
+        <li><span class="stamp s-passed">Passed</span> enacted, but not yet in effect.</li>
+        <li><span class="stamp s-in_force">In force</span> binding and in effect, including when parts apply in phases.</li>
+        <li><span class="stamp s-voluntary">Voluntary</span> published guidelines, frameworks and strategies that aren't legally binding.</li>
+        <li><span class="stamp s-lapsed">Lapsed</span> withdrawn, repealed or lapsed.</li>
+      </ul>
+
+      <h2>Money</h2>
+      <p>Fund amounts are shown in the original currency, exactly as the source states them, with the fiscal year or period. The tracker doesn't add up figures from different sources. Announced, allocated and disbursed amounts are kept apart.</p>
+
+      <h2>Maps and boundaries</h2>
+      <p>Boundaries of India, its states and union territories: Source: Survey of India, Government of India (Administrative Boundary Database, via the DataMeet community mirror). Other countries and their provinces are made with Natural Earth, public-domain map data from naturalearthdata.com, using its India point-of-view edition. Boundaries are simplified for display. Boundaries of countries other than India are shown for reference only.</p>
+      <p class="note">The India boundary data is used for non-commercial display and is not covered by this site's code licence.</p>
+
+      <h2>Limits</h2>
+      <p>The tracker is a research aid, not legal advice. Automated extraction can be wrong or out of date. Always check the linked official source before relying on a record. To report an error, open an issue in the project's public repository.</p>
+      <p><a href={url('explorer/')}>Browse all records →</a></p>
+    </div>
+  </main>
+</Base>
