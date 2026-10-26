@@ -1,0 +1,29 @@
+{
+  "id": "cn-comprehensive-ai-law-2026",
+  "jurisdiction": "CN",
+  "title": "Comprehensive legislation on the healthy development of artificial intelligence (planned national AI law)",
+  "title_original": "人工智能健康发展综合性立法",
+  "summary": "Planned national AI law. The State Council's 2023 legislative work plan listed a draft Artificial Intelligence Law among bills to be prepared for submission to the NPC Standing Committee. The State Council's 2026 plan, issued on 11 May 2026, calls for faster work on comprehensive legislation for the healthy development of AI. It also calls for laws on common AI elements such as data, computing power, algorithms, property rights, cybersecurity and supply chains, and on key application scenarios. The NPC Standing Committee's 2026 plan lists AI only as a research topic, not a bill scheduled for review. No draft had been published by 26 October 2026.",
+  "streams": ["safety", "industry"],
+  "type": "bill",
+  "status": "proposed",
+  "binding": false,
+  "issuing_body": "State Council / NPC Standing Committee",
+  "dates": { "announced": "2023-05-31" },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "status_history": [
+    { "status": "proposed", "date": "2023-05-31", "source_url": "https://www.gov.cn/zhengce/zhengceku/202306/content_6884926.htm" },
+    { "status": "proposed", "date": "2026-05-08", "source_url": "https://www.gov.cn/zhengce/content/202605/content_7068345.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.cn/zhengce/content/202605/content_7068345.htm", "title": "国务院办公厅关于印发《国务院2026年度立法工作计划》的通知（国办发〔2026〕14号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2026-05-11", "lang": "zh" },
+    { "url": "https://www.gov.cn/zhengce/zhengceku/202306/content_6884926.htm", "title": "国务院办公厅关于印发国务院2023年度立法工作计划的通知（国办发〔2023〕18号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2023-06-06", "lang": "zh" },
+    { "url": "https://npcobserver.com/2026/05/11/china-npc-2026-legislative-plan/", "title": "China's National Legislature Releases 2026 Legislative Plan", "publisher": "NPC Observer", "date": "2026-05-11", "lang": "en" },
+    { "url": "https://www.news.cn/20260511/64fb4f5178b042e6aa16bf55932f038e/c.html", "title": "国务院办公厅印发《国务院2026年度立法工作计划》", "publisher": "Xinhua News Agency", "date": "2026-05-11", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

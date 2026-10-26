@@ -223,7 +223,7 @@ function legend() {
   const ib = '<svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" style="stroke:var(--ink);stroke-width:1.4;stroke-dasharray:8 3 1.5 3"/></svg>';
   const sw = (cls, op) => `<svg width="18" height="12" aria-hidden="true"><rect width="18" height="12" class="${cls}" style="fill-opacity:${op};stroke:var(--ink-3);stroke-width:.8"/></svg>`;
   const rows = RANK.map((s) => `<li>${sw('f-' + s, 0.62)}${STATUS[s]}</li>`).join('') + `<li>${sw('unit nodata', 1)}No records yet</li>`;
-  $('#refBody').innerHTML = `<ul>${rows}<li>${ib}Boundary of India</li></ul><p class="note">Countries are coloured by their most advanced national instrument.</p><p class="note">India: Survey of India. Elsewhere: Natural Earth.</p>`;
+  $('#refBody').innerHTML = `<ul>${rows}<li>${ib}Boundary of India</li></ul><p class="note">Countries are coloured by their most advanced AI-specific national instrument. General data-protection laws are left out.</p><p class="note">India: Survey of India. Elsewhere: Natural Earth.</p>`;
 }
 
 function drill(iso) {
@@ -251,7 +251,7 @@ function logList(items) {
 }
 function showCountry(iso) {
   const n = NAT[iso], c = n.counts;
-  const lede = n.status ? `${c.total} instrument${c.total === 1 ? '' : 's'} tracked · strongest status ${stamp(n.status)}` : 'No instruments tracked yet';
+  const lede = c.total ? `${c.total} instrument${c.total === 1 ? '' : 's'} tracked${n.status ? ` · most advanced AI rule ${stamp(n.status)}` : ''}` : 'No instruments tracked yet';
   const figs = [['In force', c.in_force], ['In progress', c.in_progress], ['Voluntary', c.voluntary], ['Initiatives', n.initiatives]];
   const money = n.topFund ? `<b>${esc(n.topFund.label)}</b><small>${esc(n.topFund.note)}</small>` : '<b>Not yet tracked</b>';
   $('#regBody').innerHTML = `<div style="display:flex;flex-direction:column;gap:16px">

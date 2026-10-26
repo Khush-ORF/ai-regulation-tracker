@@ -1,0 +1,21 @@
+{
+  "id": "za-chpc-2007",
+  "jurisdiction": "ZA",
+  "title": "Centre for High Performance Computing (CHPC)",
+  "summary": "South Africa's national high-performance computing facility, opened in Cape Town on 22 May 2007 by the then Department of Science and Technology and managed by the CSIR. It is one of three pillars of the National Integrated Cyber Infrastructure System (NICIS), alongside the SANReN research network and the DIRISA data infrastructure. It provides the Lengau supercomputer, a GPU cluster and a cloud service to researchers in higher education and the public sector, with separate access for commercial users. It is general research compute rather than an AI-specific programme, but is the main public compute resource available for AI research.",
+  "streams": ["compute", "research"],
+  "kind": "compute",
+  "agency": "DSTI",
+  "start": "2007-05-22",
+  "status": "active",
+  "beneficiaries": "Researchers in higher education, science councils and industry",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.gov.za/news/science-and-technology-centre-high-performance-computing-23-may-2007", "title": "Science and Technology on Centre for High Performance Computing", "publisher": "South African Government (gov.za)", "date": "2007-05-23", "lang": "en" },
+    { "url": "https://www.chpc.ac.za/about-the-chpc/", "title": "About the CHPC", "publisher": "NICIS CHPC", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

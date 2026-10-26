@@ -1,0 +1,21 @@
+{
+  "id": "za-cair-2011",
+  "jurisdiction": "ZA",
+  "title": "Centre for Artificial Intelligence Research (CAIR)",
+  "summary": "A national AI research network founded in 2011 and funded by the Department of Science and Innovation (now Science, Technology and Innovation). It is virtually hosted and coordinated by the CSIR, with its directorate at the University of Cape Town and research groups at several universities, including UKZN, North-West, Pretoria, Stellenbosch, Western Cape, Johannesburg, Sol Plaatje and Limpopo. It aims to build AI research capacity, train master's and doctoral students, advise industry, government and NGOs, and support socio-economic development through AI. The CSIR referred to it in an October 2024 briefing to Parliament's science committee.",
+  "streams": ["research", "skilling"],
+  "kind": "research",
+  "agency": "DSTI",
+  "start": "2011",
+  "status": "active",
+  "beneficiaries": "Postgraduate students and university AI research groups",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.cair.org.za/about", "title": "About CAIR", "publisher": "Centre for Artificial Intelligence Research", "lang": "en" },
+    { "url": "https://pmg.org.za/committee-meeting/39740/", "title": "CSIR briefing on 10-year Foundational Digital Capabilities Research Programme", "publisher": "Parliamentary Monitoring Group (CC BY 3.0 ZA)", "date": "2024-10-29", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

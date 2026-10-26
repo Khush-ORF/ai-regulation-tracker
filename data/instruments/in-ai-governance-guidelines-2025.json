@@ -1,0 +1,34 @@
+{
+  "id": "in-ai-governance-guidelines-2025",
+  "jurisdiction": "IN",
+  "title": "India AI Governance Guidelines",
+  "summary": "MeitY released the India AI Governance Guidelines under the IndiaAI Mission on 5 November 2025, building on a draft report on AI governance guidelines development put out for comment in January 2025. The guidelines set out seven principles ('sutras'), recommendations across six pillars, and a short-, medium- and long-term action plan. They conclude that a separate AI law is not needed for now and rely on existing laws, sector regulators and voluntary measures. They recommend an inter-ministerial AI Governance Group, a Technology and Policy Expert Committee, a role for the AI Safety Institute, a national AI incident database, and IT Act amendments on liability and safe harbour.",
+  "streams": ["safety"],
+  "type": "guideline",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "MeitY",
+  "dates": {
+    "announced": "2025-11-05"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Start with voluntary commitments, with binding mandates possibly later",
+    "Report AI incidents to a national database (recommended)",
+    "Use techno-legal tools such as watermarking and content authentication",
+    "Graded liability proportionate to each actor's role and risk"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2025-01", "source_url": "https://www.azbpartners.com/?p=87781" },
+    { "status": "voluntary", "date": "2025-11-05", "source_url": "https://negd.gov.in/press_release/meity-unveils-india-ai-governance-guidelines-under-indiaai-mission-to-ensure-safe-inclusive-and-responsible-adoption-of-artificial-intelligence-across-sectors/" }
+  ],
+  "sources": [
+    { "url": "https://negd.gov.in/press_release/meity-unveils-india-ai-governance-guidelines-under-indiaai-mission-to-ensure-safe-inclusive-and-responsible-adoption-of-artificial-intelligence-across-sectors/", "title": "MeitY unveils India AI Governance Guidelines under IndiaAI Mission", "publisher": "National e-Governance Division, MeitY", "date": "2025-11-06", "lang": "en" },
+    { "url": "https://www.azbpartners.com/?p=87781", "title": "India AI Governance Guidelines (update)", "publisher": "AZB & Partners", "date": "2025-11-13", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

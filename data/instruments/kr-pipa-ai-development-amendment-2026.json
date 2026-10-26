@@ -1,0 +1,35 @@
+{
+  "id": "kr-pipa-ai-development-amendment-2026",
+  "jurisdiction": "KR",
+  "title": "Personal Information Protection Act amendment creating a special provision on personal data use for AI development (Act No. 21910)",
+  "title_original": "개인정보 보호법 일부개정 (안전한 인공지능 개발을 위한 개인정보 활용 특례)",
+  "summary": "Amendment to the Personal Information Protection Act passed by the National Assembly on 20 August 2026. Press reports say it was promulgated as Act No. 21910 on 8 September 2026 and takes effect on 9 March 2027, six months after promulgation. It lets controllers use lawfully collected personal data for AI development beyond the original purpose, only where pseudonymised or anonymised data is insufficient, the purpose serves a public or social interest, safeguards are strengthened and the PIPC deliberates and approves. High-risk cases need a prior risk assessment, and uses must be disclosed. PIPC is preparing subordinate rules and operating guidelines.",
+  "streams": ["data-protection", "industry"],
+  "type": "law",
+  "status": "passed",
+  "binding": true,
+  "issuing_body": "National Assembly / PIPC",
+  "dates": {
+    "passed": "2026-08-20",
+    "effective": "2027-03-09"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Obtain PIPC deliberation and approval before using personal data for AI development",
+    "Show pseudonymised or anonymised data would not suffice",
+    "Run a prior risk assessment where sensitive or unique identifiers are processed",
+    "Disclose the use in the privacy policy; PIPC publishes approved cases"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2026-08-20", "source_url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12391" }
+  ],
+  "sources": [
+    { "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=12391", "title": "안전한 인공지능 개발을 위한 개인정보 활용 특례 신설 「개인정보 보호법」 개정안 국회 본회의 통과", "publisher": "PIPC", "date": "2026-08-20", "lang": "ko" },
+    { "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=226510", "title": "「개인정보 보호법」개정 - 인공지능기술 개발을 위한 개인정보 이용 특례 신설", "publisher": "Law Times (법률신문)", "date": "2026-09-17", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

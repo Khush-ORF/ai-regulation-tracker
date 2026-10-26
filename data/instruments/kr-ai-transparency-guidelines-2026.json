@@ -1,0 +1,35 @@
+{
+  "id": "kr-ai-transparency-guidelines-2026",
+  "jurisdiction": "KR",
+  "title": "Guidelines on Ensuring AI Transparency",
+  "title_original": "인공지능 투명성 확보 안내 지침(가이드라인)",
+  "summary": "MSIT guidance released on 21–22 January 2026, alongside the AI Basic Act's entry into force, explaining how operators can meet the transparency duty in Article 31. A draft was published in September 2025. It describes acceptable ways to give advance notice that a service uses high-impact or generative AI, how to label AI outputs inside and outside a service, and how to mark deepfakes. It covers operators, including foreign ones, that offer AI products directly to users in Korea, but not people who only use AI as a creative tool. The guidance is not itself binding.",
+  "streams": ["content", "safety"],
+  "type": "guideline",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "MSIT",
+  "dates": {
+    "announced": "2025-09",
+    "effective": "2026-01-22"
+  },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Give advance notice via terms, contracts, app screens or offline notices",
+    "Outputs used within a service may be flagged by UI labels or logos",
+    "Outputs exported or shared need a watermark or machine-readable metadata",
+    "Deepfakes must be labelled so users clearly recognise them"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2026-01-22", "source_url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&nttSeqNo=1215" }
+  ],
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&nttSeqNo=1215", "title": "MSIT Releases Guidelines on Ensuring AI Transparency", "publisher": "MSIT", "date": "2026-01-22", "lang": "en" },
+    { "url": "https://newsseoul.co.kr/news/view/1065609609648210", "title": "과기정통부, '인공지능 투명성 확보 가이드라인' 공개", "publisher": "News Seoul (뉴스서울)", "date": "2026-01-21", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

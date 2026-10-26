@@ -1,0 +1,21 @@
+{
+  "id": "za-fdcr-platform-2022",
+  "jurisdiction": "ZA",
+  "title": "Foundational Digital Capabilities Research (FDCR) platform",
+  "summary": "A 10-year research programme established by the Department of Science and Innovation and implemented by the CSIR to build foundational digital capabilities for use across economic sectors, in line with the Digital Economy Masterplan. Artificial intelligence, robotics and cybernetics is the first of five research domains; the others are cloud-to-edge computing and IoT, extended reality, blockchain and cybersecurity, and modelling and simulation. The CSIR told Parliament in October 2024 that the plan averages about R100 million a year, excluding infrastructure, and that a 16% budget cut had affected timelines. The FDCR2025 conference was held in July 2025.",
+  "streams": ["research"],
+  "kind": "research",
+  "agency": "DSTI",
+  "status": "active",
+  "beneficiaries": "CSIR researchers, postgraduate students and industry partners",
+  "linked_funds": ["za-fdcr-allocation-2024"],
+  "sources": [
+    { "url": "https://pmg.org.za/committee-question/26140/", "title": "Question NW955 to the Minister of Science, Technology and Innovation", "publisher": "Parliamentary Monitoring Group (CC BY 3.0 ZA)", "date": "2024-09-25", "lang": "en" },
+    { "url": "https://pmg.org.za/committee-meeting/39740/", "title": "CSIR briefing on 10-year Foundational Digital Capabilities Research Programme", "publisher": "Parliamentary Monitoring Group (CC BY 3.0 ZA)", "date": "2024-10-29", "lang": "en" },
+    { "url": "https://www.csir.co.za/media-hub/media-room/fdcr2025-conference-champions-science-driven-path-to-sustainable-digital", "title": "FDCR2025 Conference champions science-driven path to sustainable digital transformation", "publisher": "CSIR", "date": "2025-07", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

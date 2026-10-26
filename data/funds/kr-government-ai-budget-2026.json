@@ -1,0 +1,21 @@
+{
+  "id": "kr-government-ai-budget-2026",
+  "jurisdiction": "KR",
+  "title": "Government-wide AI budget in the 2026 budget proposal",
+  "title_original": "2026년 예산안 AI 분야 예산",
+  "summary": "AI allocation in the government's 2026 budget proposal, approved by the Cabinet on 29 August 2025 as part of a KRW 728 trillion budget. The government said AI-related spending would more than triple, from KRW 3.3 trillion in 2025 to KRW 10.1 trillion in 2026, across all ministries. The National Assembly passed the 2026 budget in early December 2025, but no official post-passage government-wide AI total was found, so this record keeps the proposal figure.",
+  "streams": ["industry", "compute", "public-sector"],
+  "kind": "budget_allocation",
+  "amount": 10100000000000,
+  "currency": "KRW",
+  "stage": "announced",
+  "fiscal_year": "2026",
+  "purpose": "Government-wide spending on AI talent, infrastructure and AI adoption across industry, daily life and the public sector in 2026.",
+  "sources": [
+    { "url": "https://www.korea.net/NewsFocus/policies/view?articleId=278125", "title": "2026 budget of KRW 728T reflects growth-minded fiscal policy", "publisher": "Korea.net", "date": "2025-09-01", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

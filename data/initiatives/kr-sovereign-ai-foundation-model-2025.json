@@ -1,0 +1,22 @@
+{
+  "id": "kr-sovereign-ai-foundation-model-2025",
+  "jurisdiction": "KR",
+  "title": "Independent (Sovereign) AI Foundation Model Project",
+  "title_original": "독자 AI 파운데이션 모델 프로젝트",
+  "summary": "MSIT programme to develop Korean AI foundation models built from scratch, in line with a sovereign-AI goal. On 5 August 2025 MSIT selected five elite teams (Naver Cloud, Upstage, SK Telecom, NC AI and LG AI Research) from 15 applicants; the government supports teams with leased GPU compute. Teams are cut at staged evaluations that combine benchmark, expert and user scores. After the second-stage evaluation announced in August 2026, Upstage, SK Telecom and LG AI Research advanced and Motif Technologies was eliminated. MSIT said the third-stage plan and budget were still being finalised.",
+  "streams": ["research", "compute", "industry"],
+  "kind": "research",
+  "agency": "MSIT",
+  "start": "2025-08-05",
+  "status": "active",
+  "beneficiaries": "Selected Korean AI developer consortia",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=269498", "title": "「독자 AI 파운데이션 모델」 사업 발표평가 결과, 5개 정예팀 선정", "publisher": "MSIT (via KDI EIEC)", "date": "2025-08-05", "lang": "ko" },
+    { "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156774781", "title": "독자 AI 파운데이션모델 프로젝트 2차 단계평가 결과", "publisher": "Korea.kr (MSIT briefing)", "date": "2026-08-19", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

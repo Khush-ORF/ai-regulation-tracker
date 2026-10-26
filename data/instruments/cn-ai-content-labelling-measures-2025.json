@@ -1,0 +1,33 @@
+{
+  "id": "cn-ai-content-labelling-measures-2025",
+  "jurisdiction": "CN",
+  "title": "Measures for Labeling Artificial Intelligence-Generated Synthetic Content",
+  "title_original": "人工智能生成合成内容标识办法",
+  "summary": "Measures issued by the Cyberspace Administration of China, the Ministry of Industry and Information Technology, the Ministry of Public Security and the National Radio and Television Administration (Guoxinban Tongzi [2025] No. 2). They require explicit labels (visible text, sound or graphic cues) and implicit labels (file metadata, with digital watermarks encouraged) on AI-generated or synthetic content. Duties fall on service providers, content platforms, app distribution platforms and users, and apply alongside the mandatory national standard GB 45438-2025. Maliciously deleting, altering, forging or concealing labels is prohibited.",
+  "streams": ["content", "safety"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "CAC",
+  "dates": { "passed": "2025-03-07", "effective": "2025-09-01" },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Providers add visible labels and embed implicit metadata labels in generated content",
+    "Platforms check metadata and flag content that is or may be AI-generated",
+    "App stores verify labelling materials of apps offering generative AI services",
+    "Users declare AI-generated content when publishing it",
+    "Do not maliciously delete, alter, forge or conceal labels"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2025-03-07", "source_url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm" },
+    { "status": "in_force", "date": "2025-09-01", "source_url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm", "title": "关于印发《人工智能生成合成内容标识办法》的通知", "publisher": "Cyberspace Administration of China", "date": "2025-03-14", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

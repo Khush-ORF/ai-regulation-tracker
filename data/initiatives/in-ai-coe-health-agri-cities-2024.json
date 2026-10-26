@@ -1,0 +1,21 @@
+{
+  "id": "in-ai-coe-health-agri-cities-2024",
+  "jurisdiction": "IN",
+  "title": "AI Centres of Excellence in Healthcare, Agriculture and Sustainable Cities",
+  "summary": "First outlined in the Union Budget 2023-24, these three AI Centres of Excellence were inaugurated by the Ministry of Education in October 2024. They are led by AIIMS Delhi, IIT Delhi, IIT Ropar and IIT Kanpur, working with industry partners and startups on interdisciplinary research and scalable AI applications. The healthcare centre works on diagnostics, treatment planning and care delivery; the agriculture centre on precision farming and yield prediction; and the sustainable cities centre on waste, energy, traffic and infrastructure. The government approved ₹990 crore for the three centres over 2023-24 to 2027-28.",
+  "streams": ["research", "public-sector"],
+  "kind": "coe",
+  "agency": "Ministry of Education",
+  "start": "2024-10",
+  "status": "active",
+  "beneficiaries": "Researchers, industry partners and startups in health, agriculture and urban sectors",
+  "linked_funds": ["in-ai-coe-fund-2023"],
+  "sources": [
+    { "url": "https://indiaai.gov.in/article/prime-minister-hails-the-establishment-of-three-ai-centres-of-excellence", "title": "Prime Minister hails the establishment of three AI Centres of Excellence", "publisher": "IndiaAI", "date": "2024-10-16", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

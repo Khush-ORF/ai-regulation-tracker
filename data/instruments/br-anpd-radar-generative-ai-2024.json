@@ -1,0 +1,29 @@
+{
+  "id": "br-anpd-radar-generative-ai-2024",
+  "jurisdiction": "BR",
+  "title": "ANPD Technology Radar No. 3: Generative Artificial Intelligence",
+  "title_original": "Radar Tecnológico nº 3 – Inteligência Artificial Generativa",
+  "summary": "Technical study published by the ANPD's Superintendency of Technological Innovation in November 2024 as the third volume of its Technology Radar series. It explains how generative AI systems work and assesses their privacy and data protection risks against the LGPD, covering web scraping of personal data for training, synthetic content that may be indistinguishable from personal data, and the application of LGPD principles. It cites Brazilian uses in the public sector, health and finance. An English version followed in July 2026. It is non-binding guidance.",
+  "streams": ["data-protection", "safety"],
+  "type": "advisory",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "ANPD",
+  "dates": {
+    "announced": "2024-11-29"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2024-11-29", "source_url": "https://www.gov.br/anpd/pt-br/assuntos/conteudo-externo/ia-generativa-e-tema-do-3o-volume-da-serie-radar-tecnologico-da-anpd" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-releases-english-version", "title": "ANPD releases English version of Technology Radar on Generative AI", "publisher": "ANPD", "date": "2026-07-27", "lang": "en" },
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/conteudo-externo/ia-generativa-e-tema-do-3o-volume-da-serie-radar-tecnologico-da-anpd", "title": "IA Generativa é tema do 3º volume da série Radar Tecnológico da ANPD", "publisher": "ANPD", "date": "2024-11-29", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

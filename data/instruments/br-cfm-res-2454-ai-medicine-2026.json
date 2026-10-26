@@ -1,0 +1,38 @@
+{
+  "id": "br-cfm-res-2454-ai-medicine-2026",
+  "jurisdiction": "BR",
+  "title": "Federal Council of Medicine Resolution No. 2.454/2026 on the use of artificial intelligence in medicine",
+  "title_original": "Resolução CFM nº 2.454/2026 – uso de inteligência artificial na medicina",
+  "summary": "Rule of the Federal Council of Medicine (CFM), the federal body that regulates medical practice, published in the Diário Oficial da União on 27 February 2026 with a 180-day adaptation period. It allows AI to support clinical decisions, management, research and education, but keeps physicians responsible for diagnoses and treatment. Health institutions must risk-assess and classify AI tools, run governance and monitoring processes, and set up AI committees. Patients must be informed of AI use, which is recorded in the medical record. Hospital associations sued in federal court in August 2026 to suspend it; no ruling was found.",
+  "streams": ["sector-rules", "safety"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "CFM",
+  "dates": {
+    "passed": "2026-02-27",
+    "effective": "2026-08-26"
+  },
+  "sectors": ["health"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Physicians keep final responsibility; AI cannot replace clinical judgement",
+    "Record AI use in the patient's medical record and inform the patient",
+    "Institutions assess and classify AI tools as low, medium or high risk",
+    "Institutions with own AI create an AI and Telemedicine Committee",
+    "Comply with the LGPD and minimum security standards for health data"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2026-02-27", "source_url": "https://www.mayerbrown.com/en/insights/publications/2026/03/brazilian-cfm-issues-resolution-on-the-use-of-artificial-intelligence-in-medicine" },
+    { "status": "in_force", "date": "2026-08-26", "source_url": "https://futurodasaude.com.br/acao-judicial-suspender-regras-cfm-inteligencia-artificial/" }
+  ],
+  "sources": [
+    { "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/brazilian-cfm-issues-resolution-on-the-use-of-artificial-intelligence-in-medicine", "title": "Brazilian CFM issues resolution on the use of artificial intelligence in medicine", "publisher": "Mayer Brown", "date": "2026-03-16", "lang": "en" },
+    { "url": "https://www.migalhas.com.br/depeso/451359/regulacao-da-ia-chega-primeiro-a-saude", "title": "Regulação da IA chega primeiro à saúde", "publisher": "Migalhas", "date": "2026-03-09", "lang": "pt" },
+    { "url": "https://futurodasaude.com.br/acao-judicial-suspender-regras-cfm-inteligencia-artificial/", "title": "Ação judicial tenta suspender novas regras do CFM para inteligência artificial na medicina", "publisher": "Futuro da Saúde", "date": "2026-08-25", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

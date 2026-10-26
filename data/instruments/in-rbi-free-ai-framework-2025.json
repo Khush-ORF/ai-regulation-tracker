@@ -1,0 +1,33 @@
+{
+  "id": "in-rbi-free-ai-framework-2025",
+  "jurisdiction": "IN",
+  "title": "Framework for Responsible and Ethical Enablement of Artificial Intelligence (FREE-AI) in the Financial Sector",
+  "summary": "The Reserve Bank of India published the report of its FREE-AI Committee on 13 August 2025. The committee was set up on 26 December 2024 and chaired by Prof. Pushpak Bhattacharyya of IIT Bombay. It proposed seven principles ('sutras') and 26 recommendations under six pillars: infrastructure, policy, capacity, governance, protection and assurance. Recommendations include board-approved AI policies at regulated entities, an AI innovation sandbox, shared financial-sector data infrastructure, extending audits and incident reporting to AI, and incentives for smaller entities. The report is not itself a binding direction; the RBI cited it as background to its June 2026 draft guidance on model risk management.",
+  "streams": ["sector-rules", "safety"],
+  "type": "framework",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "RBI",
+  "dates": {
+    "announced": "2025-08-13"
+  },
+  "sectors": ["finance"],
+  "approach": "principles",
+  "key_obligations": [
+    "Regulated entities should adopt a board-approved AI policy (recommended)",
+    "Extend audits and product approval processes to AI systems",
+    "Cover AI in cybersecurity practices and incident reporting",
+    "Create an AI innovation sandbox and financial-sector data infrastructure"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2025-08-13", "source_url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=61018" }
+  ],
+  "sources": [
+    { "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=61018", "title": "Report of the Committee to develop a Framework for Responsible and Ethical Enablement of Artificial Intelligence (FREE-AI) in the Financial Sector", "publisher": "Reserve Bank of India", "date": "2025-08-13", "lang": "en" },
+    { "url": "https://rbi.org.in/scripts/PublicationReportDetails.aspx?ID=1306", "title": "FREE-AI Committee Report", "publisher": "Reserve Bank of India", "date": "2025-08-13", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

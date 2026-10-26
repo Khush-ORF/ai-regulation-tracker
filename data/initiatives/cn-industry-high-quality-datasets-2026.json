@@ -1,0 +1,23 @@
+{
+  "id": "cn-industry-high-quality-datasets-2026",
+  "jurisdiction": "CN",
+  "title": "Action plan for building high-quality industry datasets",
+  "title_original": "关于推进行业高质量数据集建设行动的实施方案",
+  "summary": "Implementation plan issued by the National Data Administration (Guoshukeji [2026] No. 25), dated 3 June 2026. It aims to build industry datasets that can be used directly to develop and train AI models. It covers 19 key industry domains and 5 innovation domains through six actions. These are expanding dataset supply, upgrading data annotation, improving quality and efficiency (including synthetic data and standards), linking datasets to AI applications, national dataset management services, and building markets for dataset products. By end-2028 it aims for application-tested datasets in key fields, typical AI application scenarios, innovative data firms and talent, and dataset tools and standards.",
+  "streams": ["industry", "research"],
+  "kind": "data_platform",
+  "agency": "NDA",
+  "start": "2026-06",
+  "end": "2028-12",
+  "status": "active",
+  "beneficiaries": "AI model developers, data firms and industry users",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.nda.gov.cn/sjj/zwgk/zjjd/0609/20260609212055771982317_pc.html", "title": "专家解读：《关于推进行业高质量数据集建设行动的实施方案》", "publisher": "National Data Administration", "date": "2026-06-09", "lang": "zh" },
+    { "url": "https://www.cj.gov.cn/p242/bmwj/20260615/445333.html", "title": "国家数据局关于印发《关于推进行业高质量数据集建设行动的实施方案》的通知（国数科基〔2026〕25号）", "publisher": "Changjiang County People's Government (reproduction of NDA notice)", "date": "2026-06-08", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

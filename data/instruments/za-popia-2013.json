@@ -1,0 +1,34 @@
+{
+  "id": "za-popia-2013",
+  "jurisdiction": "ZA",
+  "title": "Protection of Personal Information Act 4 of 2013",
+  "summary": "South Africa's general data-protection law, which sets conditions for lawful processing of personal information by public and private bodies and establishes the Information Regulator. Section 71 restricts decisions with legal or substantial effects on a person that rest solely on automated processing used to profile them, for example on work performance, creditworthiness, health or conduct. Exceptions apply for contracts and where a law or code of conduct provides safeguards; those safeguards must let the person make representations and receive information about the logic of the processing. Most provisions, including section 71, took effect on 1 July 2020.",
+  "streams": ["data-protection"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "Parliament of South Africa",
+  "dates": { "passed": "2013-11-19", "effective": "2020-07-01" },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Process personal information only under the Act's conditions for lawful processing",
+    "No solely automated profiling decisions with legal or substantial effect, unless an exception applies",
+    "Let affected persons make representations on automated decisions",
+    "Explain the underlying logic of automated processing to affected persons",
+    "Information Regulator enforces compliance"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2013-11-19", "source_url": "https://www.justice.gov.za/legislation/acts/2013-004.pdf" },
+    { "status": "in_force", "date": "2020-07-01", "source_url": "https://www.gov.za/documents/protection-personal-information-act" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.za/documents/protection-personal-information-act", "title": "Protection of Personal Information Act 4 of 2013 (with commencement dates)", "publisher": "South African Government (gov.za)", "lang": "en" },
+    { "url": "https://www.justice.gov.za/legislation/acts/2013-004.pdf", "title": "Protection of Personal Information Act 4 of 2013 [Assented to 19 November 2013]", "publisher": "Department of Justice and Constitutional Development", "date": "2013-11-19", "lang": "en" },
+    { "url": "https://popia.co.za/section-71-automated-decision-making/", "title": "POPIA Section 71: Automated decision making", "publisher": "popia.co.za", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

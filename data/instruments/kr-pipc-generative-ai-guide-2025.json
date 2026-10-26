@@ -1,0 +1,33 @@
+{
+  "id": "kr-pipc-generative-ai-guide-2025",
+  "jurisdiction": "KR",
+  "title": "Guide on Personal Information Processing for the Development and Use of Generative AI",
+  "title_original": "생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서",
+  "summary": "Guidance published by the Personal Information Protection Commission on 6 August 2025 on applying the Personal Information Protection Act to generative AI. It splits the AI lifecycle into four stages: purpose setting, strategy planning, training and development, and deployment and management. For each stage it sets out the legal bases for using personal data, risk-reduction measures for different development approaches (API use of commercial models, fine-tuning open models, in-house models), and protections for data subjects' rights. It recommends governance led by the Chief Privacy Officer and covers AI agents and machine unlearning. It is guidance, not a binding rule.",
+  "streams": ["data-protection", "safety"],
+  "type": "guideline",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "PIPC",
+  "dates": {
+    "announced": "2025-08-06"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Define the AI system's purpose and identify a lawful basis for training data",
+    "Apply layered safeguards against data poisoning and jailbreaking",
+    "Protect data subjects' rights during deployment and management",
+    "Build privacy governance centred on the Chief Privacy Officer"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2025-08-06", "source_url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=11410" }
+  ],
+  "sources": [
+    { "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=11410", "title": "생성형 인공지능(AI) 개발·활용 위한 개인정보 처리 기준 제시한다", "publisher": "PIPC", "date": "2025-08-06", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

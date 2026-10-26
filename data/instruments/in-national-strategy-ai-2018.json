@@ -1,0 +1,28 @@
+{
+  "id": "in-national-strategy-ai-2018",
+  "jurisdiction": "IN",
+  "title": "National Strategy for Artificial Intelligence (#AIForAll) – Discussion Paper",
+  "summary": "NITI Aayog, the government's policy think tank, released this discussion paper on a national AI strategy in June 2018, branded #AIForAll. It named five priority sectors: healthcare, agriculture, education, smart cities and infrastructure, and smart mobility and transportation. It proposed Centres of Research Excellence (COREs) for core AI research and International Centres for Transformational AI (ICTAIs) for applied research with industry, and discussed research, skilling, ethics and privacy. It is a non-binding discussion paper meant to start a policy conversation, not an adopted law or regulation.",
+  "streams": ["research", "industry"],
+  "type": "strategy",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "NITI Aayog",
+  "dates": {
+    "announced": "2018-06"
+  },
+  "sectors": ["health", "agriculture", "education", "urban", "transport"],
+  "approach": "other",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2018-06", "source_url": "https://indiaai.gov.in/documents/pdf/NationalStrategy-for-AI-Discussion-Paper.pdf" }
+  ],
+  "sources": [
+    { "url": "https://indiaai.gov.in/documents/pdf/NationalStrategy-for-AI-Discussion-Paper.pdf", "title": "National Strategy for Artificial Intelligence: Discussion Paper", "publisher": "NITI Aayog (hosted by IndiaAI)", "date": "2018-06", "lang": "en" },
+    { "url": "https://analyticsindiamag.com/ai-news-updates/niti-aayog-paper-india-strategy-ai-5-core-areas", "title": "NITI Aayog paper on India's strategy for AI identifies 5 core areas", "publisher": "Analytics India Magazine", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

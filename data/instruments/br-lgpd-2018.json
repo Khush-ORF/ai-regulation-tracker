@@ -1,0 +1,36 @@
+{
+  "id": "br-lgpd-2018",
+  "jurisdiction": "BR",
+  "title": "General Personal Data Protection Law (LGPD), Law No. 13.709/2018",
+  "title_original": "Lei nº 13.709, de 14 de agosto de 2018 – Lei Geral de Proteção de Dados Pessoais (LGPD)",
+  "summary": "Brazil's general data protection law, enacted in August 2018 and in force since 18 September 2020, with administrative sanctions applicable from 1 August 2021. It governs all processing of personal data by public and private bodies. Article 20 gives data subjects the right to request review of decisions made solely by automated processing that affect their interests, including profiling for credit, work or consumption. Controllers must explain the criteria and procedures used, subject to trade secrets, and the ANPD may audit automated processing for discriminatory effects.",
+  "streams": ["data-protection"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "Congresso Nacional",
+  "dates": {
+    "passed": "2018-08-14",
+    "effective": "2020-09-18"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Process personal data only under a listed legal basis",
+    "Let data subjects request review of solely automated decisions (Art. 20)",
+    "Explain criteria and procedures behind automated decisions on request",
+    "ANPD may audit automated processing for discrimination when information is withheld"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2018-08-14", "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" },
+    { "status": "in_force", "date": "2020-09-18", "source_url": "https://www12.senado.leg.br/noticias/materias/2020/09/18/lei-geral-de-protecao-de-dados-entra-em-vigor" }
+  ],
+  "sources": [
+    { "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm", "title": "Lei nº 13.709, de 14 de agosto de 2018 (texto compilado)", "publisher": "Presidência da República", "date": "2018-08-14", "lang": "pt" },
+    { "url": "https://www12.senado.leg.br/noticias/materias/2020/09/18/lei-geral-de-protecao-de-dados-entra-em-vigor", "title": "Lei Geral de Proteção de Dados entra em vigor", "publisher": "Agência Senado", "date": "2020-09-18", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

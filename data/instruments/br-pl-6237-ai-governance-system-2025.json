@@ -1,0 +1,37 @@
+{
+  "id": "br-pl-6237-ai-governance-system-2025",
+  "jurisdiction": "BR",
+  "title": "Bill No. 6237/2025 establishing the National System for AI Development, Regulation and Governance (SIA)",
+  "title_original": "Projeto de Lei nº 6.237, de 2025 – Institui o Sistema Nacional para Desenvolvimento, Regulação e Governança de Inteligência Artificial",
+  "summary": "Executive branch bill sent to the Chamber of Deputies in December 2025 to set up the institutional side of AI regulation. It creates the SIA, headed by a Brazilian AI Council (CBIA) of ministers and the ANPD, with advisory committees for industry and civil society (CRIA) and for experts (CECIA). The ANPD would issue binding general AI rules (e.g. algorithmic impact assessments, incident reporting) and act as residual regulator where no sectoral regulator exists, while sectoral authorities keep powers in their fields. Since April 2026 it is processed jointly with PL 2338/2023 in the Chamber's special committee.",
+  "streams": ["safety", "industry"],
+  "type": "bill",
+  "status": "in_progress",
+  "binding": true,
+  "issuing_body": "Câmara dos Deputados",
+  "dates": {
+    "introduced": "2025-12-08"
+  },
+  "sectors": ["all"],
+  "approach": "risk_based",
+  "key_obligations": [
+    "Create CBIA council plus CRIA and CECIA advisory committees",
+    "ANPD to issue general rules on impact assessments and serious incident reporting",
+    "ANPD acts as residual AI regulator where no sectoral regulator exists",
+    "Sectoral authorities may define further high-risk uses with the ANPD",
+    "Sandboxes run by sectoral regulators must be notified to the ANPD"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2025-12-08", "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2594000" },
+    { "status": "in_progress", "date": "2026-04-06", "source_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262/tramitacoes" }
+  ],
+  "sources": [
+    { "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2594000", "title": "PL 6237/2025 – proposição (Câmara open data API)", "publisher": "Câmara dos Deputados", "lang": "pt" },
+    { "url": "https://planalto.gov.br/ccivil_03/projetos/ato_2023_2026/2025/pl/pl-6237.htm", "title": "Projeto de Lei nº 6.237/2025 (texto)", "publisher": "Presidência da República", "date": "2025-12", "lang": "pt" },
+    { "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262/tramitacoes", "title": "PL 2338/2023 – tramitações (apensação do PL 6237/2025)", "publisher": "Câmara dos Deputados", "date": "2026-04-06", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

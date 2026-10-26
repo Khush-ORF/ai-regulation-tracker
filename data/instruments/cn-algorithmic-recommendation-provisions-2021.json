@@ -1,0 +1,34 @@
+{
+  "id": "cn-algorithmic-recommendation-provisions-2021",
+  "jurisdiction": "CN",
+  "title": "Provisions on the Management of Algorithmic Recommendations in Internet Information Services",
+  "title_original": "互联网信息服务算法推荐管理规定",
+  "summary": "Departmental rules issued as Order No. 9 by the Cyberspace Administration of China (CAC) with the Ministry of Industry and Information Technology, the Ministry of Public Security and the State Administration for Market Regulation. They govern services in mainland China that use generation, personalised push, ranking, filtering or dispatch algorithms to provide information to users. Providers must disclose that recommendation algorithms are in use, let users switch off personalisation, avoid algorithmic price discrimination, protect minors and gig workers, and file their algorithms with the CAC when a service has public-opinion or social-mobilisation capacity. Later generative AI rules reuse this filing system.",
+  "streams": ["content", "data-protection"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "CAC",
+  "dates": { "passed": "2021-12-31", "effective": "2022-03-01" },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Tell users that algorithmic recommendation is used and publish its basic principles",
+    "Offer a non-personalised option or an easy way to switch recommendations off",
+    "Do not use algorithms to impose unreasonable price differences on consumers",
+    "Protect gig workers' pay and rest when algorithms dispatch work",
+    "File public-opinion algorithms with the CAC within 10 working days of launch"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2021-12-31", "source_url": "https://www.gov.cn/gongbao/content/2022/content_5682428.htm" },
+    { "status": "in_force", "date": "2022-03-01", "source_url": "https://www.gov.cn/gongbao/content/2022/content_5682428.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.cn/gongbao/content/2022/content_5682428.htm", "title": "国家互联网信息办公室等令（第9号）互联网信息服务算法推荐管理规定（国务院公报2022年第9号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2022-01-04", "lang": "zh" },
+    { "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm", "title": "互联网信息服务算法推荐管理规定", "publisher": "Cyberspace Administration of China", "date": "2022-01-04", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

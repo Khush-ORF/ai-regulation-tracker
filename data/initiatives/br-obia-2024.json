@@ -1,0 +1,21 @@
+{
+  "id": "br-obia-2024",
+  "jurisdiction": "BR",
+  "title": "Brazilian Artificial Intelligence Observatory (OBIA)",
+  "title_original": "Observatório Brasileiro de Inteligência Artificial (OBIA)",
+  "summary": "Monitoring platform on AI use in Brazil, placed under Axis 5 (support for regulation and governance) of the Brazilian AI Plan presented in July 2024 and operated by NIC.br, the executive arm of the Brazilian Internet Steering Committee. It is meant to collect and publish Brazilian data on AI adoption in education, business, government and health, act as a repository of AI policy documents from around the world, and link Brazil's AI research centres. Partners include CGEE, the SEADE foundation and USP's Center for Artificial Intelligence (C4AI). All data is to be published openly on the OBIA portal.",
+  "streams": ["research", "public-sector"],
+  "kind": "data_platform",
+  "agency": "NIC.br / MCTI",
+  "start": "2024-07",
+  "status": "active",
+  "beneficiaries": "Policymakers, researchers and the public",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://teletime.com.br/31/07/2024/nic-br-coordenara-observatorio-de-uso-de-inteligencia-artificial-no-brasil/", "title": "NIC.br coordenará observatório de uso de inteligência artificial no Brasil", "publisher": "Teletime", "date": "2024-07-31", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.6,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

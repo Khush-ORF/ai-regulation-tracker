@@ -1,0 +1,21 @@
+{
+  "id": "in-indiaai-mission-be-2025-26",
+  "jurisdiction": "IN",
+  "title": "IndiaAI Mission budget allocation, 2025-26",
+  "summary": "The Union Budget 2025-26 allocated ₹2,000 crore to the IndiaAI Mission under the Ministry of Electronics and Information Technology, a large rise on the previous year. According to PRS Legislative Research, the allocation was cut to ₹800 crore at the revised estimate stage, and the mission's spending has stayed below half of its allocations since launch. This figure is the budget estimate, a yearly tranche of the five-year mission outlay of ₹10,371.92 crore.",
+  "streams": ["compute", "industry"],
+  "kind": "budget_allocation",
+  "amount": 20000000000,
+  "currency": "INR",
+  "stage": "allocated",
+  "fiscal_year": "2025-26",
+  "purpose": "Annual budget estimate for implementing the IndiaAI Mission in 2025-26.",
+  "parent": "in-indiaai-mission-outlay-2024",
+  "sources": [
+    { "url": "https://prsindia.org/files/budget/budget_parliament/2026/DFG_Analysis_2026-27_MeITY.pdf", "title": "Demand for Grants 2026-27 Analysis: Electronics and Information Technology", "publisher": "PRS Legislative Research", "date": "2026-03-04", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

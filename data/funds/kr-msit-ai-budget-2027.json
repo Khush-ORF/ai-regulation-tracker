@@ -1,0 +1,22 @@
+{
+  "id": "kr-msit-ai-budget-2027",
+  "jurisdiction": "KR",
+  "title": "MSIT 2027 budget proposal for AI",
+  "title_original": "과학기술정보통신부 2027년도 예산안 (AI 예산)",
+  "summary": "AI share of the Ministry of Science and ICT's 2027 budget proposal, approved by the Cabinet on 1 September 2026. MSIT's total proposal is KRW 29.6 trillion, up 24.5% on the 2026 supplementary budget. MSIT puts its AI budget at KRW 9.4 trillion, roughly 84% more than in 2026, covering AI data-centre solutions, physical AI foundation models, frontier AI data, GPU-based AI infrastructure and next-generation semiconductors. The proposal is before the National Assembly and may change before it is passed.",
+  "streams": ["compute", "research", "industry"],
+  "kind": "budget_allocation",
+  "amount": 9400000000000,
+  "currency": "KRW",
+  "stage": "announced",
+  "fiscal_year": "2027",
+  "purpose": "Proposed MSIT spending on AI transformation in 2027, including AI compute, frontier models, AI services and AI inclusion.",
+  "sources": [
+    { "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286173", "title": "인공지능과 첨단기술로 대체 불가 대한민국으로의 대도약을 견인하겠습니다 (2027년 과기정통부 예산안)", "publisher": "MSIT (via KDI EIEC)", "date": "2026-09-01", "lang": "ko" },
+    { "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=156777277", "title": "2027년 과기정통부 예산안 - 부처 브리핑", "publisher": "Korea.kr (MSIT briefing)", "date": "2026-09-02", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

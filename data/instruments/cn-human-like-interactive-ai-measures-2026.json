@@ -1,0 +1,36 @@
+{
+  "id": "cn-human-like-interactive-ai-measures-2026",
+  "jurisdiction": "CN",
+  "title": "Interim Measures for the Administration of Human-like Interactive Artificial Intelligence Services",
+  "title_original": "人工智能拟人化互动服务管理暂行办法",
+  "summary": "Departmental rules issued as Order No. 21 by the Cyberspace Administration of China, the National Development and Reform Commission, the Ministry of Industry and Information Technology, the Ministry of Public Security and the State Administration for Market Regulation. They were published on 10 April 2026 and took effect on 15 July 2026. They cover AI services in mainland China that simulate human personality to provide sustained emotional interaction, such as companionship. Customer service, Q&A, work, study and research tools without sustained emotional interaction are excluded. Providers must protect minors and older users, limit use of interaction data, run security assessments above user thresholds and file their algorithms. A draft went to consultation in December 2025.",
+  "streams": ["safety", "content", "data-protection"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "CAC",
+  "dates": { "introduced": "2025-12-27", "passed": "2026-04-10", "effective": "2026-07-15" },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Do not offer virtual relative or romantic-partner services to minors",
+    "Provide a minor mode and obtain guardian consent for users under 14",
+    "Use sensitive interaction data for model training only with separate consent",
+    "Run a security assessment at 1 million registered or 100,000 monthly active users",
+    "File algorithms under the algorithmic recommendation provisions"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2025-12-27", "source_url": "https://www.cac.gov.cn/2025-12/27/c_1768571207311996.htm" },
+    { "status": "passed", "date": "2026-04-10", "source_url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm" },
+    { "status": "in_force", "date": "2026-07-15", "source_url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm", "title": "人工智能拟人化互动服务管理暂行办法（令第21号）", "publisher": "Cyberspace Administration of China", "date": "2026-04-10", "lang": "zh" },
+    { "url": "https://www.news.cn/politics/20260410/bc2a2172b4d64a539cf253e75044b494/c.html", "title": "五部门联合公布《人工智能拟人化互动服务管理暂行办法》", "publisher": "Xinhua News Agency", "date": "2026-04-10", "lang": "zh" },
+    { "url": "https://www.cac.gov.cn/2025-12/27/c_1768571207311996.htm", "title": "国家互联网信息办公室关于《人工智能拟人化互动服务管理暂行办法（征求意见稿）》公开征求意见的通知", "publisher": "Cyberspace Administration of China", "date": "2025-12-27", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

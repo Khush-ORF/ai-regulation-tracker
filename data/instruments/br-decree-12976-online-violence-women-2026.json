@@ -1,0 +1,36 @@
+{
+  "id": "br-decree-12976-online-violence-women-2026",
+  "jurisdiction": "BR",
+  "title": "Decree No. 12.976/2026 setting guidelines to protect women online, including against AI-generated intimate content",
+  "title_original": "Decreto nº 12.976, de 20 de maio de 2026 – Estabelece diretrizes para a proteção de mulheres na internet e para o enfrentamento da violência contra mulheres em ambiente digital",
+  "summary": "Presidential decree of 20 May 2026, published on 21 May 2026 and in force 60 days later, issued alongside Decree 12.975/2026 on platform duties under the Marco Civil da Internet. Its Chapter III bars internet application providers from generating or modifying third parties' intimate content with AI, and requires providers offering AI features to adopt safeguards that detect and block such requests, phased in by audience size and risk. It also sets removal deadlines for unauthorised intimate content (two hours after notice). The ANPD regulates, supervises and enforces the decree.",
+  "streams": ["content", "safety"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "Presidência da República",
+  "dates": {
+    "passed": "2026-05-20",
+    "effective": "2026-07"
+  },
+  "sectors": ["online platforms"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Providers may not generate or alter third parties' intimate content with AI",
+    "Providers with AI features must detect and block prohibited requests",
+    "Remove unauthorised intimate content within two hours of notification",
+    "ANPD regulates, supervises and enforces compliance"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2026-05-20", "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12976.htm" },
+    { "status": "in_force", "date": "2026-07", "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12976.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d12976.htm", "title": "Decreto nº 12.976, de 20 de maio de 2026", "publisher": "Presidência da República", "date": "2026-05-20", "lang": "pt" },
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-radar-tecnologico-sobre-deepfakes", "title": "ANPD publica Radar Tecnológico sobre deepfakes", "publisher": "ANPD", "date": "2026-07-29", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

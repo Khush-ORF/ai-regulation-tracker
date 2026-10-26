@@ -1,0 +1,23 @@
+{
+  "id": "za-aiisa-2022",
+  "jurisdiction": "ZA",
+  "title": "Artificial Intelligence Institute of South Africa (AIISA) and AI hubs",
+  "summary": "A national AI institute set up by the Department of Communications and Digital Technologies with the University of Johannesburg and Tshwane University of Technology, implementing a Presidential Commission on the Fourth Industrial Revolution recommendation. It was launched on 30 November 2022 at the Johannesburg Business School with a UJ hub, followed by a TUT hub on 24 March 2023 and a third hub at the Central University of Technology by early 2024. Hubs run applied projects such as AI capacity building for public servants, AI in farming and food production, and smart manufacturing. The 2026 draft AI policy proposed reviewing its mandate and funding.",
+  "streams": ["research", "skilling", "public-sector"],
+  "kind": "coe",
+  "agency": "DCDT",
+  "start": "2022-11-30",
+  "status": "active",
+  "beneficiaries": "Researchers, students, public servants and industry in agriculture, manufacturing and health",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.gov.za/news/media-advisories/government-activities/minister-khumbudzo-ntshavheni-launches-artificial", "title": "Minister Khumbudzo Ntshavheni launches Artificial Intelligence Institute of South Africa and AI hubs, 30 Nov", "publisher": "DCDT / gov.za", "date": "2022-11-30", "lang": "en" },
+    { "url": "https://www.sanews.gov.za/south-africa/cabinet-welcomes-launch-artificial-intelligence-ai-institute-sa", "title": "Cabinet welcomes launch of Artificial Intelligence (AI) Institute of SA", "publisher": "SAnews (GCIS)", "date": "2022-12-01", "lang": "en" },
+    { "url": "https://www.gov.za/news/media-statements/minister-mondli-gungubele-launches-tshwane-university-technology-hub", "title": "Minister Mondli Gungubele launches the Tshwane University of Technology Hub of AIISA", "publisher": "DCDT / gov.za", "date": "2023-03-15", "lang": "en" },
+    { "url": "https://www.cut.ac.za/news/cuts-ai-hub-launch", "title": "CUT's AI Hub launch", "publisher": "Central University of Technology", "date": "2024-03-05", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

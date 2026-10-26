@@ -1,0 +1,22 @@
+{
+  "id": "cn-new-generation-ai-development-plan-2017",
+  "jurisdiction": "CN",
+  "title": "New Generation Artificial Intelligence Development Plan",
+  "title_original": "新一代人工智能发展规划",
+  "summary": "National AI strategy issued by the State Council (Guofa [2017] No. 35), dated 8 July 2017 and published on 20 July 2017. It sets a three-step goal for 2020, 2025 and 2030. China's core AI industry should exceed 150 billion yuan by 2020, 400 billion yuan by 2025 and 1 trillion yuan by 2030. Related industries should exceed 1 trillion, 5 trillion and 10 trillion yuan in the same years. The plan is the basis for later national programmes, including the Science and Technology Innovation 2030 'New Generation AI' major project run by the Ministry of Science and Technology.",
+  "streams": ["industry", "research"],
+  "type": "strategy",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "State Council",
+  "dates": { "passed": "2017-07-08" },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "sources": [
+    { "url": "https://www.gov.cn/zhengce/content/2017-07/20/content_5211996.htm", "title": "国务院关于印发新一代人工智能发展规划的通知（国发〔2017〕35号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2017-07-20", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

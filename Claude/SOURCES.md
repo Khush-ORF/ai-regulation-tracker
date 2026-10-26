@@ -69,6 +69,18 @@ Verdicts: `ok`, `caveat` (usable with a note), `blocked`, `replaced`.
 | DigiChina (Stanford) | https://digichina.stanford.edu/work/feed/ | rss | caveat | The main `/feed/` is empty; use `/work/feed/` |
 | NPC (npc.gov.cn, flk.npc.gov.cn) | — | — | **replaced** | Firewall 403 from India; TLS fails from the US |
 
+## 5a. Additional working sources found during seeding (2026-10-26; not yet in `check_sources.py`)
+| Country | Source | Access | Notes |
+|---|---|---|---|
+| India | PIB backgrounder PDFs | `static.pib.gov.in` | Downloads worked although `pib.gov.in` pages are blocked. Check robots.txt before crawling |
+| Brazil | Central Bank rules API | `https://www.bcb.gov.br/api/conteudo/app/normativos/exibenormativo?p1=<type>&p2=<number>` | JSON |
+| Brazil | Câmara API | (as §2) | Decode responses as UTF-8 from the raw bytes |
+| Brazil | TSE, CNJ | — | Returned 403 to our fetcher; MCTI pages show a CAPTCHA (not attempted) |
+| South Korea | PIPC press board | `pipc.go.kr/...selectBoardList.do?bbsId=BS074&mCode=C020010000&searchCnd=0&searchWrd=<term>` | Works without JavaScript |
+| South Korea | KDI EIEC | `eiec.kdi.re.kr` | Republishes ministry press releases |
+| South Korea | National Assembly API | (as §4) | Sample mode returns only the first 5 rows, whatever `pIndex` is |
+| China | China Law Translate | (as §5) | Returned 403 on every page during seeding; re-check in T-201 |
+
 ## 6. Priority states and provinces (Phase 3)
 Confirmed by the owner (ADR-012):
 - **India:** Karnataka, Tamil Nadu, Telangana, Maharashtra, Kerala, Uttar Pradesh, Gujarat, Odisha, West Bengal, Andhra Pradesh

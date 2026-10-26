@@ -1,0 +1,30 @@
+{
+  "id": "br-anpd-ai-automated-decisions-regulation-2024",
+  "jurisdiction": "BR",
+  "title": "ANPD regulatory process on artificial intelligence and review of automated decisions (LGPD Art. 20)",
+  "title_original": "Tomada de Subsídios sobre Inteligência Artificial e revisão de decisões automatizadas",
+  "summary": "Regulatory process by Brazil's data protection authority (ANPD) on how the LGPD applies to AI, centred on the Article 20 right to review automated decisions. The ANPD opened a public call for input (tomada de subsídios) on the Participa+Brasil platform on 6 November 2024, with 15 questions on principles, legal bases, data subject rights and governance; the deadline was extended to 24 January 2025. Technical Note No. 12/2025 (May 2025) consolidated the input. The topic sits as item 7 of the ANPD Regulatory Agenda 2025-2026; no draft rule or guide had been published as of October 2026.",
+  "streams": ["data-protection", "safety"],
+  "type": "rule",
+  "status": "in_progress",
+  "binding": true,
+  "issuing_body": "ANPD",
+  "dates": {
+    "announced": "2024-11-06"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "in_progress", "date": "2024-11-06", "source_url": "https://legismap.com.br/conteudos/artigos-e-noticias/anpd-abre-tomada-de-subsidios-sobre-ia" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/tomada-de-subsidios-sobre-inteligencia-artificial-e-prorrogada-ate-24-de-janeiro-de-2025", "title": "Tomada de Subsídios sobre Inteligência Artificial é prorrogada até 24 de janeiro de 2025", "publisher": "ANPD", "date": "2024-11-29", "lang": "pt" },
+    { "url": "https://legismap.com.br/conteudos/artigos-e-noticias/anpd-abre-tomada-de-subsidios-sobre-ia", "title": "ANPD abre tomada de subsídios sobre IA", "publisher": "Legismap (reproducing ANPD)", "date": "2024-11-06", "lang": "pt" },
+    { "url": "https://lefosse.com/noticias/inteligencia-artificial-anpd-publica-nota-tecnica-sobre-decisoes-automatizadas/", "title": "Inteligência artificial: ANPD publica nota técnica sobre decisões automatizadas", "publisher": "Lefosse Advogados", "date": "2025-05-23", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.6,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "cn-national-ai-industry-investment-fund-2025",
+  "jurisdiction": "CN",
+  "title": "National Artificial Intelligence Industry Investment Fund",
+  "title_original": "国家人工智能产业投资基金",
+  "summary": "State-backed AI equity fund set up in January 2025 as a limited partnership in Xuhui District, Shanghai. Its founders are Guozhitou (Shanghai) Private Equity Fund Management Co. and the China Integrated Circuit Industry Investment Fund Phase III (Big Fund III). Shanghai's government reported capital of 60 billion yuan. In November 2025 MIIT Minister Li Lecheng wrote that the 60-billion-yuan fund was in formal operation. He said it would steer social capital toward early-stage, small, long-term and hard-technology investments.",
+  "streams": ["industry"],
+  "kind": "vc_fund",
+  "amount": 60000000000,
+  "currency": "CNY",
+  "stage": "allocated",
+  "fiscal_year": "2025",
+  "purpose": "Equity investment in AI that steers social capital toward early-stage, small, long-term and hard-technology projects.",
+  "sources": [
+    { "url": "https://www.shanghai.gov.cn/nw15343/20250123/76167eae0a624d569fc71fe6627e5334.html", "title": "600亿国家大基金落地徐汇", "publisher": "Shanghai Municipal People's Government", "date": "2025-01-23", "lang": "zh" },
+    { "url": "https://wap.miit.gov.cn/xwfb/bldhd/art/2025/art_d1d974ab71444a9bace20d05d2f197c6.html", "title": "工业和信息化部党组书记、部长李乐成：加快推进人工智能赋能新型工业化", "publisher": "Ministry of Industry and Information Technology of the PRC", "date": "2025-11-03", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

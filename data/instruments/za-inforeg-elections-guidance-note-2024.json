@@ -1,0 +1,29 @@
+{
+  "id": "za-inforeg-elections-guidance-note-2024",
+  "jurisdiction": "ZA",
+  "title": "Guidance Note on the Processing of Personal Information of Voters, and the Countering of Misinformation and Disinformation during Elections",
+  "summary": "A guidance note issued by the Information Regulator on 14 May 2024 explaining how POPIA applies to political parties and independent candidates, including consent for direct marketing and automated calling during campaigns. It addresses misinformation and disinformation enabled by digital platforms, and states that using a person's voice or image without consent to spread fake messages, particularly with generative AI, violates their right to privacy. It is the Regulator's only published guidance found that mentions AI; no guidance specifically on AI or automated decision-making under section 71 was found.",
+  "streams": ["content", "data-protection"],
+  "type": "guideline",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "Information Regulator",
+  "dates": { "passed": "2024-05-14" },
+  "sectors": ["elections"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Parties must obtain voter consent before campaign messages by phone, SMS or email",
+    "Automated campaign calls must offer voters an opt-out"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2024-05-14", "source_url": "https://inforegulator.org.za/guidance-notes/" }
+  ],
+  "sources": [
+    { "url": "https://inforegulator.org.za/wp-content/uploads/2020/07/FINAL-GUIDANCE-NOTE-ON-THE-PROCESSING-OF-PERSONAL-INFORMATION-OF-VOTERS-AND-THE-COUNTERING-OF-MISINFORMATION-AND-DISINFORMATION-DURING-ELECTIONS.pdf", "title": "Guidance Note on the Processing of Personal Information of Voters, and the Countering of Misinformation and Disinformation during Elections", "publisher": "Information Regulator (South Africa)", "date": "2024-05-14", "lang": "en" },
+    { "url": "https://inforegulator.org.za/guidance-notes/", "title": "Guidance Notes", "publisher": "Information Regulator (South Africa)", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

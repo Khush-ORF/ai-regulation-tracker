@@ -1,0 +1,27 @@
+{
+  "id": "za-national-ai-policy-framework-2024",
+  "jurisdiction": "ZA",
+  "title": "South Africa National Artificial Intelligence Policy Framework",
+  "summary": "A non-binding discussion framework released by the Department of Communications and Digital Technologies in August 2024 as a first step towards a national AI policy. It sets out strategic pillars, including talent and capacity development, digital infrastructure, research and innovation, public-sector use, ethical guidelines, privacy and data protection, safety and security, transparency and explainability, and fairness and bias mitigation. DCDT invited public input until 29 November 2024 and received 32 submissions. The framework was never gazetted or formally adopted. It became the basis of the March 2026 Draft National AI Policy, which was later withdrawn.",
+  "streams": ["safety", "skilling", "public-sector"],
+  "type": "framework",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "DCDT",
+  "dates": { "announced": "2024-08" },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "in_progress", "date": "2024-10-25", "source_url": "https://pmg.org.za/blog/From%20the%20Government%20Gazette%20and%20Media%20Statements%20(18%20November%202024)" }
+  ],
+  "sources": [
+    { "url": "https://pmg.org.za/blog/From%20the%20Government%20Gazette%20and%20Media%20Statements%20(18%20November%202024)", "title": "From the Government Gazette and Media Statements (18 November 2024)", "publisher": "Parliamentary Monitoring Group (CC BY 3.0 ZA)", "date": "2024-11-18", "lang": "en" },
+    { "url": "https://oecd.ai/en/dashboards/policy-initiatives/south-africa-national-artificial-intelligence-policy-framework", "title": "South Africa National Artificial Intelligence Policy Framework", "publisher": "OECD.AI Policy Observatory", "lang": "en" },
+    { "url": "https://www.gov.za/sites/default/files/gcis_document/202604/54477gen3880.pdf", "title": "Draft South Africa National Artificial Intelligence (AI) Policy, Notice 3880 of 2026 (explanatory note citing the August 2024 Framework and 32 submissions)", "publisher": "Government Gazette / gov.za", "date": "2026-04-10", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.6,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

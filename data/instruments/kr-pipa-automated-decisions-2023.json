@@ -1,0 +1,36 @@
+{
+  "id": "kr-pipa-automated-decisions-2023",
+  "jurisdiction": "KR",
+  "title": "Personal Information Protection Act, amended by Act No. 19234 (rights over automated decisions)",
+  "title_original": "개인정보 보호법 (법률 제19234호, 자동화된 결정에 대한 정보주체의 권리)",
+  "summary": "Korea's general data-protection law, overseen by the Personal Information Protection Commission (PIPC). Act No. 19234 of 14 March 2023 added Article 37-2, which lets data subjects object to a fully automated decision, including one using AI, that significantly affects their rights or duties, and ask for an explanation. Controllers must then stop applying the decision or reprocess it with human involvement and explain it, and must publish their criteria and procedures for automated decisions. Most of the amendment took effect six months after promulgation; Article 37-2 took effect one year after, on 15 March 2024. Administrative dispositions under the Framework Act on Administration are excluded.",
+  "streams": ["data-protection"],
+  "type": "law",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "National Assembly / PIPC",
+  "dates": {
+    "passed": "2023-03-14",
+    "effective": "2024-03-15"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Data subjects may object to fully automated decisions with significant effects (Art. 37-2(1))",
+    "Data subjects may request an explanation of an automated decision (Art. 37-2(2))",
+    "On objection, stop applying the decision or reprocess with human involvement",
+    "Publish criteria and procedures for automated decisions (Art. 37-2(4))"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2023-03-14", "source_url": "https://elaw.klri.re.kr/kor_service/lawViewContent.do?hseq=62389" },
+    { "status": "in_force", "date": "2024-03-15", "source_url": "https://www.yulchon.com/en/resources/publications/newsletter-view/36978/page.do" }
+  ],
+  "sources": [
+    { "url": "https://elaw.klri.re.kr/kor_service/lawViewContent.do?hseq=62389", "title": "Personal Information Protection Act (English translation, Act No. 19234)", "publisher": "Korea Legislation Research Institute", "date": "2023-03-14", "lang": "en" },
+    { "url": "https://www.yulchon.com/en/resources/publications/newsletter-view/36978/page.do", "title": "Amendment to the Enforcement Decree of the Personal Information Protection Act Comes into Effect", "publisher": "Yulchon LLC", "date": "2024-03-29", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

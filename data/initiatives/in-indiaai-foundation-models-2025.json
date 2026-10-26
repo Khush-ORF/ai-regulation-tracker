@@ -1,0 +1,23 @@
+{
+  "id": "in-indiaai-foundation-models-2025",
+  "jurisdiction": "IN",
+  "title": "IndiaAI Foundation Models (IndiaAI Innovation Centre)",
+  "summary": "Under this IndiaAI Mission pillar, MeitY launched a call for proposals in January 2025 for indigenous large language, small language and multimodal models trained on Indian datasets, offering grants, compute credits and possible equity investment. More than 500 proposals were received. Sarvam AI, Soket AI, Gnani AI and Gan AI were selected first, and eight more were added in September 2025, including the IIT Bombay-led BharatGen consortium, Fractal Analytics and Tech Mahindra, for twelve in total. Sarvam AI presented 30-billion and 105-billion-parameter models, built with IndiaAI support, at the India AI Impact Summit in February 2026.",
+  "streams": ["research", "compute", "industry"],
+  "kind": "research",
+  "agency": "IndiaAI (MeitY)",
+  "start": "2025-01",
+  "status": "active",
+  "beneficiaries": "Indian startups, companies and research consortia building foundation models",
+  "linked_funds": ["in-indiaai-mission-outlay-2024"],
+  "sources": [
+    { "url": "https://indiaai.gov.in/article/indiaai-mission-call-for-proposals-to-build-foundational-ai-models", "title": "IndiaAI mission: Call for Proposals to Build Foundational AI Models", "publisher": "IndiaAI", "date": "2025-01-31", "lang": "en" },
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" },
+    { "url": "https://india.entrepreneur.com/en-in/news-and-trends/india-expands-ai-mission-with-12-llm-builders/497343", "title": "India Expands AI Mission with 12 LLM Builders", "publisher": "Entrepreneur India", "date": "2025-09-19", "lang": "en" },
+    { "url": "https://www.indiascienceandtechnology.gov.in/stihighlights/sarvam-ai-unveils-indigenous-multilingual-foundation-models-india-ai-impact-summit", "title": "Sarvam AI Unveils Indigenous Multilingual Foundation Models at India AI Impact Summit", "publisher": "India Science, Technology & Innovation portal", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

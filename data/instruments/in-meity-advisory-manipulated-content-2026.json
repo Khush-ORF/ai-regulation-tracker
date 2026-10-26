@@ -1,0 +1,33 @@
+{
+  "id": "in-meity-advisory-manipulated-content-2026",
+  "jurisdiction": "IN",
+  "title": "MeitY Advisory to Social Media Intermediaries on Manipulated and Synthetic Content (8 October 2026)",
+  "summary": "On 8 October 2026 MeitY's Cyber Laws Division issued an advisory (File No. 16(2)/2026-CyberLaws) to all social media intermediaries. It asks them to exercise enhanced diligence over false, manipulated or out-of-context content that could affect public order; to identify and label or contextualise manipulated, synthetic or misleading content, especially content presented as a current event; and to prioritise complaints from authorised government agencies. Unlike the February 2026 IT Rules amendment, its labelling request is not limited to audio-visual content. It refers to duties under the IT Act and IT Rules, takes immediate effect, and states no specific penalties.",
+  "streams": ["content"],
+  "type": "advisory",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "MeitY",
+  "dates": {
+    "announced": "2026-10-08"
+  },
+  "sectors": ["online platforms"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Label or contextualise manipulated, synthetic or misleading content",
+    "Prioritise complaints from authorised government agencies on public-order content",
+    "Run user awareness measures on verifying information before sharing",
+    "Strengthen monitoring, escalation and grievance-redressal systems"
+  ],
+  "status_history": [
+    { "status": "voluntary", "date": "2026-10-08", "source_url": "https://www.medianama.com/2026/10/223-meity-labelling-social-media-synthetic-content/" }
+  ],
+  "sources": [
+    { "url": "https://www.medianama.com/2026/10/223-meity-labelling-social-media-synthetic-content/", "title": "MeitY widens labelling for social media beyond synthetic content", "publisher": "MediaNama", "date": "2026-10-08", "lang": "en" },
+    { "url": "https://theprint.in/tech/amid-sir-stir-meity-asks-social-media-platforms-to-prioritise-govt-complaints-label-misleading-content/3065881/", "title": "Amid SIR stir, MeitY asks social media platforms to prioritise govt complaints, label 'misleading' content", "publisher": "ThePrint", "date": "2026-10-08", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

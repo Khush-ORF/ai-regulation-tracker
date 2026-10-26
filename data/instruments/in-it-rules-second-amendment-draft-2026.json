@@ -1,0 +1,32 @@
+{
+  "id": "in-it-rules-second-amendment-draft-2026",
+  "jurisdiction": "IN",
+  "title": "Draft Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Second Amendment Rules, 2026",
+  "summary": "MeitY released this draft amendment to the IT Rules, 2021 for public consultation on 30 March 2026 and published further changes on 21 April 2026, with comments due by 7 May 2026. The draft would make compliance with MeitY's written clarifications, advisories, orders, SOPs and codes part of intermediaries' due diligence under section 79 of the IT Act, and extend grievance rules for publishers to news content posted by other users. The April changes would require labels on synthetically generated content to stay continuously visible for the full duration of visual content. No final notification was found as of 26 October 2026.",
+  "streams": ["content"],
+  "type": "rule",
+  "status": "in_progress",
+  "binding": true,
+  "issuing_body": "MeitY",
+  "dates": {
+    "announced": "2026-03-30"
+  },
+  "sectors": ["online platforms"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Comply with MeitY written advisories and SOPs as part of due diligence (proposed)",
+    "Keep synthetic-content labels continuously visible in videos (proposed)",
+    "Grievance rules extended to user-posted news content (proposed)"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2026-03-30", "source_url": "https://theprint.in/india/governance/comply-or-lose-safe-harbour-meitys-draft-amendment-to-it-rules-lets-govt-give-platforms-binding-orders/2892174/" }
+  ],
+  "sources": [
+    { "url": "https://theprint.in/india/governance/comply-or-lose-safe-harbour-meitys-draft-amendment-to-it-rules-lets-govt-give-platforms-binding-orders/2892174/", "title": "Comply or lose safe harbour: MeitY's draft amendment to IT Rules lets govt give platforms binding orders", "publisher": "ThePrint", "date": "2026-03-30", "lang": "en" },
+    { "url": "https://ssrana.in/articles/india-tightens-oversight-on-ai-generated-content-under-it-rules/", "title": "India Tightens Oversight on AI-Generated Content Under IT Rules", "publisher": "S.S. Rana & Co.", "date": "2026", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.5,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

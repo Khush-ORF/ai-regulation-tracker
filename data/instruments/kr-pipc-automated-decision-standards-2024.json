@@ -1,0 +1,36 @@
+{
+  "id": "kr-pipc-automated-decision-standards-2024",
+  "jurisdiction": "KR",
+  "title": "Standards for Measures by Personal Information Controllers on Automated Decisions (PIPC Notice) and Guide on Data Subjects' Rights",
+  "title_original": "자동화된 결정에 대한 개인정보처리자의 조치 기준 (고시) / 자동화된 결정에 대한 정보주체의 권리 안내서",
+  "summary": "Personal Information Protection Commission notice, pre-announced for comment in May 2024 and effective 26 September 2024, setting out what businesses and public bodies must do when they make fully automated decisions, including AI-based ones, under Article 37-2 of the Personal Information Protection Act. PIPC published a case-based guide with it explaining when a decision counts as automated, how to give meaningful explanations, how to handle refusals and reviews, and how to publish criteria in advance. The guide includes a self-assessment checklist and encourages explainable-AI techniques.",
+  "streams": ["data-protection"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "PIPC",
+  "dates": {
+    "introduced": "2024-05-17",
+    "effective": "2024-09-26"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [
+    "Publish automated-decision criteria and procedures on the website in advance",
+    "Give meaningful, simplified explanations on request, not complex mathematical detail",
+    "Suspend a refused decision and notify the data subject of the outcome",
+    "Review data subjects' submitted opinions and report the result"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2024-05-17", "source_url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=10174" },
+    { "status": "in_force", "date": "2024-09-26", "source_url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=10611" }
+  ],
+  "sources": [
+    { "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=10611", "title": "개인정보위, 사례 중심의 「자동화된 결정에 대한 정보주체의 권리 안내서」 공개", "publisher": "PIPC", "date": "2024-09-26", "lang": "ko" },
+    { "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&mCode=C020010000&nttId=10174", "title": "'자동화된 결정에 대한 조치 기준' 고시안 행정예고", "publisher": "PIPC", "date": "2024-05-17", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

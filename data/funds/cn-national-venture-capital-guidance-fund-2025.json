@@ -1,0 +1,23 @@
+{
+  "id": "cn-national-venture-capital-guidance-fund-2025",
+  "jurisdiction": "CN",
+  "title": "National Venture Capital Guidance Fund",
+  "title_original": "国家创业投资引导基金",
+  "summary": "Government venture fund launched on 26 December 2025, with three regional funds for Beijing-Tianjin-Hebei, the Yangtze River Delta and the Greater Bay Area. A Ministry of Finance official said the state contributes 100 billion yuan at national level from ultra-long special treasury bonds. Social capital is invited at regional and sub-fund levels, and NDRC expects total funds of around 1 trillion yuan. The fund has a 20-year life, and sub-funds must put at least 70% into seed and early-stage firms. AI is one of several frontier sectors it targets, alongside biopharmaceuticals, quantum technology and 6G. It is not an AI-only fund.",
+  "streams": ["industry"],
+  "kind": "vc_fund",
+  "amount": 100000000000,
+  "currency": "CNY",
+  "stage": "allocated",
+  "fiscal_year": "2025",
+  "purpose": "Central fiscal capital for seed and early-stage investment in strategic emerging and frontier industries, AI among them.",
+  "sources": [
+    { "url": "http://www.news.cn/fortune/20251226/48961f6ce580407aaeb0d2afa7b5e8eb/c.html", "title": "用耐心资本陪伴企业“长跑”——国家发展改革委等部门解读国家创业投资引导基金", "publisher": "Xinhua News Agency", "date": "2025-12-26", "lang": "zh" },
+    { "url": "https://english.www.gov.cn/news/202512/26/content_WS694e4e56c6d00ca5f9a08486.html", "title": "China unveils national venture capital guidance fund to boost innovation", "publisher": "State Council of the PRC (english.gov.cn)", "date": "2025-12-26", "lang": "en" },
+    { "url": "http://www.news.cn/liangzi/20251231/92777f3f2a82444cb6a72b4bbbb3e963/c.html", "title": "中国设创投引导基金发展前沿产业", "publisher": "Xinhua News Agency", "date": "2025-12-31", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

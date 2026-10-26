@@ -1,0 +1,34 @@
+{
+  "id": "in-sebi-ai-ml-guidelines-consultation-2025",
+  "jurisdiction": "IN",
+  "title": "Consultation Paper on Guidelines for Responsible Usage of AI/ML in Indian Securities Markets",
+  "summary": "SEBI published this consultation paper on 20 June 2025, proposing guidelines for market participants that use AI and machine learning, for example in algorithmic trading, asset and portfolio management, and advisory and research services. Proposals include internal governance and risk controls, disclosure of AI/ML use to investors, model validation and record-keeping of development, testing and monitoring, periodic reporting to SEBI, and principles of equality, accountability, transparency, and safety and reliability. In August 2026 the SEBI chairman said final guidelines would follow with a tiered approach, kill switches and human-in-the-loop controls. No final guidelines had been found as of 26 October 2026.",
+  "streams": ["sector-rules", "safety"],
+  "type": "guideline",
+  "status": "in_progress",
+  "binding": true,
+  "issuing_body": "SEBI",
+  "dates": {
+    "announced": "2025-06-20"
+  },
+  "sectors": ["finance"],
+  "approach": "sectoral",
+  "key_obligations": [
+    "Set up governance and risk controls for AI/ML use (proposed)",
+    "Disclose AI/ML use in client-facing services (proposed)",
+    "Keep records of model development, testing and monitoring (proposed)",
+    "File periodic reports on AI/ML use with SEBI (proposed)"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2025-06-20", "source_url": "https://www.sebi.gov.in/reports-and-statistics/reports/jun-2025/consultation-paper-on-guidelines-for-responsible-usage-of-ai-ml-in-indian-securities-markets_94687.html" }
+  ],
+  "sources": [
+    { "url": "https://www.sebi.gov.in/reports-and-statistics/reports/jun-2025/consultation-paper-on-guidelines-for-responsible-usage-of-ai-ml-in-indian-securities-markets_94687.html", "title": "Consultation Paper on guidelines for responsible usage of AI/ML in Indian Securities Markets", "publisher": "Securities and Exchange Board of India", "date": "2025-06-20", "lang": "en" },
+    { "url": "https://www.taxmann.com/post/blog/sebi-proposes-ai-ml-governance-framework-for-securities-markets", "title": "SEBI Proposes AI/ML Governance Framework for Securities Markets", "publisher": "Taxmann", "lang": "en" },
+    { "url": "https://www.outlookmoney.com/invest/sebi-to-issue-aiml-guidelines-for-capital-markets-mandatory-kill-switch-and-human-oversight-framework-explained", "title": "Sebi to issue AI/ML guidelines for capital markets with kill switch and human-in-the-loop controls", "publisher": "Outlook Money", "date": "2026-08-20", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

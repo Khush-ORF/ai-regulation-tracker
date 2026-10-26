@@ -1,0 +1,22 @@
+{
+  "id": "cn-ai-plus-action-opinions-2025",
+  "jurisdiction": "CN",
+  "title": "Opinions of the State Council on Deepening the Implementation of the \"AI+\" Action",
+  "title_original": "国务院关于深入实施“人工智能+”行动的意见",
+  "summary": "State Council policy document (Guofa [2025] No. 11), dated 21 August 2025 and published on 26 August 2025. It sets out AI integration in six areas: science and technology, industrial development, consumption, people's livelihoods, governance capacity and global cooperation. Targets are adoption of new-generation intelligent terminals and agents above 70% by 2027 and above 90% by 2030, and a new stage of intelligent economy and society by 2035. Supporting measures cover models, data, computing power (including the national integrated computing network and 'East Data, West Computing' hubs), open source, talent, policy and regulation, and security. NDRC coordinates implementation.",
+  "streams": ["industry", "public-sector", "compute"],
+  "type": "strategy",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "State Council",
+  "dates": { "passed": "2025-08-21" },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "sources": [
+    { "url": "https://www.gov.cn/zhengce/content/202508/content_7037861.htm", "title": "国务院关于深入实施“人工智能+”行动的意见（国发〔2025〕11号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2025-08-26", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cn-ai-agents-implementation-opinions-2026",
+  "jurisdiction": "CN",
+  "title": "Implementation Opinions on the Standardised Application and Innovative Development of AI Agents",
+  "title_original": "智能体规范应用与创新发展实施意见",
+  "summary": "Policy opinions issued jointly by the Cyberspace Administration of China, the National Development and Reform Commission and the Ministry of Industry and Information Technology, reported on 8 May 2026. They implement the State Council's 'AI+' opinions for AI agents. Their principles are safety and controllability, orderly standards, innovation and application-led development. Measures cover technical foundations and agent standards and protocols; product rules, security risk prevention, a governance system and industry self-regulation; 19 typical application scenarios across research, industry, consumption, livelihoods and social governance; and building an agent ecosystem.",
+  "streams": ["safety", "industry"],
+  "type": "guideline",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "CAC, NDRC, MIIT",
+  "dates": { "announced": "2026-05-08" },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [],
+  "sources": [
+    { "url": "https://www.gov.cn/lianbo/202605/content_7068177.htm", "title": "三部门部署智能体规范应用与创新发展", "publisher": "State Council of the PRC (gov.cn)", "date": "2026-05-08", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

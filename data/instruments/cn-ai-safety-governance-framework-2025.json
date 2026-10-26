@@ -1,0 +1,29 @@
+{
+  "id": "cn-ai-safety-governance-framework-2025",
+  "jurisdiction": "CN",
+  "title": "AI Safety Governance Framework 2.0",
+  "title_original": "人工智能安全治理框架 2.0版",
+  "summary": "Non-binding governance framework released on 15 September 2025 at National Cybersecurity Awareness Week. CNCERT (the National Internet Emergency Center) led the drafting with AI bodies, research institutes and companies, under the guidance of the Cyberspace Administration of China. It updates version 1.0, which the National Cybersecurity Standardization Technical Committee (TC260) released on 9 September 2024. Version 2.0 refines risk categories, adding open-source model risks and risks from AI's wider social effects. It also explores risk grading and adds ethics guidelines. It sets out 14 governance measures, 4 security guidelines and principles including trusted application and preventing loss of control.",
+  "streams": ["safety"],
+  "type": "framework",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "CNCERT (CAC-guided); v1.0 by TC260",
+  "dates": { "announced": "2025-09-15" },
+  "sectors": ["all"],
+  "approach": "risk_based",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2024-09-09", "source_url": "https://www.ncsti.gov.cn/kjdt/kjrd/rgzn_kjrd/202409/t20240910_178449.html" },
+    { "status": "voluntary", "date": "2025-09-15", "source_url": "https://cpc.people.com.cn/n1/2025/0916/c64387-40564753.html" }
+  ],
+  "sources": [
+    { "url": "https://cpc.people.com.cn/n1/2025/0916/c64387-40564753.html", "title": "《人工智能安全治理框架》2.0版发布", "publisher": "People's Daily Online (CPC News)", "date": "2025-09-16", "lang": "zh" },
+    { "url": "https://www.cac.gov.cn/2025-09/26/c_1760606717425964.htm", "title": "专家解读｜《人工智能安全治理框架》2.0版", "publisher": "Cyberspace Administration of China", "date": "2025-09-26", "lang": "zh" },
+    { "url": "https://www.ncsti.gov.cn/kjdt/kjrd/rgzn_kjrd/202409/t20240910_178449.html", "title": "《人工智能安全治理框架》1.0版发布", "publisher": "National Center for Science and Technology Information (China)", "date": "2024-09-10", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

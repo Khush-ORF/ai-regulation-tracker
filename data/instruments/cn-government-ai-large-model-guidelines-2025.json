@@ -1,0 +1,23 @@
+{
+  "id": "cn-government-ai-large-model-guidelines-2025",
+  "jurisdiction": "CN",
+  "title": "Guidelines for the Deployment and Application of AI Large Models in Government Affairs",
+  "title_original": "政务领域人工智能大模型部署应用指引",
+  "summary": "Guidelines issued by the Office of the Central Cyberspace Affairs Commission and the National Development and Reform Commission, reported by Xinhua on 10 October 2025. They tell government bodies to pick common, high-frequency use cases in public services, social governance, office work and decision support. Models should be built centrally so that one jurisdiction's deployment can be reused by other regions and departments, avoiding duplicated systems. They call for lifecycle management and clear limits on use, and position large models as aids rather than decision-makers. Officials are told to guard against hallucinations and 'digital formalism'.",
+  "streams": ["public-sector"],
+  "type": "guideline",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "CAC, NDRC",
+  "dates": { "announced": "2025-10-10" },
+  "sectors": ["government"],
+  "approach": "sectoral",
+  "key_obligations": [],
+  "sources": [
+    { "url": "https://www.gov.cn/lianbo/bumen/202510/content_7043864.htm", "title": "两部门印发《政务领域人工智能大模型部署应用指引》", "publisher": "State Council of the PRC (gov.cn)", "date": "2025-10-11", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

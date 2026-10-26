@@ -1,0 +1,33 @@
+{
+  "id": "cn-deep-synthesis-provisions-2022",
+  "jurisdiction": "CN",
+  "title": "Provisions on the Administration of Deep Synthesis Internet Information Services",
+  "title_original": "互联网信息服务深度合成管理规定",
+  "summary": "Departmental rules issued as Order No. 12 by the Cyberspace Administration of China, the Ministry of Industry and Information Technology and the Ministry of Public Security. They cover internet information services in mainland China that use deep synthesis technology to generate or edit text, images, audio, video and virtual scenes. Providers must verify users' real identities, manage training data securely, review content, label synthetic content (prominently for face swaps, synthetic voices and similar outputs), and file algorithms and run security assessments where services can shape public opinion. Deleting, altering or concealing labels is prohibited.",
+  "streams": ["content", "safety"],
+  "type": "rule",
+  "status": "in_force",
+  "binding": true,
+  "issuing_body": "CAC",
+  "dates": { "passed": "2022-11-25", "effective": "2023-01-10" },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Verify users' real identity before letting them publish information",
+    "Label synthetic content, prominently for face swaps and synthetic voices",
+    "Prompt users to obtain separate consent before editing a person's face or voice",
+    "File algorithms and run security assessments for public-opinion services",
+    "Do not delete, alter or conceal synthetic-content labels"
+  ],
+  "status_history": [
+    { "status": "passed", "date": "2022-11-25", "source_url": "https://www.gov.cn/gongbao/content/2023/content_5741257.htm" },
+    { "status": "in_force", "date": "2023-01-10", "source_url": "https://www.gov.cn/gongbao/content/2023/content_5741257.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.cn/gongbao/content/2023/content_5741257.htm", "title": "国家互联网信息办公室 工业和信息化部 公安部令（第12号）互联网信息服务深度合成管理规定（国务院公报2023年第4号）", "publisher": "State Council of the PRC (gov.cn)", "date": "2022-11-25", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.9,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

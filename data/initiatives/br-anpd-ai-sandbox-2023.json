@@ -1,0 +1,24 @@
+{
+  "id": "br-anpd-ai-sandbox-2023",
+  "jurisdiction": "BR",
+  "title": "ANPD Regulatory Sandbox on Artificial Intelligence and Data Protection",
+  "title_original": "Sandbox Regulatório em Inteligência Artificial e Proteção de Dados",
+  "summary": "Pilot regulatory sandbox run by the ANPD in which companies test AI systems in a controlled, supervised environment, with algorithmic transparency under LGPD Article 20 as its focus. The project page dates from October 2023; the ANPD selected the University of São Paulo's AI and Machine Learning Centre (CIAAM/USP) as partner under Call No. 1/2024 and three participants (Metatext, Synapse AI and Prevvine) under Call No. 2/2025. Testing began in March 2026. The ANPD published a testing methodology and three partial monitoring reports by October 2026; a fourth cycle will run the planned tests and feed future ANPD guidance.",
+  "streams": ["data-protection", "safety"],
+  "kind": "other",
+  "agency": "ANPD",
+  "start": "2023-10",
+  "status": "active",
+  "beneficiaries": "AI developers selected as sandbox participants",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-3o-relatorio-parcial-de-monitoramento-do-sandbox-regulatorio-em-ia", "title": "ANPD publica 3º Relatório Parcial de Monitoramento do Sandbox em IA e proteção de dados", "publisher": "ANPD", "date": "2026-10-16", "lang": "pt" },
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/publicados-primeiros-resultados-do-sandbox-regulatorio-em-inteligencia-artificial", "title": "Publicados primeiros resultados do Sandbox Regulatório em Inteligência Artificial", "publisher": "ANPD", "date": "2026-07-02", "lang": "pt" },
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/projetos-acoes-iniciativas/sandbox/por-que-inteligencia-artificial", "title": "Por que Inteligência Artificial? (Sandbox)", "publisher": "ANPD", "date": "2023-10-31", "lang": "pt" },
+    { "url": "https://www.gov.br/anpd/pt-br/assuntos/projetos-acoes-iniciativas/sandbox/editais-sandbox-anpd", "title": "Editais Sandbox ANPD", "publisher": "ANPD", "date": "2025-07-11", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

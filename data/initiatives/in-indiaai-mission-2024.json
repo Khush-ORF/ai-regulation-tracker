@@ -1,0 +1,22 @@
+{
+  "id": "in-indiaai-mission-2024",
+  "jurisdiction": "IN",
+  "title": "IndiaAI Mission",
+  "summary": "The Union Cabinet approved the IndiaAI Mission in March 2024 with an outlay of ₹10,371.92 crore over five years. IndiaAI, an independent business division under MeitY, runs it through seven pillars: compute capacity, the AIKosh datasets platform, application development, foundation models, FutureSkills, startup financing, and safe and trusted AI. By December 2025 the government reported 38,000 GPUs onboarded and twelve foundation-model teams selected. PRS notes that spending has stayed below half of each year's allocation, and the 2026-27 budget allocation fell to ₹1,000 crore from ₹2,000 crore in 2025-26.",
+  "streams": ["compute", "industry", "research"],
+  "kind": "mission",
+  "agency": "IndiaAI (MeitY)",
+  "start": "2024-03-07",
+  "status": "active",
+  "beneficiaries": "Startups, researchers, academia, students and government bodies",
+  "linked_funds": ["in-indiaai-mission-outlay-2024", "in-indiaai-mission-be-2025-26", "in-indiaai-mission-be-2026-27"],
+  "sources": [
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" },
+    { "url": "https://prsindia.org/files/budget/budget_parliament/2026/DFG_Analysis_2026-27_MeITY.pdf", "title": "Demand for Grants 2026-27 Analysis: Electronics and Information Technology", "publisher": "PRS Legislative Research", "date": "2026-03-04", "lang": "en" },
+    { "url": "https://indiaai.gov.in/news/cabinet-approves-india-ai-mission-at-an-outlay-of-rs-10-372-crore", "title": "Cabinet approves India AI mission at an outlay of Rs 10,372 crore", "publisher": "IndiaAI", "date": "2024-03-12", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

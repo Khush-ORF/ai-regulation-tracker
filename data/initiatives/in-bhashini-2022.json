@@ -1,0 +1,19 @@
+{
+  "id": "in-bhashini-2022",
+  "jurisdiction": "IN",
+  "title": "Digital India BHASHINI",
+  "summary": "BHASHINI is an AI language platform of MeitY's Digital India Bhashini Division, launched in July 2022. It offers translation and speech tools in Indian languages so that citizens can use digital services in their own language, including people who are not comfortable reading or writing, and makes its models available to public and private users. By December 2025 the government reported support for 20 Indian languages, more than 350 integrated AI models, over one million downloads and more than 450 active customers. In June 2025 it signed an agreement with the Centre for Railway Information Systems to add multilingual AI tools to railway platforms.",
+  "streams": ["public-sector"],
+  "kind": "public_service",
+  "agency": "Digital India Bhashini Division (MeitY)",
+  "start": "2022-07",
+  "status": "active",
+  "beneficiaries": "Citizens using digital public services; government and private service providers",
+  "sources": [
+    { "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251230747901.pdf", "title": "Transforming India with AI", "publisher": "Press Information Bureau, Government of India", "date": "2025-12-30", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

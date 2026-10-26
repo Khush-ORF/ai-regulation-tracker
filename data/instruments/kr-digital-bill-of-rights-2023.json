@@ -1,0 +1,29 @@
+{
+  "id": "kr-digital-bill-of-rights-2023",
+  "jurisdiction": "KR",
+  "title": "Digital Bill of Rights (Charter on the Values and Principles for a Digital Society of Mutual Prosperity)",
+  "title_original": "디지털 권리장전",
+  "summary": "Charter presented by MSIT and reported to the Cabinet on 25 September 2023 under President Yoon Suk Yeol. It has a preamble and six chapters with 28 articles. Five basic principles cover freedom and rights in the digital environment, fair access and opportunity, a safe and trustworthy digital society, innovation based on autonomy and creativity, and human well-being; later chapters set out rights and the roles of the state, businesses and civil society. It covers digital issues broadly, not only AI. It is a statement of principles meant to guide later laws, including AI legislation, and to inform international digital-norm talks.",
+  "streams": ["safety", "content"],
+  "type": "framework",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "MSIT",
+  "dates": {
+    "announced": "2023-09-25"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2023-09-25", "source_url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&bbsSeqNo=42&nttSeqNo=878&searchOpt=ALL" }
+  ],
+  "sources": [
+    { "url": "https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&bbsSeqNo=42&nttSeqNo=878&searchOpt=ALL", "title": "South Korea presents a new digital order to the world! (Digital Bill of Rights)", "publisher": "MSIT", "date": "2023-09-25", "lang": "en" },
+    { "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148920752", "title": "디지털 환경에서 자유와 권리 보장…'디지털 권리장전' 발표", "publisher": "Korea.kr (Korea Policy Briefing)", "date": "2023-09-25", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

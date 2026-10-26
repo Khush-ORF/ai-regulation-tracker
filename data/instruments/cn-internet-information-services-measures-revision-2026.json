@@ -1,0 +1,34 @@
+{
+  "id": "cn-internet-information-services-measures-revision-2026",
+  "jurisdiction": "CN",
+  "title": "Measures for the Administration of Internet Information Services (Revised Draft for Comment)",
+  "title_original": "互联网信息服务管理办法（修订草案征求意见稿）",
+  "summary": "Draft revision of the Measures for the Administration of Internet Information Services, a State Council regulation dating from 2000. The Cyberspace Administration of China drafted it with the Ministry of Industry and Information Technology and the Ministry of Public Security. A first draft went to consultation in January 2021. A revised 94-article draft was released for a second consultation on 3 July 2026, closing on 2 August 2026. Its new section on intelligent information services would require AI service providers to disclose operating principles and training-data sources, label AI-generated content, and complete security assessment and algorithm filing for public-opinion services. It also covers AI agents.",
+  "streams": ["content", "safety"],
+  "type": "rule",
+  "status": "in_progress",
+  "binding": false,
+  "issuing_body": "CAC (draft State Council regulation)",
+  "dates": { "introduced": "2021-01-08" },
+  "sectors": ["all"],
+  "approach": "content_specific",
+  "key_obligations": [
+    "Disclose AI services' basic principles, purposes, mechanisms and training-data sources",
+    "Label AI-generated content under laws and mandatory national standards",
+    "Do not force users to use intelligent information services",
+    "AI agent providers must maintain security management under national rules"
+  ],
+  "status_history": [
+    { "status": "in_progress", "date": "2021-01-08", "source_url": "https://www.cac.gov.cn/2021-01/08/c_1611676476075132.htm" },
+    { "status": "in_progress", "date": "2026-07-03", "source_url": "https://www.cac.gov.cn/2026-07/03/c_1784822399677167.htm" }
+  ],
+  "sources": [
+    { "url": "https://www.cac.gov.cn/2026-07/03/c_1784822399677167.htm", "title": "国家互联网信息办公室关于《互联网信息服务管理办法（修订草案征求意见稿）》再次公开征求意见的通知", "publisher": "Cyberspace Administration of China", "date": "2026-07-03", "lang": "zh" },
+    { "url": "https://www.cac.gov.cn/2021-01/08/c_1611676476075132.htm", "title": "关于《互联网信息服务管理办法（修订草案征求意见稿）》公开征求意见的通知", "publisher": "Cyberspace Administration of China", "date": "2021-01-08", "lang": "zh" },
+    { "url": "https://www.news.cn/20260703/bb8af7abe671483dbc4603cd78175eff/c.html", "title": "事关互联网信息服务 国家网信办再次公开征求意见", "publisher": "Xinhua News Agency", "date": "2026-07-03", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

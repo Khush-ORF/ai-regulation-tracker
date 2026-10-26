@@ -48,7 +48,7 @@ sources/registry.json          # crawl targets (generated from SOURCES.md)
 |---|---|---|
 | `type` | enum | `law`, `bill`, `rule`, `guideline`, `framework`, `standard`, `advisory`, `strategy`, `order` |
 | `status` | enum | `proposed`, `in_progress`, `passed`, `in_force`, `voluntary`, `lapsed` |
-| `binding` | boolean | |
+| `binding` | boolean | Whether the instrument is legally binding *by its nature* (true for a draft rule that would bind once final). Pages show "Binding once in force" until `status` is `in_force` |
 | `issuing_body` | string | e.g. "MeitY", "CAC", "MSIT" |
 | `dates` | object | `{announced?, introduced?, passed?, effective?, lapsed?}` |
 | `sectors` | string[] | e.g. `finance`, `health`, `all` |

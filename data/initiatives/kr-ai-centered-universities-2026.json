@@ -1,0 +1,22 @@
+{
+  "id": "kr-ai-centered-universities-2026",
+  "jurisdiction": "KR",
+  "title": "AI-Centered Universities and AX Graduate Schools",
+  "title_original": "AI중심대학 / AX대학원",
+  "summary": "MSIT talent programme that funds universities to rebuild their teaching around AI. The 2026 call opened on 19 January 2026. On 29 September 2026 MSIT launched 18 AI-centered universities (3 new and 15 converted from the earlier software-centered university programme) and 15 AX graduate schools at a ceremony at Yonsei University. AI-centered universities receive about KRW 3 billion a year for up to eight years to strengthen AI majors, require basic AI courses for all students and create AI-convergence courses; AX graduate schools receive KRW 3 billion a year for up to six years to train master's and doctoral AI-convergence talent.",
+  "streams": ["skilling"],
+  "kind": "skilling",
+  "agency": "MSIT",
+  "start": "2026-01-19",
+  "status": "active",
+  "beneficiaries": "Universities and their students; 11 of 18 AI-centered universities are outside the Seoul metropolitan area",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972767", "title": "대학 교육 AI 중심으로 전환…AI중심대학 18곳·AX대학원 15곳 출범", "publisher": "Korea.kr (Korea Policy Briefing)", "date": "2026-09-29", "lang": "ko" },
+    { "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958262", "title": "AI중심대학 10곳 올해 새로 선정한다…대학당 연 30억 원 지원", "publisher": "Korea.kr (Korea Policy Briefing)", "date": "2026-01-19", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

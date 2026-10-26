@@ -1,0 +1,21 @@
+{
+  "id": "kr-pan-government-ai-common-infrastructure-2025",
+  "jurisdiction": "KR",
+  "title": "Pan-Government AI Common Infrastructure",
+  "title_original": "범정부 AI 공통기반",
+  "summary": "Shared platform launched on 24 November 2025 by the Ministry of the Interior and Safety and MSIT so that central and local government bodies can use private-sector AI models, training data and GPUs on the internal government network without duplicating investment. It started with two AI chat services, from Samsung SDS and Naver Cloud, linked to public administrative documents, plus a pilot Intelligent Work Management Platform that connects AI to mail, messenger and video conferencing. A pilot ran to the end of February 2026, with access planned to widen to all central and local governments from March 2026.",
+  "streams": ["public-sector"],
+  "kind": "public_service",
+  "agency": "MOIS / MSIT",
+  "start": "2025-11-24",
+  "status": "active",
+  "beneficiaries": "Central and local government officials",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148955271", "title": "정부 행정망에서도 'AI 챗서비스' 사용 가능해진다", "publisher": "Korea.kr (Korea Policy Briefing)", "date": "2025-11-24", "lang": "ko" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.75,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

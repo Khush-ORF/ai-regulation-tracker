@@ -1,0 +1,23 @@
+{
+  "id": "br-pbia-investment-2024",
+  "jurisdiction": "BR",
+  "title": "Brazilian AI Plan (PBIA) investment envelope 2024–2028",
+  "title_original": "Investimentos previstos no Plano Brasileiro de Inteligência Artificial 2024–2028",
+  "summary": "Total investment foreseen by the Brazilian Artificial Intelligence Plan for 2024 to 2028, stated in the MCTI plan document as BRL 23.03 billion. The plan splits it into immediate-impact actions (BRL 435.04 million) and five axes: infrastructure and AI development (BRL 5.79 billion), diffusion and training (BRL 1.15 billion), AI for public services (BRL 1.76 billion), AI for business innovation (BRL 13.79 billion) and regulation and governance (BRL 103.25 million). At launch, Agência Brasil reported the sources as FNDCT and BNDES credit, non-reimbursable FNDCT funds, the federal budget, state companies and private counterparts.",
+  "streams": ["compute", "industry", "research"],
+  "kind": "budget_allocation",
+  "amount": 23030000000,
+  "currency": "BRL",
+  "stage": "announced",
+  "fiscal_year": "2024",
+  "period": { "from": "2024", "to": "2028" },
+  "purpose": "Fund the 54 actions of the Brazilian AI Plan across immediate-impact actions and five strategic axes.",
+  "sources": [
+    { "url": "https://api.oecd.ai/storage//policy-initiatives/Feb2026/117ojp3vhlml84rjxd-ai-for-the-good-of-all-2025.pdf", "title": "Brazilian Artificial Intelligence Plan – AI for the Good of All (Table: Investments 2024-28)", "publisher": "MCTI (hosted by OECD.AI)", "date": "2025", "lang": "en" },
+    { "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-07/brasil-quer-ter-supercomputador-e-desenvolver-modelos-nacionais-de-ia", "title": "Brasil quer ter supercomputador e desenvolver modelos nacionais de IA", "publisher": "Agência Brasil", "date": "2024-07-30", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.85,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "br-santos-dumont-ai-upgrade-2024",
+  "jurisdiction": "BR",
+  "title": "PBIA estimate for upgrading the Santos Dumont supercomputer",
+  "title_original": "Investimento estimado na atualização do supercomputador Santos Dumont (PBIA)",
+  "summary": "Estimated investment of R$ 1.8 billion announced at the July 2024 launch of the Brazilian AI Plan to upgrade the Santos Dumont supercomputer run by the National Laboratory for Scientific Computing (LNCC) in Petrópolis. The stated goal was for Santos Dumont to rank among the five most powerful computers on the TOP500 list within five years. The figure was reported by the government news agency at launch; the 2025 plan document does not list it separately.",
+  "streams": ["compute"],
+  "kind": "budget_allocation",
+  "amount": 1800000000,
+  "currency": "BRL",
+  "stage": "announced",
+  "fiscal_year": "2024",
+  "purpose": "Upgrade the LNCC Santos Dumont supercomputer to a top-five global ranking.",
+  "parent": "br-pbia-investment-2024",
+  "sources": [
+    { "url": "https://agenciabrasil.ebc.com.br/geral/noticia/2024-07/brasil-quer-ter-supercomputador-e-desenvolver-modelos-nacionais-de-ia", "title": "Brasil quer ter supercomputador e desenvolver modelos nacionais de IA", "publisher": "Agência Brasil", "date": "2024-07-30", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.65,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

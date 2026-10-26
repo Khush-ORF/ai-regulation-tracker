@@ -69,14 +69,21 @@ export type Instrument = CollectionEntry<'instruments'>['data'];
 export type Initiative = CollectionEntry<'initiatives'>['data'];
 export type Fund = CollectionEntry<'funds'>['data'];
 
+const TODAY = new Date().toISOString().slice(0, 10);
+/** The record's own most recent milestone that has already happened (future effective dates don't count).
+    Falls back to the earliest source date only when the record has no dates of its own. */
 function latestDate(r: Instrument | Initiative | Fund): string {
-  const ds: (string | undefined)[] = [];
-  if ('dates' in r) ds.push(...Object.values(r.dates));
-  if ('start' in r) ds.push(r.start);
-  if ('period' in r && r.period) ds.push(r.period.from);
-  ds.push(...r.sources.map((s) => s.date));
-  return ds.filter(Boolean).sort().at(-1) ?? '';
+  const own: (string | undefined)[] = [];
+  if ('dates' in r) own.push(...Object.values(r.dates));
+  if ('start' in r) own.push(r.start);
+  if ('period' in r && r.period) own.push(r.period.from);
+  const past = own.filter((d): d is string => !!d && d <= TODAY).sort();
+  if (past.length) return past.at(-1)!;
+  return r.sources.map((s) => s.date).filter((d): d is string => !!d).sort()[0] ?? '';
 }
+
+/** General data-protection laws apply to AI but aren't AI regulation; leave them out when judging how far AI rules have got. */
+export const isAiSpecific = (r: Instrument) => r.streams.some((s) => s !== 'data-protection');
 
 export interface LogItem { id: string; kind: 'instrument' | 'initiative' | 'fund'; title: string; status: string; date: string; issuer: string; source: string; provenance: string; href: string }
 
@@ -96,7 +103,7 @@ export async function countrySummaries() {
     const ini = initiatives.filter((r) => r.jurisdiction === code);
     const fun = funds.filter((r) => r.jurisdiction === code);
     const count = (s: string) => ins.filter((r) => r.status === s).length;
-    const status = STATUS_RANK.find((s) => count(s) > 0) ?? null;
+    const status = STATUS_RANK.find((s) => ins.some((r) => r.status === s && isAiSpecific(r))) ?? null;
     const topFund = [...fun].sort((a, b) => b.amount - a.amount)[0];
     const href = url(`country/${c.slug}/`);
     const items: LogItem[] = [

@@ -1,0 +1,29 @@
+{
+  "id": "br-ebia-2021",
+  "jurisdiction": "BR",
+  "title": "Brazilian Artificial Intelligence Strategy (EBIA)",
+  "title_original": "Estratégia Brasileira de Inteligência Artificial (EBIA)",
+  "summary": "Brazil's first federal AI strategy, issued by the Ministry of Science, Technology and Innovation (MCTI) through Ordinance No. 4.617 of 6 April 2021 after a public consultation. Ordinance No. 4.979 of 13 July 2021 replaced its annex. The strategy sets objectives on ethical principles for responsible AI, sustained investment in research and development, removing barriers to innovation, training AI professionals, promoting Brazilian AI abroad and public-private cooperation, and is aligned with the OECD AI Principles. OECD.AI lists it as active; the 2024 Brazilian AI Plan (PBIA) now carries the government's investment programme.",
+  "streams": ["research", "skilling", "industry"],
+  "type": "strategy",
+  "status": "voluntary",
+  "binding": false,
+  "issuing_body": "MCTI",
+  "dates": {
+    "announced": "2021-04-06"
+  },
+  "sectors": ["all"],
+  "approach": "principles",
+  "key_obligations": [],
+  "status_history": [
+    { "status": "voluntary", "date": "2021-04-06", "source_url": "https://oecd.ai/en/dashboards/policy-initiatives/brazilian-ai-strategy-2027" }
+  ],
+  "sources": [
+    { "url": "https://oecd.ai/en/dashboards/policy-initiatives/brazilian-ai-strategy-2027", "title": "Brazilian AI strategy", "publisher": "OECD.AI Policy Observatory", "date": "2026-02-10", "lang": "en" },
+    { "url": "https://ses.sp.bvs.br/wp-content/uploads/2021/07/U_PT-MCTI-GM-4979_130721.pdf", "title": "Portaria MCTI nº 4.979, de 13 de julho de 2021 (DOU nº 132, 15/07/2021, Seção 1, p. 16)", "publisher": "Diário Oficial da União (copy hosted by BVS SES-SP)", "date": "2021-07-15", "lang": "pt" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

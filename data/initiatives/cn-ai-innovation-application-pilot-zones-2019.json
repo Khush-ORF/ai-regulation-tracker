@@ -1,0 +1,23 @@
+{
+  "id": "cn-ai-innovation-application-pilot-zones-2019",
+  "jurisdiction": "CN",
+  "title": "National AI Innovation Application Pilot Zones",
+  "title_original": "国家人工智能创新应用先导区",
+  "summary": "Ministry of Industry and Information Technology programme that designates city areas to pilot AI applications and reforms, speed AI integration with the real economy and produce replicable experience. Shanghai's Pudong New Area became the first zone in May 2019. Later zones were Shenzhen, Jinan-Qingdao, Beijing, Tianjin (Binhai), Hangzhou, Guangzhou and Chengdu. Nanjing, Wuhan and Changsha were approved in September 2022, bringing the total to 11. In May 2026 MIIT launched a pilot of AI ethics review and services, starting in the provinces that host these zones.",
+  "streams": ["industry"],
+  "kind": "other",
+  "agency": "MIIT",
+  "start": "2019-05",
+  "status": "active",
+  "beneficiaries": "Cities hosting pilot zones and AI firms deploying applications there",
+  "linked_funds": [],
+  "sources": [
+    { "url": "https://www.cac.gov.cn/2019-05/21/c_1124524750.htm", "title": "全国首个人工智能创新应用先导区在上海启动建设", "publisher": "Cyberspace Administration of China (Xinhua)", "date": "2019-05-21", "lang": "zh" },
+    { "url": "https://www.ncsti.gov.cn/kjdt/kjrd/rgzn_kjrd/202209/t20220930_99165.html", "title": "工信部支持创建南京、武汉、长沙国家人工智能创新应用先导区", "publisher": "National Center for Science and Technology Information (China)", "date": "2022-09-30", "lang": "zh" },
+    { "url": "https://www.news.cn/tech/20260515/aa522493208a48f092034eea122bf473/c.html", "title": "工信部启动人工智能科技伦理审查与服务先导计划", "publisher": "Xinhua News Agency", "date": "2026-05-15", "lang": "zh" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.8,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}

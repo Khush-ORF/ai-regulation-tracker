@@ -1,0 +1,26 @@
+{
+  "id": "za-revised-national-ai-policy-2026",
+  "jurisdiction": "ZA",
+  "title": "National Artificial Intelligence Policy (revised draft in preparation)",
+  "summary": "A replacement for the withdrawn March 2026 draft national AI policy, now being prepared by the Department of Communications and Digital Technologies. In his 12 May 2026 budget vote speech the Minister announced an Independent Expert Review Panel, chaired by Professor Benjamin Rosman, to help review the policy, and said the revised text would be reintroduced for public comment. A ministerial reply to a July 2026 parliamentary question said the draft was still under review. National Treasury's 2026 expenditure estimates list a national AI policy and implementation plan as a DCDT objective by March 2028. No revised text had been published as of 26 October 2026.",
+  "streams": ["safety", "public-sector"],
+  "type": "strategy",
+  "status": "proposed",
+  "binding": false,
+  "issuing_body": "DCDT",
+  "dates": { "announced": "2026-05-12" },
+  "sectors": ["all"],
+  "key_obligations": [],
+  "status_history": [
+    { "status": "proposed", "date": "2026-05-12", "source_url": "https://www.gov.za/news/speeches/minister-solly-malatsi-communications-and-digital-technologies-dept-budget-vote-0" }
+  ],
+  "sources": [
+    { "url": "https://www.gov.za/news/speeches/minister-solly-malatsi-communications-and-digital-technologies-dept-budget-vote-0", "title": "Minister Solly Malatsi: Communications and Digital Technologies Dept Budget Vote 2026/27", "publisher": "South African Government (gov.za)", "date": "2026-05-12", "lang": "en" },
+    { "url": "https://pmg.org.za/committee-question/39587/", "title": "Question NW3567 to the Minister of Communications and Digital Technologies", "publisher": "Parliamentary Monitoring Group (CC BY 3.0 ZA)", "date": "2026-07-23", "lang": "en" },
+    { "url": "https://archive.treasury.gov.za/documents/National%20Budget/2026/ene/Vote%2030%20Communications%20and%20Digital%20Technologies.pdf", "title": "2026 Estimates of National Expenditure, Vote 30: Communications and Digital Technologies", "publisher": "National Treasury", "date": "2026", "lang": "en" }
+  ],
+  "provenance": "auto",
+  "confidence": 0.7,
+  "first_seen": "2026-10-26",
+  "last_checked": "2026-10-26"
+}
