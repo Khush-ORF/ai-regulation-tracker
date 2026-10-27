@@ -109,3 +109,18 @@ Statuses: `Proposed`, `Accepted`, `Superseded`.
   - Wordmark: a small globe with its southern hemisphere hatched; "Global South" in letter-spaced Spectral SC with ISO codes `IN · BR · ZA · KR · CN`; "AI Regulation *Tracker*" in Spectral.
   - The page `<title>` uses the full name.
 - **Note:** South Korea isn't usually classed as Global South (it's a high-income OECD member). `/about` should say in one line why it's included, e.g. as a comparator for state-led AI regulation.
+
+### ADR-019 — Layered, legitimate-access data pipeline
+- **Status:** Accepted (owner, 2026-10-27)
+- **Decision:** Collect data through five layers, as specified in `Claude/PIPELINE.md`:
+  1. official APIs and feeds;
+  2. reputable secondary trackers;
+  3. read-only web archives;
+  4. publisher email push;
+  5. news, used for discovery only.
+
+  A monthly coverage audit compares our records with OECD.AI's public policy database.
+
+  Access restrictions are never circumvented: no browser imitation, proxies, VPNs, CAPTCHA solving or bot-filter evasion. A block is treated as an answer, and another layer is used instead.
+- **Why:** completeness without legal or reputational risk. The owner noted the data is public, but that doesn't authorise getting round access controls. Several layers overlapping, plus an audit against an independent baseline, makes gaps visible instead of silent.
+- **Consequence:** Layer 2–5 evidence is confidence-capped and always reviewed. Auto-merge needs Layer 1 evidence (see PIPELINE.md "Auto-merge rules").

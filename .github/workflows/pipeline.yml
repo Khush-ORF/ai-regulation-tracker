@@ -1,0 +1,100 @@
+# Daily data update (Claude/PIPELINE.md). Crawls the sources in pipeline/sources.json, extracts records
+# with GitHub Models, validates, and opens a data pull request. The PR merges itself only when every
+# auto-merge rule holds (pipeline/decide.mjs); otherwise it waits for the owner.
+# One-time setup: Settings → Actions → General → Workflow permissions: "Read and write" and
+# "Allow GitHub Actions to create and approve pull requests".
+name: Daily data update
+
+on:
+  schedule:
+    - cron: '30 20 * * *' # 02:00 IST
+  workflow_dispatch:
+    inputs:
+      max:
+        description: Most candidates to send to the model in this run
+        default: '25'
+
+permissions:
+  contents: write
+  pull-requests: write
+  models: read
+  actions: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Restore crawl state (which items were already seen)
+        uses: actions/cache/restore@v4
+        with:
+          path: pipeline/state
+          key: pipeline-state-${{ github.run_id }}
+          restore-keys: pipeline-state-
+
+      - name: Crawl sources
+        run: node pipeline/crawl.mjs
+        env:
+          KR_ASSEMBLY_KEY: ${{ secrets.KR_ASSEMBLY_KEY }}
+
+      - name: Extract records (GitHub Models)
+        run: node pipeline/extract.mjs --max ${{ inputs.max || '25' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save crawl state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: pipeline/state
+          key: pipeline-state-${{ github.run_id }}
+
+      - name: Check for data changes
+        id: diff
+        run: |
+          if [ -n "$(git status --porcelain data)" ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; else echo "No data changes today."; fi
+
+      - name: Validate records and build
+        if: steps.diff.outputs.changed == 'true'
+        run: npm run validate
+
+      - name: Open the data pull request (auto-merge only if every rule holds)
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          decision=$(node pipeline/decide.mjs | head -n 1)
+          day=$(date -u +%Y-%m-%d)
+          branch="data/${day}-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add data
+          git commit -m "Data update ${day}" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          git push -u origin "$branch"
+          url=$(gh pr create --base main --head "$branch" --title "Data update ${day}" --body-file pipeline/out/pr-body.md)
+          echo "Opened $url (decision: $decision)"
+          if [ "$decision" = "auto" ]; then
+            gh pr merge "$url" --squash --delete-branch
+            # A merge made with GITHUB_TOKEN doesn't trigger other workflows, so start the deploy explicitly.
+            gh workflow run deploy.yml --ref main
+          fi
+
+      - name: Keep run outputs (candidates, changes, crawl report)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-out-${{ github.run_id }}
+          path: pipeline/out
+          retention-days: 30

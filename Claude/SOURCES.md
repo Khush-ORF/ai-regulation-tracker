@@ -1,5 +1,7 @@
 # Source registry (v2, verified 2026-10-26)
 
+> **The pipeline reads `pipeline/sources.json`**, the machine registry of Layer 1 and 2 sources with their parsers. It was built from this document on 2026-10-27; keep the two in step. Disabled entries there carry a `note` explaining why (IndiaAI news is global news, not announcements; MSIT's titles are filled in by JavaScript). OECD.AI's public API (`api.oecd.ai/policy-initiatives/public?countryIds=<id>`) is a Layer 2 source and the audit baseline.
+
 Verified in T-004. Full evidence (HTTP codes, robots.txt, sample calls) is in `Claude/research/T-004-source-verification.md`. The re-check script is `scripts/check_sources.py`.
 
 Checks ran from an Indian desktop plus US cloud servers, not from a GitHub runner yet. **Re-run `check_sources.py` on a runner in Phase 2 (T-201).**

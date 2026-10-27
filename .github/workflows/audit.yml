@@ -1,0 +1,39 @@
+# Monthly coverage audit (Claude/PIPELINE.md): compares our records with OECD.AI, flags status and
+# staleness issues and dead links, and opens or updates the issue "Coverage audit YYYY-MM".
+name: Coverage audit
+
+on:
+  schedule:
+    - cron: '0 4 1 * *' # 1st of each month, 09:30 IST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run the audit (with link checks)
+        run: node pipeline/audit.mjs --links
+      - name: Open or update this month's audit issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Coverage audit $(date -u +%Y-%m)"
+          n=$(gh issue list --state open --search "\"${title}\" in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$n" ]; then gh issue edit "$n" --body-file pipeline/out/audit.md; else gh issue create --title "$title" --body-file pipeline/out/audit.md; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: audit-${{ github.run_id }}
+          path: pipeline/out
+          retention-days: 90

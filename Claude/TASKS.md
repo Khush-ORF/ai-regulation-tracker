@@ -44,3 +44,16 @@ Claim a task by setting `Owner` and `Status` before starting (see README rule 1)
 | T-201 | Run `scripts/check_sources.py` on a GitHub runner; compare with the T-004 results | — | todo | Watch the TLS chains (egazette, gov.cn) and CN reachability |
 | T-202 | Ship the missing intermediate certificates for sources with incomplete chains, if the runner fails | — | todo | Never disable verification |
 | T-203 | Owner registers the Assembly Open API key and the law.go.kr `OC` ID; store them as Actions secrets | owner | todo | Q13 |
+| T-204 | Pipeline design (`Claude/PIPELINE.md`, ADR-019) | claude-opus | done | Agreed 2026-10-27 |
+| T-205 | Share the record schema between site and pipeline (`src/schema.mjs`) | claude-opus | done | Site build and Node both validate all 118 records |
+| T-206 | Layer 1 crawler: source registry, polite fetch, parsers, AI-relevance filter | claude-opus | review | 24 of 26 sources enabled; local run read 24/24 OK, 62 candidates. CAC timed out from this PC; check on a runner |
+| T-207 | Extractor: GitHub Models → validated records, confidence caps, change report | claude-opus | review | Write path and decision rules tested with mock model replies. Real model calls are untested until the first Actions run (needs GITHUB_TOKEN) |
+| T-208 | `pipeline.yml`: daily run, data PR, auto-merge rules, deploy dispatch | claude-opus | review | Not yet run on GitHub. Owner must enable Actions PR permissions (PIPELINE.md setup) |
+| T-209 | Coverage audit + `audit.yml` (OECD.AI comparison, status, staleness, links, counts) | claude-opus | review | Local run: 48/131 OECD national items matched, 83 listed for triage; 3 status flags; 16 low-confidence records |
+| T-210 | Layer 2 sources (NPC Observer, DigiChina, CSET, PRS, OECD.AI as candidates) | claude-opus | in-progress | NPC Observer, DigiChina and OECD.AI (5 countries) are in; CSET still to add |
+| T-211 | Layer 3: Wayback CDX lookups for blocked sources | — | todo | |
+| T-212 | Layer 4: inbox reader + subscriptions list | — | todo | Owner creates the inbox |
+| T-213 | Layer 5: GDELT and news RSS discovery | — | todo | |
+| T-214 | MSIT: find a feed with titles (RSS or KDI EIEC) | — | todo | MSIT's list page fills titles with JavaScript |
+| T-215 | Triage the first audit's 83 unmatched OECD items (add or note exclusions) | owner | todo | Some are out of scope (e.g. autonomous-vehicle standards, university courses) |
+| T-216 | Fix status histories flagged by the audit (e.g. PL 2338's last entry is 2025-05) | — | todo | The daily run's tracked-bill feeds will catch new steps; older ones need a backfill |

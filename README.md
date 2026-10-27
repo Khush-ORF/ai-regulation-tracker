@@ -15,6 +15,16 @@ npm run dev
 
 Open http://localhost:4321. `npm run build` writes the static site to `dist/`.
 
+## Data pipeline
+
+```bash
+npm run crawl     # read the sources in pipeline/sources.json, write pipeline/out/candidates.json
+npm run extract   # needs GITHUB_TOKEN (GitHub Models): turn candidates into records in data/
+npm run audit     # coverage audit against OECD.AI, written to pipeline/out/audit.md
+```
+
+These run daily (`pipeline.yml`) and monthly (`audit.yml`) on GitHub Actions. The design is in `Claude/PIPELINE.md`.
+
 ## Project layout
 
 | Path | What it holds |

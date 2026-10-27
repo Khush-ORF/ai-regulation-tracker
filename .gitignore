@@ -5,3 +5,5 @@ dist/
 geo/sources/
 geo/build/
 geo/null.json
+pipeline/out/
+pipeline/state/
